@@ -1,4 +1,4 @@
 ScheduleOpt
 ===========
 
-CS 296-25 Honors project. 
+CS 196-25 Honors project. 
