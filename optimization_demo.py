@@ -18,16 +18,16 @@ class Section:
         self.loc = location
 
         # The group of the section is determined by the first letter in the
-        # name. For example, CQK with be grouped as a "C" section. This is
+        # name. For example, CQK would be grouped as a "C" section. This is
         # important for some classes/departments, because they require you
         # to sign up for sections with the same first letter. This is the 
-        # case in a lot of math/cs/chem courses, but this does not hold in
+        # case in a lot of Math/CS/Chem courses, but this does not hold in
         # other departments. For example, the lectures, discussions, and
-        # lab sections have no bindings for physics courses.
+        # lab sections have no couplings for physics courses.
         self.group = name[0]
 
-        # This is a hash set that represents the time each class uses. Time
-        # is broken up into 5 minute blocks, and added to the hash set. 
+        # Time required is  a hash set that represents the time each class uses.
+        # Time is broken up into 5 minute blocks, and added to the hash set. 
         # Example: a 12:00 AM - 12:20 AM course would have a set like this:
         # {0, 5, 10, 15} 
         # Each number in the set represents a 5 min block of time the course
