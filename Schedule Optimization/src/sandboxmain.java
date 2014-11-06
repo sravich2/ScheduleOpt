@@ -10,7 +10,6 @@ public class sandboxmain
 	{
 
 		Worker help = new Worker();
-
 		Course CS100 = new Course(1);
 		Course CS125 = new Course(2);
 		Course CS173 = new Course(2);

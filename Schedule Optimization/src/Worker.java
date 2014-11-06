@@ -19,7 +19,8 @@ public class Worker
 	{
 		int timeIn10;
 		int hourIn60 = Integer.valueOf(time.substring(0, 2));
-		int minuteIn60 = Integer.valueOf(time.substring(2));
+		if(time.substring(time.length()-2).equals("PM") && hourIn60!=12){hourIn60+=12;}
+		int minuteIn60 = Integer.valueOf(time.substring(3,5));
 		timeIn10 = hourIn60 * 60 + minuteIn60;
 		return timeIn10;
 	}
