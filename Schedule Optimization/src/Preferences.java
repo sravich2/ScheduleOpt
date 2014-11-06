@@ -1,7 +1,7 @@
 /**
- * 
+ * Framework for storing and working with user preferences
  * @author Sachin
- * Stores user preferences
+ * 
  */
 public class Preferences
 {

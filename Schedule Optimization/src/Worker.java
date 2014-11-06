@@ -107,7 +107,7 @@ public class Worker
 	/**
 	 * Appends one Module[] to the end of another Module[] 
 	 * 
-	 * @param addThisModuleArray  Module[] to be appnded
+	 * @param addThisModuleArray  Module[] to be appended
 	 * @param finalClasses        Module[] to which Module[] addThisModuleArray is to be appended
 	 * @return					  Module[] with Module[] addThisModuleArray appended to the end of Module[] finalClasses
 	 */
@@ -146,6 +146,21 @@ public class Worker
 			i++;
 		}
 		return abc;
+	}
+	
+	public String toString(Module[][] schedule)
+	{
+		StringBuffer output = new StringBuffer();
+		
+		for (int i = 0;i<5;i++)
+		{
+			output.append("\n");
+			output.append("Day "+(i+1)+": ");
+			
+			for (int j = 0;j<schedule[i].length;j++)
+				output.append(this.convertTimeBase10To60(schedule[i][j].startTime)+" - " + this.convertTimeBase10To60(schedule[i][j].endTime)+" | ");
+		}
+		return output.toString();
 	}
 
 	/**
@@ -189,13 +204,12 @@ public class Worker
 		}
 
 		return schedule;
-
 	}
 
 	/**
 	 * Removes elements of Module[] at given index and the index following it
 	 * 
-	 * @param inputArray  Module[] from which removal is to performed
+	 * @param inputArray  Module[] from which elements are to be removed
 	 * @param k			  Index of first removal
 	 * @return			  Module[] with elements at k and k+1 removed
 	 */
@@ -213,6 +227,13 @@ public class Worker
 		return newArray;
 	}
 
+	/**
+	 * Compares two Module[] (compares contents, not memory locations)
+	 * 
+	 * @param module1
+	 * @param module2
+	 * @return			boolean representing whether module1 and module2 are equal
+	 */
 	public boolean compareModuleArrays(Module[] module1, Module[] module2)
 	{
 		if (module1.length != module2.length)
@@ -224,19 +245,29 @@ public class Worker
 			{
 				return false;
 			}
-
 		}
 
 		return true;
-
 	}
 
+	/**
+	 * Creates a deep copy of Module
+	 * 
+	 * @param inputModule	Module whose deep copy is needed
+	 * @return				Module which is a deep copy of inputModule
+	 */
 	public Module deepCopyModule(Module inputModule)
 	{
 		Module output = new Module(String.valueOf(inputModule.days), inputModule.startTime, inputModule.endTime);
 		return output;
 	}
 
+	/**
+	 * Creates a deep copy of Module[]
+	 * 
+	 * @param inputArray	Module[] whose deep copy is needed
+	 * @return				Module[] which is a deep copy of inputArray
+	 */
 	public Module[] deepCopyModuleArray(Module[] inputArray)
 	{
 		Module[] outputArray = new Module[inputArray.length];
