@@ -4,15 +4,26 @@ public class ScheduleScorer
 {
 
 	Worker help = new Worker();
+	Preferences pref = new Preferences(true, 300, 300, 1, 4);
+	
 	public int[] sortedNotableTimes;
 	public StringBuilder log = new StringBuilder();
-	Preferences pref = new Preferences(true, 300, 300, 1, 4);
 
+	/**
+	 * Scores a given schedule according to arbitrary set of rules, detailed in documentation
+	 * Input taken as Module[][]. See next line. 
+	 * Use convertModuleArrayToSchedule method in Worker class to convert Module[] to Module[][] 
+	 * 
+	 * @param schedule		Module[][] which represents prospective schedule
+	 * @return				Score for given prospective schedule. Higher is better.
+	 */
 	public int scoreSchedule(Module[][] schedule)
 	{
 		log.setLength(0);
 		int score = 0;
-		//Lunch
+		
+		
+		//1. Checking for Lunch Break
 		if (pref.lunchBreak)
 		{
 			for (int i = 0; i < 5; i++)
@@ -25,7 +36,7 @@ public class ScheduleScorer
 			}
 		}
 
-		//Classes at avoidable time of day
+		//2. Checking classes at disfavored Time of Day
 		for (int i = 0; i < 5; i++)
 		{
 			int badClasses = this.classesAtTimeOfDay(schedule[i]);
@@ -36,7 +47,7 @@ public class ScheduleScorer
 			}
 		}
 
-		//Minutes in a row
+		//3. Calculating Maximum Minutes in a Row
 		for (int i = 0; i < 5; i++)
 		{
 			int maxMinsInRow = this.maxMinutesInRow(schedule[i]);
@@ -47,7 +58,7 @@ public class ScheduleScorer
 			}
 		}
 
-		//Minutes in day
+		//4. Calculating Minutes in class each day
 		for (int i = 0; i < 5; i++)
 		{
 			int maxMinsInDay = this.minutesInDay(schedule[i]);
@@ -58,7 +69,7 @@ public class ScheduleScorer
 			}
 		}
 
-		//Breaks
+		//5. Checking existence of Breaks as per user preference
 		if (pref.avoidBreaksBetweenClasses > 0)
 		{
 			for (int i = 0; i < 5; i++)
@@ -83,6 +94,12 @@ public class ScheduleScorer
 		return score;
 	}
 
+	/**
+	 * Calculates the number of minutes in class on a given day
+	 * 
+	 * @param scheduleForOneDay		Module[] containing all classes on a single day
+	 * @return						Number of minutes in class during the given day
+	 */
 	public int minutesInDay(Module[] scheduleForOneDay)
 	{
 		int minutesBusyInDay = 0;
@@ -93,6 +110,12 @@ public class ScheduleScorer
 		return minutesBusyInDay;
 	}
 
+	/**
+	 * Calculates the maximum number of minutes in a row on a given day
+	 * 
+	 * @param scheduleForOneDay		Module[] containing all classes on a single day
+	 * @return						Maximum number of minutes in a row during the given day
+	 */
 	public int maxMinutesInRow(Module[] scheduleForOneDay)
 	{
 		int maxMinutesInRow = 0;
@@ -125,6 +148,12 @@ public class ScheduleScorer
 
 	}
 
+	/**
+	 * Checks whether there is a lunch break on the given day
+	 * 
+	 * @param scheduleForOneDay		Module[] containing all classes on a single day
+	 * @return						boolean represents whether there is a break for lunch on the given day
+	 */
 	public boolean checkLunchBreak(Module[] scheduleForOneDay)
 	{
 		int minutesBusyDuringLunchTime = 0;
@@ -143,6 +172,12 @@ public class ScheduleScorer
 
 	}
 
+	/**
+	 * Calculates the number of classes during disfavored time of day on the given day
+	 * 
+	 * @param scheduleOnDay		Module[] containing all classes on a single day
+	 * @return					Number of classes during disfavored time of day on the given day
+	 */
 	public int classesAtTimeOfDay(Module[] scheduleOnDay) //Returns number of bad classes
 	{
 		int countOfClassesInUndesirableTime = 0;
@@ -173,6 +208,14 @@ public class ScheduleScorer
 		return countOfClassesInUndesirableTime;
 	}
 
+	/**
+	 * Counts the number of short breaks and total breaks between classes on the given day
+	 * Short break: Between 20 and 90 minutes
+	 * All breaks:  More than 20 minutes
+	 * 
+	 * @param scheduleForOneDay		Module[] containing all classes on a single day
+	 * @return						int[][] containing count of short breaks and total breaks, in that order
+	 */
 	public int[] countShortAndTotalBreaks(Module[] scheduleForOneDay)
 	{
 
