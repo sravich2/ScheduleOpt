@@ -22,6 +22,15 @@ public class Module {
 	public int endTime;
 	public int duration; 
 	
+	public Module(String days, String startTime, String endTime, String location)
+	{
+		this.days = days.toCharArray();
+		this.startTime = help.convertTimeBase60To10(startTime);
+		this.endTime = help.convertTimeBase60To10(endTime);
+		this.duration = this.endTime-this.startTime;
+		this.building = location;
+	}
+	
 	public Module(String days, String startTime, String endTime)
 	{
 		this.days = days.toCharArray();

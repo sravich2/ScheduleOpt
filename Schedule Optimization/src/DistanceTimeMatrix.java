@@ -10,23 +10,30 @@ import org.json.simple.parser.JSONParser;
 import org.json.*;
 public class DistanceTimeMatrix {
 	
-
+	
 	private static String readUrl(String urlString) throws Exception {
-	    BufferedReader reader = null;
+		Worker help = new Worker();
+		
+		
+		BufferedReader reader = null;
 	    try {
 	        URL url = new URL(urlString);
 	        reader = new BufferedReader(new InputStreamReader(url.openStream()));
 	        StringBuffer buffer = new StringBuffer();
+	        String travelTime = "";
+	        String distance = "";
+	        
 	        String line = "";
 	        for (line = reader.readLine();line != null; line = reader.readLine())
 	        {
 	        	if (line.indexOf("km")>-1)
-	        		buffer.append("Distance: "+line.substring(28,line.indexOf("km")+2));
+	        		distance = ("Distance: "+line.substring(28,line.indexOf("km")+2));
 	        	if (line.indexOf("mins") > -1)
-	        	buffer.append("\nTravel time : "+line.substring(28, line.indexOf("mins")+4));
-	        	
+	        	travelTime = ("\nTravel time : "+line.substring(28, line.indexOf("mins")+4));
 	        }
-	        
+	        //System.out.println(distance);
+	        //System.out.println(travelTime);
+	        //System.out.println(help.parseJSONTimeToInteger(travelTime));
 	        
 	        return buffer.toString();
 	    } finally {
@@ -37,9 +44,10 @@ public class DistanceTimeMatrix {
 
   public static void main(String[] args) throws Exception {
 	  
-	  String s = readUrl("https://maps.googleapis.com/maps/api/distancematrix/json?origins=noyes+laboratory&destinations=champaign+walmart&mode=walking");
-	  System.out.println(s);
-	  
+	  Worker help = new Worker();
+	  //String s = readUrl("https://maps.googleapis.com/maps/api/distancematrix/json?origins=noyes+laboratory&destinations=champaign+walmart&mode=walking");
+	  //System.out.println(s);
+	  System.out.println("\n\n"+help.parseJSONTimeToInteger("0 hour 9 min"));
 	 
 	  
 	  

@@ -10,7 +10,8 @@ public class Worker
 {
 
 	/**
-	 * Converts time in 24-hour format (Example: 1400, 2000) to decimal equivalent.
+	 * Converts sexagesimal time to decimal equivalent.
+	 * Works for both military time and AM/PM format 
 	 * 
 	 * @param time string containing time in 24-hour format
 	 * @return     time in decimal format
@@ -276,6 +277,48 @@ public class Worker
 			outputArray[i] = this.deepCopyModule(inputArray[i]);
 		}
 		return outputArray;
+	}
+	
+	/**
+	 * Converts string representing location to a format usable in URLs
+	 * Primarily for making calls to the Distance Matrix API
+	 * 
+	 * @param locationString	String representing location
+	 * @return					String representing location in URL format
+	 */
+	public String parseLocationToURLFormat(String locationString)
+	{
+		StringBuffer buffer = new StringBuffer();
+		buffer.append(locationString.toLowerCase());
+		while (buffer.indexOf(" ") > -1){
+			buffer.setCharAt(buffer.indexOf(" "), '+');
+		}
+		return buffer.toString();
+	}
+	
+	/**
+	 * Parses travel time as returned in JSON by Google to decimal format
+	 * 
+	 * @param travelTime	String from JSON representing travel time
+	 * @return				travel time in decimal
+	 */
+	public int parseJSONTimeToInteger(String travelTime)
+	{
+		int hour = 0;
+		int min = 0;
+		
+		if (travelTime.indexOf("hour")==-1)
+			hour = 0;
+		
+		else
+		{
+			hour = Integer.valueOf(travelTime.substring(0, 2).trim());
+			travelTime = travelTime.substring(travelTime.indexOf("hour")+5).trim();
+		}
+		
+		min = Integer.valueOf(travelTime.substring(0, 2).trim());
+		
+		return hour*60+min;
 	}
 
 }

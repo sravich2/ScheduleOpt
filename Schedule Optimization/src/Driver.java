@@ -212,7 +212,7 @@ public class Driver
 
 		//System.out.println(countOfExecutions);
 		System.out.println("Number of runs: " + numberOfLegalSchedules);
-
+		System.out.println(help.parseLocationToURLFormat("Siebel Center for computer science"));
 	}
 
 }
