@@ -13,9 +13,9 @@ public class InfoSandbox {
 		
 		String contents = ir.getPageXML(url);
 		String sections = contents.substring(contents.indexOf("<sections>")+10);
-		ir.getCourseInfo("HIST",241,2014,"fall");
+		//ir.getCourseInfo("HIST",241,2014,"fall");
 		//ir.getCourseInfo("CS",241,2014,"fall");
-		ir.getCourseInfo("MATH",241,2015,"spring");
+		ir.getCourseInfo("CS",173,2015,"spring");
 
 	}
 

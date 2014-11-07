@@ -68,7 +68,7 @@ public class InfoRetreiver{
 		final Pattern courseP = Pattern.compile(re);
 		final Matcher courseM = courseP.matcher(page);
 		while (courseM.find()) {
-		    String sId = courseM.group(1).trim();
+		    String crn = courseM.group(1).trim();
 		    String sUrl = courseM.group(2).trim();
 		    String sCode = courseM.group(3).trim();
 		    String sPage = getPageXML(sUrl);
@@ -90,12 +90,13 @@ public class InfoRetreiver{
 			
 			
 			System.out.printf("\n\n\nSection: %s\n\n",section);
+			System.out.printf("CRN: %s\n",crn);
 			System.out.printf("Type: %s\n",type);
 			System.out.printf("Status: %s\n",status);
 			System.out.printf("Time range: %s - %s\n",startTime,endTime);
-			int startTime10 = w.convertTimeBase60To10(startTime);
-			int endTime10 = w.convertTimeBase60To10(endTime);
-			System.out.printf("Time range (Base 10): %s - %s\n",startTime10,endTime10);
+//			int startTime10 = w.c(startTime);
+//			int endTime10 = w.convertTimeBase60To10(endTime);
+//			System.out.printf("Time range (Base 10): %s - %s\n",startTime10,endTime10);
 			System.out.printf("Date range: %s - %s\n",startDate,endDate);
 			System.out.printf("Days: %s\n", days);
 			System.out.printf("Building name: %s\n", building);

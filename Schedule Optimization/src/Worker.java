@@ -20,7 +20,7 @@ public class Worker
 		int timeIn10;
 		int hourIn60 = Integer.valueOf(time.substring(0, 2));
 		if(time.substring(time.length()-2).equals("PM") && hourIn60!=12){hourIn60+=12;}
-		int minuteIn60 = Integer.valueOf(time.substring(3,5));
+		int minuteIn60 = Integer.valueOf(time.substring(2));
 		timeIn10 = hourIn60 * 60 + minuteIn60;
 		return timeIn10;
 	}
@@ -39,7 +39,6 @@ public class Worker
 		timeIn60 = String.valueOf(hourIn60) + String.format("%02d", minuteIn60);
 		return timeIn60;
 	}
-
 	/**
 	 * Checks for time conflicts between 2 Modules.
 	 * Checks truth of statement: "There is a conflict between modules module1 and module2"
