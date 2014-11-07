@@ -99,9 +99,9 @@ public class Worker
 		Module[] newModuleArray = new Module[moduleArr.length + 1];
 		for (int i = 0; i < moduleArr.length; i++)
 		{
-			newModuleArray[i] = moduleArr[i];
+			newModuleArray[i] = this.deepCopyModule(moduleArr[i]);
 		}
-		newModuleArray[newModuleArray.length - 1] = moduleToAdd;
+		newModuleArray[newModuleArray.length - 1] = this.deepCopyModule(moduleToAdd);
 		return newModuleArray;
 	}
 
@@ -259,7 +259,7 @@ public class Worker
 	 */
 	public Module deepCopyModule(Module inputModule)
 	{
-		Module output = new Module(String.valueOf(inputModule.days), inputModule.startTime, inputModule.endTime);
+		Module output = new Module(String.valueOf(inputModule.days), inputModule.startTime, inputModule.endTime, inputModule.building);
 		return output;
 	}
 
@@ -306,6 +306,15 @@ public class Worker
 	{
 		int hour = 0;
 		int min = 0;
+		StringBuffer buffer = new StringBuffer(travelTime);
+		
+		//Removes any characters before first digit
+		while (!Character.isDigit(buffer.charAt(0)))
+		{
+			buffer.replace(0, 2, "");
+		}
+		
+		travelTime = buffer.toString();
 		
 		if (travelTime.indexOf("hour")==-1)
 			hour = 0;
@@ -320,5 +329,57 @@ public class Worker
 		
 		return hour*60+min;
 	}
-
+	
+	/**
+	 * Parses travel distance as returned in JSON by Google to decimal format
+	 * 
+	 * @param distance		String from JSON representing travel distance
+	 * @return				travel distance in decimal
+	 */
+	public double parseJSONDistanceToInteger(String distance)
+	{
+		double dist = 0;
+		
+		StringBuffer buffer = new StringBuffer(distance);
+		//Removes any characters before first digit
+		while (!Character.isDigit(buffer.charAt(0)))
+		{
+			buffer.replace(0, 2, "");
+		}
+		
+		dist = Double.valueOf(distance.substring(0,3).trim());
+		
+		return dist;
+	}
+	
+	public Module[] sortByTimeScheduleForOneDay(Module[] scheduleForOneDay)
+	{
+		Module[] finalSchedule = new Module[0];
+		
+		Module[] scheduleForOneDay2 = this.deepCopyModuleArray(scheduleForOneDay);
+		
+		int nextIndex = 0;
+		int earliest = 9999;
+		int count = 0;
+		while (count < scheduleForOneDay2.length)
+		{
+			earliest = 9999;
+			nextIndex = 0;
+		for (int i = 0;i<scheduleForOneDay2.length;i++)
+		{
+			if (scheduleForOneDay2[i].startTime < earliest)
+			{
+				nextIndex = i;
+				earliest = scheduleForOneDay2[i].startTime;
+			}
+		}
+		
+		finalSchedule = this.addModule(scheduleForOneDay2[nextIndex], finalSchedule);
+		
+		scheduleForOneDay2[nextIndex].startTime = 9999;
+		count++;
+		}
+		
+		return finalSchedule;
+	}
 }

@@ -1,3 +1,4 @@
+import java.io.IOException;
 import java.util.Arrays;
 
 public class ScheduleScorer
@@ -90,6 +91,19 @@ public class ScheduleScorer
 				}
 			}
 		}
+		
+		//6. Checking for unwalkable classes
+				
+		for (int i = 0; i < 5; i++)
+		{
+			int unwalkableClasses = this.countUnwalkableClasses(schedule[i]).length;
+			if ((unwalkableClasses>0))
+			{
+				score -= 50;
+				log.append(unwalkableClasses+ " unwalkable classes " + " on Day " + (i + 1) + "\n");
+			}
+		}				
+
 		//System.out.println(log);
 		return score;
 	}
@@ -250,6 +264,38 @@ public class ScheduleScorer
 		countBreaks[0] = countShortBreaks;
 		countBreaks[1] = countAllBreaks;
 		return countBreaks;
+	}
+	
+	public int[] countUnwalkableClasses(Module[] scheduleForOneDay)
+	{
+		DistanceTimeMatrix matrix = new DistanceTimeMatrix();
+		double[] travelInfo = new double[2];
+		int[] howLateAreYouGoingToBe = new int[10];
+		int count = 0;
+		Module[] scheduleForOneDay2 = help.sortByTimeScheduleForOneDay(scheduleForOneDay);
+		//System.out.println((scheduleForOneDay[1].building));
+		for (int i = 0;i<scheduleForOneDay2.length-1;i++)
+		{
+			try{
+			travelInfo = matrix.getTravelTimeAndDistance("https://maps.googleapis.com/maps/api/distancematrix/json?origins="+help.parseLocationToURLFormat(scheduleForOneDay[i].building)+"&destinations="+help.parseLocationToURLFormat(scheduleForOneDay[i+1].building)+"&mode=walking&units=imperial");
+			//System.out.println(Arrays.toString(travelInfo));
+			} catch (IOException e){
+				//System.out.println("You messed up! " + e.getMessage());
+			}
+			catch (Exception e){
+				//System.out.println("You messed up! " + e.getMessage());
+			}
+			
+			if (travelInfo[0] > scheduleForOneDay2[i+1].startTime-scheduleForOneDay2[i].endTime)
+			{
+				System.out.print(scheduleForOneDay2[i].building + " to ");
+				System.out.println(scheduleForOneDay2[i+1].building + "  "+travelInfo[0] + " > " + scheduleForOneDay2[i+1].startTime + " - "+ scheduleForOneDay2[i].endTime);
+				howLateAreYouGoingToBe[count] = (int)(travelInfo[0] - (scheduleForOneDay2[i+1].startTime-scheduleForOneDay2[i].endTime));
+				count++;
+			}
+		}
+		howLateAreYouGoingToBe = Arrays.copyOfRange(howLateAreYouGoingToBe, 0, count+1);
+		return howLateAreYouGoingToBe;
 	}
 
 }

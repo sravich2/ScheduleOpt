@@ -47,6 +47,15 @@ public class Module {
 		this.duration = this.endTime-this.startTime;
 	}
 	
+	public Module(String days, int startTime, int endTime, String building)
+	{
+		this.days = days.toCharArray();
+		this.startTime = (startTime);
+		this.endTime = (endTime);
+		this.duration = this.endTime-this.startTime;
+		this.building = building;
+	}
+	
 	public boolean equals(Module checkModule)
 	{
 		if (Arrays.equals(this.days, checkModule.days)&& this.startTime == checkModule.startTime && this.endTime == checkModule.endTime)
