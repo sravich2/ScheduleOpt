@@ -117,8 +117,9 @@ public class Driver
 		MATH241.modulesAvailable[0][0] = new Module("MTWR", "1400", "1450");
 		MATH241.modulesAvailable[0][1] = new Module("MTWR", "1300", "1350");
 
-		Module[][] best2DSchedule = new Module[0][0];
+		//Module[][][] best2DSchedule = new Module[0][0][0];
 		Module[][] bestSchedule = new Module[20][0];
+		String[] scheduleReadable = new String[500];
 		
 		int bestScore = -999;
 		int numberOfLegalSchedules = 1;
@@ -135,7 +136,7 @@ public class Driver
 		
 		
 		//while (numberOfLegalSchedules < 438000)
-		while (System.currentTimeMillis() - initialTime < 10000)
+		while (System.currentTimeMillis() - initialTime < 1000)
 		{
 			countOfExecutions++;
 
@@ -183,11 +184,13 @@ public class Driver
 			{
 				bestSchedule = new Module[200][0];
 				bestLog = new StringBuilder[200];
+				scheduleReadable = new String[200];
 				countOfBestSchedule = 0;
 				bestLog[countOfBestSchedule] = new StringBuilder(scorer.log);
 				bestSchedule[countOfBestSchedule] = help.deepCopyModuleArray(scheduleForSemester);
+				scheduleReadable[countOfBestSchedule] = help.toString(finalSchedule);
 				bestScore = currentScore;
-				best2DSchedule = finalSchedule;
+				//best2DSchedule[countOfBestSchedule] = finalSchedule;
 			} 
 			else if (currentScore == bestScore)
 			{
@@ -195,6 +198,7 @@ public class Driver
 					countOfBestSchedule++;
 					bestLog[countOfBestSchedule] = new StringBuilder(scorer.log);
 					bestSchedule[countOfBestSchedule] = help.deepCopyModuleArray(scheduleForSemester);
+					scheduleReadable[countOfBestSchedule] = help.toString(finalSchedule);
 				}
 			}
 		}
@@ -202,10 +206,11 @@ public class Driver
 		System.out.println("Found " + (countOfBestSchedule + 1) + " optimal schedules\n\n");
 		for (int i = 0; i <= countOfBestSchedule; i++)
 		{
-			System.out.println(help.toString((bestSchedule[i])));
+			//System.out.println(help.toString((bestSchedule[i])));
+			System.out.println(scheduleReadable[i]);
 			System.out.println(bestLog[i]);
-			System.out.println("------------------------------");
-			System.out.println(help.toString(best2DSchedule));
+			System.out.println("--------------------------------------------------------------------------------");
+			
 		}
 
 		System.out.println("Score: " + bestScore);

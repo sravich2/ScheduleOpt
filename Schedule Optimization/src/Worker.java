@@ -149,17 +149,35 @@ public class Worker
 		return abc;
 	}
 	
+	/**
+	 * 
+	 * @param schedule
+	 * @return
+	 */
 	public String toString(Module[][] schedule)
 	{
 		StringBuffer output = new StringBuffer();
 		
+		output.append("   Monday         Tuesday          Wednesday         Thursday         Friday\n");
 		for (int i = 0;i<5;i++)
 		{
+			schedule[i] = this.sortByTimeScheduleForOneDay(schedule[i]);
+		}
+		outerloop:
+		for (int i = 0;i<8;i++)
+		{
+			boolean foundClass = false;
+			for (int j = 0;j<5;j++)
+			{
+				if (i<schedule[j].length)
+				{
+					output.append(this.convertTimeBase10To60(schedule[j][i].startTime) + " - " + this.convertTimeBase10To60(schedule[j][i].endTime) + "      ");
+					foundClass = true;
+				}
+				if (!foundClass)
+					break outerloop;
+			}
 			output.append("\n");
-			output.append("Day "+(i+1)+": ");
-			
-			for (int j = 0;j<schedule[i].length;j++)
-				output.append(this.convertTimeBase10To60(schedule[i][j].startTime)+" - " + this.convertTimeBase10To60(schedule[i][j].endTime)+" | ");
 		}
 		return output.toString();
 	}
@@ -352,6 +370,11 @@ public class Worker
 		return dist;
 	}
 	
+	/**
+	 * 
+	 * @param scheduleForOneDay
+	 * @return
+	 */
 	public Module[] sortByTimeScheduleForOneDay(Module[] scheduleForOneDay)
 	{
 		Module[] finalSchedule = new Module[0];

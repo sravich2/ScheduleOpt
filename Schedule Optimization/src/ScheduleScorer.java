@@ -22,7 +22,19 @@ public class ScheduleScorer
 	{
 		log.setLength(0);
 		int score = 0;
+		String periodOfDay = "";
+		String days[] = new String[] {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday"};
 		
+		switch (pref.avoidClasses)
+		{
+		case 1: periodOfDay = "morning";
+				break;
+		case 2: periodOfDay = "afternoon";
+				break;
+		case 3: periodOfDay = "evening";
+				break;
+		default: ;
+		}
 		
 		//1. Checking for Lunch Break
 		if (pref.lunchBreak)
@@ -31,20 +43,21 @@ public class ScheduleScorer
 			{
 				if (!this.checkLunchBreak(schedule[i]))
 				{
-					log.append("No lunch break on Day " + (i + 1) + "\n");
+					log.append("No lunch break on " + days[i] + "\n");
 					score -= 10;
 				}
 			}
 		}
 
 		//2. Checking classes at disfavored Time of Day
+		
 		for (int i = 0; i < 5; i++)
 		{
 			int badClasses = this.classesAtTimeOfDay(schedule[i]);
 			if (badClasses > 0)
 			{
 				score -= badClasses * 7.5;
-				log.append(badClasses + " classes in period " + pref.avoidClasses + " on Day " + (i + 1) + "\n");
+				log.append(badClasses + " class(es) in the " + periodOfDay + " on " + days[i] + "\n");
 			}
 		}
 
@@ -55,7 +68,7 @@ public class ScheduleScorer
 			if (maxMinsInRow > pref.maxMinutesInARow)
 			{
 				score -= (maxMinsInRow - pref.maxMinutesInARow) / 10;
-				log.append(maxMinsInRow + " minutes in a row on Day " + (i + 1) + "\n");
+				log.append(maxMinsInRow + " minutes in a row on " + days[i] + "\n");
 			}
 		}
 
@@ -66,7 +79,7 @@ public class ScheduleScorer
 			if (maxMinsInDay > pref.maxMinutesInADay)
 			{
 				score -= (maxMinsInDay - pref.maxMinutesInADay) / 10;
-				log.append(maxMinsInDay + " minutes on Day " + (i + 1) + "\n");
+				log.append(maxMinsInDay + " minutes on " + days[i] + "\n");
 			}
 		}
 
@@ -81,17 +94,17 @@ public class ScheduleScorer
 				if ((pref.avoidBreaksBetweenClasses == 2 || pref.avoidBreaksBetweenClasses == 4) && shortBreaks > 0)
 				{
 					score -= shortBreaks * 5;
-					log.append(shortBreaks + " short breaks " + " on Day " + (i + 1) + "\n");
+					log.append(shortBreaks + " short break(s) " + " on " + days[i] + "\n");
 				}
 				if (pref.avoidBreaksBetweenClasses > 2 && allBreaks > 0)
 
 				{
 					score -= 2 * allBreaks;
-					log.append(allBreaks + " breaks " + " on Day " + (i + 1) + "\n");
+					log.append(allBreaks + " break(s)" + " on " + days[i] + "\n");
 				}
 			}
 		}
-		
+		/*
 		//6. Checking for unwalkable classes
 				
 		for (int i = 0; i < 5; i++)
@@ -100,10 +113,10 @@ public class ScheduleScorer
 			if ((unwalkableClasses>0))
 			{
 				score -= 50;
-				log.append(unwalkableClasses+ " unwalkable classes " + " on Day " + (i + 1) + "\n");
+				log.append(unwalkableClasses+ " unwalkable classes " + " on " + days[i] + "\n");
 			}
 		}				
-
+		*/
 		//System.out.println(log);
 		return score;
 	}
