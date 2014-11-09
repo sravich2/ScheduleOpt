@@ -1,4 +1,5 @@
 import java.util.Random;
+import java.util.ArrayList;
 
 /**
  * Contains helper methods for use throughout program
@@ -78,12 +79,13 @@ public class Worker
 	 * @param inputCourse  Course for which modules are to be chosen
 	 * @return			   Module[] containing random selection of Modules for given Course
 	 */
-	public Module[] chooseRandomModules(Course inputCourse)
+	public ArrayList<Module> chooseRandomModules(Course inputCourse)
 	{
 		Random rand = new Random();
-		Module[] finalCourses = new Module[inputCourse.modulesAvailable.length];
-		for (int i = 0; i < finalCourses.length; i++)
-			finalCourses[i] = inputCourse.modulesAvailable[i][(int) (rand.nextDouble() * this.realLength(inputCourse.modulesAvailable[i]))];
+		//Module[] finalCourses = new Module[inputCourse.modulesAvailable.length];
+		ArrayList<Module> finalCourses = new ArrayList<Module>(inputCourse.modulesAvailable.length);
+		for (int i = 0; i < inputCourse.modulesAvailable.length; i++)
+			finalCourses.add(inputCourse.modulesAvailable[i][(int) (rand.nextDouble() * this.realLength(inputCourse.modulesAvailable[i]))]);
 		return finalCourses;
 	}
 
@@ -103,29 +105,6 @@ public class Worker
 		}
 		newModuleArray[newModuleArray.length - 1] = this.deepCopyModule(moduleToAdd);
 		return newModuleArray;
-	}
-
-	/**
-	 * Appends one Module[] to the end of another Module[] 
-	 * 
-	 * @param addThisModuleArray  Module[] to be appended
-	 * @param finalClasses        Module[] to which Module[] addThisModuleArray is to be appended
-	 * @return					  Module[] with Module[] addThisModuleArray appended to the end of Module[] finalClasses
-	 */
-	public Module[] addModuleArray(Module[] addThisModuleArray, Module[] finalClasses)
-	{
-		Module[] moduleWithAddition = new Module[addThisModuleArray.length + finalClasses.length];
-		for (int i = 0; i < finalClasses.length; i++)
-		{
-			moduleWithAddition[i] = finalClasses[i];
-		}
-		int i = 0;
-		while (i < addThisModuleArray.length && addThisModuleArray[i] != null)
-		{
-			moduleWithAddition[i + finalClasses.length] = addThisModuleArray[i];
-			i++;
-		}
-		return moduleWithAddition;
 	}
 
 	/**
@@ -174,6 +153,10 @@ public class Worker
 					output.append(this.convertTimeBase10To60(schedule[j][i].startTime) + " - " + this.convertTimeBase10To60(schedule[j][i].endTime) + "      ");
 					foundClass = true;
 				}
+				else
+				{
+					output.append("                 ");
+				}
 				if (!foundClass)
 					break outerloop;
 			}
@@ -209,9 +192,7 @@ public class Worker
 		for (int i = 0; i < arr.length; i++)
 		{
 			if (String.valueOf(arr[i].days).contains("M"))
-			{
 				schedule[0] = this.addModule(arr[i], schedule[0]);
-			}
 			if (String.valueOf(arr[i].days).contains("T"))
 				schedule[1] = this.addModule(arr[i], schedule[1]);
 			if (String.valueOf(arr[i].days).contains("W"))

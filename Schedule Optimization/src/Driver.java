@@ -1,4 +1,5 @@
 import java.util.Arrays;
+import java.util.ArrayList;
 /**
  * Contains main method
  * Contains manually entered sample data for classes
@@ -118,25 +119,25 @@ public class Driver
 		MATH241.modulesAvailable[0][1] = new Module("MTWR", "1300", "1350");
 
 		//Module[][][] best2DSchedule = new Module[0][0][0];
-		Module[][] bestSchedule = new Module[20][0];
+		ArrayList<Module[]> bestSchedule = new ArrayList<Module[]>();
+		//Module[][] bestSchedule = new Module[20][0];
 		String[] scheduleReadable = new String[500];
 		
 		int bestScore = -999;
 		int numberOfLegalSchedules = 1;
 		int countOfBestSchedule = 0;
-		long initialTime = System.currentTimeMillis();
+		
 		int countOfExecutions = 0;
 		StringBuilder[] bestLog = new StringBuilder[3000];
 		
 		Course[] takingThisSem = new Course[] { CS225, CS233, MATH415, MATH461 };
 
-		Module[][] allLegalSchedules = new Module[3000][7];
-		
+		Module[][] allLegalSchedules = new Module[3000][7];	
 		allLegalSchedules[0] = build.buildCourseSchedule(takingThisSem);
 		
-		
-		//while (numberOfLegalSchedules < 438000)
-		while (System.currentTimeMillis() - initialTime < 1000)
+		long initialTime = System.currentTimeMillis();
+		while (numberOfLegalSchedules < 438000)
+		//while (System.currentTimeMillis() - initialTime < 10000)
 		{
 			countOfExecutions++;
 
@@ -146,16 +147,17 @@ public class Driver
 			boolean repeat = true;
 			while (repeat == true)
 			{
-				for (int i = 0; i <= countOfBestSchedule; i++)
+				for (int i = 0; i < countOfBestSchedule; i++)
 				{
-					if (help.compareModuleArrays(scheduleForSemester, bestSchedule[i]))
+					if (help.compareModuleArrays(scheduleForSemester, bestSchedule.get(i)))
 					{
 						scheduleForSemester = build.buildCourseSchedule(takingThisSem);
 						i = -1;
 					}
-					if (i == countOfBestSchedule)
-						repeat = false;
+					//if (i == countOfBestSchedule-1)
+					//	repeat = false;
 				}
+				repeat = false;
 			}
 
 			/* This code counts the number of legal schedules (without clashes)
@@ -182,12 +184,14 @@ public class Driver
 			//System.out.println(currentScore);
 			if (currentScore > bestScore)
 			{
-				bestSchedule = new Module[200][0];
+				//bestSchedule = new Module[200][0];
+				bestSchedule.clear();
 				bestLog = new StringBuilder[200];
 				scheduleReadable = new String[200];
 				countOfBestSchedule = 0;
 				bestLog[countOfBestSchedule] = new StringBuilder(scorer.log);
-				bestSchedule[countOfBestSchedule] = help.deepCopyModuleArray(scheduleForSemester);
+				bestSchedule.add(help.deepCopyModuleArray(scheduleForSemester));
+				//bestSchedule[countOfBestSchedule] = help.deepCopyModuleArray(scheduleForSemester);
 				scheduleReadable[countOfBestSchedule] = help.toString(finalSchedule);
 				bestScore = currentScore;
 				//best2DSchedule[countOfBestSchedule] = finalSchedule;
@@ -197,7 +201,8 @@ public class Driver
 				{
 					countOfBestSchedule++;
 					bestLog[countOfBestSchedule] = new StringBuilder(scorer.log);
-					bestSchedule[countOfBestSchedule] = help.deepCopyModuleArray(scheduleForSemester);
+					//bestSchedule[countOfBestSchedule] = help.deepCopyModuleArray(scheduleForSemester);
+					bestSchedule.add(help.deepCopyModuleArray(scheduleForSemester));
 					scheduleReadable[countOfBestSchedule] = help.toString(finalSchedule);
 				}
 			}
@@ -206,7 +211,7 @@ public class Driver
 		System.out.println("Found " + (countOfBestSchedule + 1) + " optimal schedules\n\n");
 		for (int i = 0; i <= countOfBestSchedule; i++)
 		{
-			//System.out.println(help.toString((bestSchedule[i])));
+			//System.out.println(help.toString((bestSchedule.get(i))));
 			System.out.println(scheduleReadable[i]);
 			System.out.println(bestLog[i]);
 			System.out.println("--------------------------------------------------------------------------------");
@@ -217,7 +222,7 @@ public class Driver
 
 		//System.out.println(countOfExecutions);
 		System.out.println("Number of runs: " + numberOfLegalSchedules);
-
+		System.out.println("Runtime: "+ ((System.currentTimeMillis() -initialTime)/Double.valueOf(1000)) + " seconds");
 	}
 
 }
