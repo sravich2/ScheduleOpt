@@ -136,14 +136,14 @@ public class Driver
 		allLegalSchedules[0] = build.buildCourseSchedule(takingThisSem);
 		
 		long initialTime = System.currentTimeMillis();
-		while (numberOfLegalSchedules < 438000)
-		//while (System.currentTimeMillis() - initialTime < 10000)
+		//while (numberOfLegalSchedules < 438000)
+		while (System.currentTimeMillis() - initialTime < 1000)
 		{
 			countOfExecutions++;
 
 			Module[] scheduleForSemester = build.buildCourseSchedule(takingThisSem);
 			
-			// Checks whether generated schedule has already been scored and considered
+			// Checks whether generated schedule is already in the list of best schedules
 			boolean repeat = true;
 			while (repeat == true)
 			{
@@ -194,22 +194,23 @@ public class Driver
 				//bestSchedule[countOfBestSchedule] = help.deepCopyModuleArray(scheduleForSemester);
 				scheduleReadable[countOfBestSchedule] = help.toString(finalSchedule);
 				bestScore = currentScore;
+				countOfBestSchedule++;
 				//best2DSchedule[countOfBestSchedule] = finalSchedule;
 			} 
 			else if (currentScore == bestScore)
 			{
 				{
-					countOfBestSchedule++;
 					bestLog[countOfBestSchedule] = new StringBuilder(scorer.log);
 					//bestSchedule[countOfBestSchedule] = help.deepCopyModuleArray(scheduleForSemester);
 					bestSchedule.add(help.deepCopyModuleArray(scheduleForSemester));
 					scheduleReadable[countOfBestSchedule] = help.toString(finalSchedule);
+					countOfBestSchedule++;
 				}
 			}
 		}
 		
-		System.out.println("Found " + (countOfBestSchedule + 1) + " optimal schedules\n\n");
-		for (int i = 0; i <= countOfBestSchedule; i++)
+		System.out.println("Found " + (countOfBestSchedule) + " optimal schedules\n");
+		for (int i = 0; i < countOfBestSchedule; i++)
 		{
 			//System.out.println(help.toString((bestSchedule.get(i))));
 			System.out.println(scheduleReadable[i]);
@@ -219,10 +220,9 @@ public class Driver
 		}
 
 		System.out.println("Score: " + bestScore);
-
-		//System.out.println(countOfExecutions);
 		System.out.println("Number of runs: " + numberOfLegalSchedules);
 		System.out.println("Runtime: "+ ((System.currentTimeMillis() -initialTime)/Double.valueOf(1000)) + " seconds");
+		
 	}
 
 }
