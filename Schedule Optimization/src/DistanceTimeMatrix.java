@@ -1,19 +1,13 @@
 
 import java.io.BufferedReader;
+import java.io.IOException;
 import java.io.InputStreamReader;
-import java.net.*;
+import java.net.URL;
 import java.util.Arrays;
-
-import org.json.simple.JSONObject;
-import org.json.simple.JSONArray;
-import org.json.simple.parser.ParseException;
-import org.json.simple.parser.JSONParser;
-
-import org.json.*;
 public class DistanceTimeMatrix {
 	
 	
-	public double[] getTravelTimeAndDistance(String urlString) throws Exception {
+	public double[] getTravelTimeAndDistance(String urlString) {
 		Worker help = new Worker();
 		double[] values = new double[2];
 		
@@ -26,21 +20,28 @@ public class DistanceTimeMatrix {
 	        String distance = "";
 	        
 	        String line = "";
-	        for (line = reader.readLine();line != null; line = reader.readLine())
-	        {
-	        	if (line.indexOf("km")>-1 || (line.indexOf("mi")>-1 && line.indexOf("min") == -1)){
-	        		values[1]= help.parseJSONDistanceToInteger((line.substring(28,31)));
-	        	}
-	        	if (line.indexOf("mins") > -1)
-	        		values[0] = (help.parseJSONTimeToInteger(line.substring(28, line.indexOf("mins")+4)));
-	        }
-	        //System.out.println(distance);
-	        //System.out.println(travelTime);
+	        line = reader.readLine();
+	        values[0] = Double.valueOf(line.substring(line.indexOf("distance")+10, line.indexOf("distance")+19).split(",")[0]);
+	        values[1] = Double.valueOf(line.substring(line.indexOf("time")+6, line.indexOf("time")+13).split(",")[0]);
+	        System.out.println(values[0]);
+	        System.out.println(values[1]);
 	        
 	        return values;
+	    } catch (IOException e)
+	    {
+	    	System.out.println(e.getMessage());
+	    	
 	    } finally {
 	        if (reader != null)
-	            reader.close();
+	        	try{
+	        		reader.close();	
+	        	}
+	            catch (IOException e)
+	            {
+	            	System.out.println(e.getMessage());
+	            }
 	    }
+	    return null;
 	}
+	
 }

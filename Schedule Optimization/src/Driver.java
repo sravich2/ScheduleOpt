@@ -132,12 +132,12 @@ public class Driver
 		
 		Course[] takingThisSem = new Course[] { CS225, CS233, MATH415, MATH461 };
 
-		Module[][] allLegalSchedules = new Module[3000][7];	
-		allLegalSchedules[0] = build.buildCourseSchedule(takingThisSem);
+		ArrayList<Module[]> allLegalSchedules = new ArrayList<Module[]>();	
+		allLegalSchedules.add(build.buildCourseSchedule(takingThisSem));
 		
 		long initialTime = System.currentTimeMillis();
 		//while (numberOfLegalSchedules < 438000)
-		while (System.currentTimeMillis() - initialTime < 1000)
+		while (System.currentTimeMillis() - initialTime < 10000)
 		{
 			countOfExecutions++;
 
@@ -159,13 +159,13 @@ public class Driver
 				}
 				repeat = false;
 			}
-
-			/* This code counts the number of legal schedules (without clashes)
+			/*
+			//This code counts the number of legal schedules (without clashes)
 			for (int i = 0;i<numberOfLegalSchedules;i++)
 			{
 				if (System.currentTimeMillis() - initialTime < 120000)
 				{
-					if (help.compareModuleArrays(scheduleForSemester, allLegalSchedules[i]))
+					if (help.compareModuleArrays(scheduleForSemester, allLegalSchedules.get(i)))
 					{
 						scheduleForSemester = build.buildCourseSchedule(takingThisSem);
 						i = -1;
@@ -173,7 +173,7 @@ public class Driver
 					}
 				}
 			} 
-			allLegalSchedules[numberOfLegalSchedules] = help.addModuleArray(allLegalSchedules[numberOfLegalSchedules], scheduleForSemester);
+			allLegalSchedules.add(scheduleForSemester);
 			//System.out.println(help.toString(allLegalSchedules[numberOfLegalSchedules]));
 			*/
 

@@ -279,7 +279,7 @@ public class ScheduleScorer
 		return countBreaks;
 	}
 	
-	public int[] countUnwalkableClasses(Module[] scheduleForOneDay)
+	public int[] countUnwalkableClasses(Module[] scheduleForOneDay) //Re-Implement once you have travel time data
 	{
 		DistanceTimeMatrix matrix = new DistanceTimeMatrix();
 		double[] travelInfo = new double[2];
@@ -290,11 +290,11 @@ public class ScheduleScorer
 		for (int i = 0;i<scheduleForOneDay2.length-1;i++)
 		{
 			try{
-			travelInfo = matrix.getTravelTimeAndDistance("https://maps.googleapis.com/maps/api/distancematrix/json?origins="+help.parseLocationToURLFormat(scheduleForOneDay[i].building)+"&destinations="+help.parseLocationToURLFormat(scheduleForOneDay[i+1].building)+"&mode=walking&units=imperial");
+			travelInfo = matrix.getTravelTimeAndDistance("http://www.mapquestapi.com/directions/v2/route?key=Fmjtd%7Cluurn9u7ng%2Cbx%3Do5-9wznl0&outFormat=json&routeType=pedestrian&enhancedNarrative=true&locale=en_US&from=1304+w+springfield+avenue+urbana&to=201+n+goodwin+avenue+Urbana");
 			//System.out.println(Arrays.toString(travelInfo));
-			} catch (IOException e){
+			} //catch (IOException e){
 				//System.out.println("You messed up! " + e.getMessage());
-			}
+			//}
 			catch (Exception e){
 				//System.out.println("You messed up! " + e.getMessage());
 			}
