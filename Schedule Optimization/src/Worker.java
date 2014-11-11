@@ -129,9 +129,10 @@ public class Worker
 	}
 	
 	/**
+	 * Prints out time table representation of schedule 
 	 * 
-	 * @param schedule
-	 * @return
+	 * @param schedule	Module[] representing schedule to be printed
+	 * @return			String containing time table representation of schedule
 	 */
 	public String toString(Module[][] schedule)
 	{
@@ -295,66 +296,12 @@ public class Worker
 		return buffer.toString();
 	}
 	
+
 	/**
-	 * Parses travel time as returned in JSON by Google to decimal format
+	 * Sorts the classes on a day in chronological order
 	 * 
-	 * @param travelTime	String from JSON representing travel time
-	 * @return				travel time in decimal
-	 */
-	public int parseJSONTimeToInteger(String travelTime)
-	{
-		int hour = 0;
-		int min = 0;
-		StringBuffer buffer = new StringBuffer(travelTime);
-		
-		//Removes any characters before first digit
-		while (!Character.isDigit(buffer.charAt(0)))
-		{
-			buffer.replace(0, 2, "");
-		}
-		
-		travelTime = buffer.toString();
-		
-		if (travelTime.indexOf("hour")==-1)
-			hour = 0;
-		
-		else
-		{
-			hour = Integer.valueOf(travelTime.substring(0, 2).trim());
-			travelTime = travelTime.substring(travelTime.indexOf("hour")+5).trim();
-		}
-		
-		min = Integer.valueOf(travelTime.substring(0, 2).trim());
-		
-		return hour*60+min;
-	}
-	
-	/**
-	 * Parses travel distance as returned in JSON by Google to decimal format
-	 * 
-	 * @param distance		String from JSON representing travel distance
-	 * @return				travel distance in decimal
-	 */
-	public double parseJSONDistanceToInteger(String distance)
-	{
-		double dist = 0;
-		
-		StringBuffer buffer = new StringBuffer(distance);
-		//Removes any characters before first digit
-		while (!Character.isDigit(buffer.charAt(0)))
-		{
-			buffer.replace(0, 2, "");
-		}
-		
-		dist = Double.valueOf(distance.substring(0,3).trim());
-		
-		return dist;
-	}
-	
-	/**
-	 * 
-	 * @param scheduleForOneDay
-	 * @return
+	 * @param scheduleForOneDay		Module[] representing schedule on a day
+	 * @return						Module[] representing same schedule with classes in chronological order
 	 */
 	public Module[] sortByTimeScheduleForOneDay(Module[] scheduleForOneDay)
 	{

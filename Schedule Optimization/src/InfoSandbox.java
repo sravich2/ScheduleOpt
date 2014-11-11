@@ -11,12 +11,35 @@ public class InfoSandbox {
 		String re = "<section id=\"[1-9].*?\" href=\"(.*)\">(.*)<";
 		re = "<section id=\"([1-9].*?)\" href=\"(.*?)\">(.*?)<";
 		
+		//System.out.println(checkDept("MATHs"));
 		String contents = ir.getPageXML(url);
 		String sections = contents.substring(contents.indexOf("<sections>")+10);
 		//ir.getCourseInfo("HIST",241,2014,"fall");
 		//ir.getCourseInfo("CS",241,2014,"fall");
 		ir.getCourseInfo("CS",173,2015,"spring");
 
+	}
+	//@author tushar
+	public static boolean checkDept(String dept)
+	{
+		boolean check=false;
+		TextIO.readFile("dept.txt");
+		String[] list= new String[200];
+		int i=0;
+		while (!TextIO.eof())
+		{
+			String line=TextIO.getln();
+			line=line.trim();
+			if (line.equals("<td>"))
+				list[i++]=TextIO.getln().trim();
+			TextIO.getln();
+			TextIO.getln();
+		}
+		
+		for (int a=0; a<list.length;a++)
+			if (dept.equals(list[a]))
+				check=true;
+		return check;
 	}
 
 }
