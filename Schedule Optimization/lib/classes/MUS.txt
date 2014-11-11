@@ -1,0 +1,2554 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html lang="en">
+    <head>
+        <title>Course Explorer</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="image/x-icon" href="/static/images/favicon.ico" rel="icon">
+        
+    
+        <!-- PROD -->
+<link rel="stylesheet" href="/static/css/cis/cis.min.css">
+
+<!--[if lte IE 9]>
+    <script src="/static/bootstrap/common/html5shiv.min.js"></script>
+    <script src="/static/bootstrap/common/respond.js"></script>
+ <![endif]-->
+
+<script src="/static/js/cis.min.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-52702852-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+
+    
+    
+        
+    
+
+
+
+
+
+    </head>
+    <body>
+        
+        
+        <noscript><div id="noscript-padding"></div></noscript>
+        
+        
+        <div id="wrap">
+            
+            
+            <div role="banner">
+    <div id="header-wrap">
+        <div id="header-container" class="container">
+            <div class="row">
+                <div id="header" class="span12 hidden-xs">
+                    <a id="header-title" href="http://illinois.edu/" target="_blank">University of Illinois at Urbana-Champaign</a>
+                    <ul id="login-info" class="list-unstyled list-inline pull-right">
+                        <li><b>Hello Guest</b></li>
+                        <li><a href="https://illinois.edu/fb/sec/2080949">Contact Us</a></li>
+                        <li>
+                            
+                                <a href="/login">Login</a>
+                            
+                            
+                        </li>
+                    </ul>
+                </div>
+                <div id="header-mobile" class="span12 visible-xs-block">
+                    <a id="header-title" href="http://illinois.edu/" target="_blank">University of Illinois at Urbana-Champaign</a>
+                    <br/>
+                    <ul id="login-info" class="list-unstyled list-inline">
+                        <li><b>Hello Guest</b></li>
+                        <li><a href="https://illinois.edu/fb/sec/2080949">Contact Us</a></li>
+                        <li>
+                            
+                                <a href="/login">Login</a>
+                            
+                             
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>    
+    <div id="header-brand-wrap" class="hidden-xs">
+        <div class="container">
+            <div class="row">
+                <div id="header-brand" class="span12">
+                    <a target="_blank" href="http://illinois.edu">
+                        <img alt="Illinois logo" src="/static/images/siteid-iblock.png" />
+                    </a>
+                    <a id="header-brand-title" class="noxs" href="/">Course Explorer</a>
+                </div>
+            </div>    
+        </div>
+    </div>
+    <div id="header-brand-wrap-xs" class="visible-xs-block">            
+        <div class="container">
+            <div class="row">
+                <div id="header-brand" class="span12">
+                    <a id="header-brand-title-xs" href="/">Course Explorer</a>
+                </div>
+            </div>    
+        </div>
+    </div>
+</div>
+            
+            
+            <div class="container">
+
+                
+                <div id="app-main-nav" class="navbar navbar-default" role="navigation" aria-label="primary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+    </div>
+    
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav nav-justified">
+            
+            
+                
+                
+                    <li><a href="/">Home</a></li>
+                
+            
+                
+            
+                
+                    <li class="navbar-text">Schedule</li>
+                
+                
+            
+                
+            
+                
+                
+                    <li><a href="/gened/DEFAULT/DEFAULT">GenEd&#160;REQs</a></li>
+                
+            
+                
+            
+                
+                
+                    <li><a href="/search/form">Search</a></li>
+                
+            
+                
+            
+                
+                
+                    <li><a href="/resources">Resources</a></li>
+                
+                
+            
+            
+        </ul>
+        
+    </div> 
+</div> 
+
+<div id="app-content" role="main">
+    
+    
+    
+    
+    
+    
+        
+        
+        
+    
+
+    
+    
+    
+        <ol class="breadcrumb app-breadcrumb" role="navigation" aria-label="breadcrumbs">
+            <li><a href="/schedule">schedule</a></li>
+            <li><a href="/schedule/2015">2015</a></li>
+            <li><a href="/schedule/2015/spring">spring</a></li>
+            <li class="active">MUS</li>
+        </ol>
+    
+    
+
+    <div class="lead app-table-lead">
+        <div class="row">
+            <div class="col-sm-9">
+                <h1 class="app-inline">Music</h1>
+                <div class="app-text-engage pull-right">
+                    <span class="app-cap">spring&#160;2015</span>
+                    <div class="pull-right app-text-focus" style="font-size: 12px;line-height:13px;padding-left:10px;">
+                        <div>&#160;</div>
+                        <div>All Classes</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-sm-9">
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <div class="row">
+                <div class="col-xs-10">
+                    <div id="program-info" aria-label="program information">
+    <address>
+        <ul class="list-unstyled">
+            <li><a href="http://www.music.uiuc.edu" target="_blank"/>Music</a></li>
+            <li><span class="text-muted">Director of School:</span> Dr. Jeffrey Magee</li>
+            <li><span class="text-muted">School Office:</span> 3053 Music Building, 1114 West Nevada, Urbana</li>
+            <li><span class="text-muted"><abbr title="Phone">P:</abbr></span> 244-2670</li>
+        </ul>
+    </address>
+    
+</div>        
+                </div>
+                <div class="col-xs-2">
+                    
+                        <span class="pull-right" style="font-size:14px;">
+                           <a href="/pdf/schedule/2015/spring/MUS" class="get-pdf">
+                                PDF <img src="/static/images/pdf.png"/>
+                            </a>
+                        </span>
+                           
+                </div>
+            </div>
+            
+            <table id="default-dt" class="table table-striped table-bordered table-condensed">
+                <thead>
+                    <tr>
+                        <th>COURSE NUMBER</th>
+                        <th>COURSE TITLE</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                        
+                            <tr>
+                                <td>
+                                    MUS 090
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/090">
+                                        Seminar in Music Education
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 102
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/102">
+                                        Music Theory and Practice II
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 106
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/106">
+                                        Beginning Composition
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 108
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/108">
+                                        Aural Skills II
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 120
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/120">
+                                        English Diction
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 122
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/122">
+                                        German Diction
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 130
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/130">
+                                        Introd to the Art of Music
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 133
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/133">
+                                        Introduction to World Music
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 140
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/140">
+                                        String Instrument Class
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 144
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/144">
+                                        Supp WW Inst: Clarinet
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 145
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/145">
+                                        Supp WW Inst: Clar non-WW Maj
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 146
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/146">
+                                        Supp WW Inst: Flute
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 147
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/147">
+                                        Supp WW Inst: Oboe
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 148
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/148">
+                                        Supp WW Inst: Saxophone
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 149
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/149">
+                                        Supp WW Inst: Bassoon
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 151
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/151">
+                                        Supp Brass Inst: Trumpet
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 152
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/152">
+                                        Supp Br Inst: Tpt non-Br Maj
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 153
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/153">
+                                        Supp Brass Inst: Horn
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 154
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/154">
+                                        Supp Brass Inst: Trombone
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 155
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/155">
+                                        Supp Brass Inst: Euph/Tuba
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 158
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/158">
+                                        Supp Percussion Instruments
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 161
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/161">
+                                        Jazz Piano Improvisation II
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 164
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/164">
+                                        Jazz Keyboard Studies II
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 165
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/165">
+                                        Applied Jazz Instruction
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 167
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/167">
+                                        Class Jazz Improvisation II
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 169
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/169">
+                                        Unit One Sem Instruct in Music
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 173
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/173">
+                                        Grp Instr Pno for Mus Maj II
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 175
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/175">
+                                        Grp Instr Pno for Mus Maj IV
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 179
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/179">
+                                        Harpsichord
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 180
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/180">
+                                        Piano
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 181
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/181">
+                                        Voice
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 182
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/182">
+                                        Organ
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 183
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/183">
+                                        Violin
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 184
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/184">
+                                        Viola
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 185
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/185">
+                                        Cello
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 186
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/186">
+                                        Double Bass
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 187
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/187">
+                                        Harp
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 188
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/188">
+                                        Flute
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 189
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/189">
+                                        Clarinet
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 190
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/190">
+                                        Oboe
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 191
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/191">
+                                        Bassoon
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 192
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/192">
+                                        Saxophone
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 193
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/193">
+                                        Trumpet
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 194
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/194">
+                                        Horn
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 195
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/195">
+                                        Trombone
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 196
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/196">
+                                        Euphonium
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 197
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/197">
+                                        Tuba
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 198
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/198">
+                                        Percussion
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 199
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/199">
+                                        Undergraduate Open Seminar
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 202
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/202">
+                                        Music Theory and Practice IV
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 206
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/206">
+                                        Intermediate Composition
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 208
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/208">
+                                        Aural Skills IV
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 240
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/240">
+                                        Orientation Mus Tchg Lrng K-HS
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 241
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/241">
+                                        Music for Elementary Teachers
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 242
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/242">
+                                        Elements of Conducting
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 243
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/243">
+                                        Introductory Music Ed Tech
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 250
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/250">
+                                        University Orchestra
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 252
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/252">
+                                        Ethnomusicology Perf Ensembles
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 255
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/255">
+                                        Woodwind Ensemble
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 256
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/256">
+                                        Brass Ensemble
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 257
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/257">
+                                        Percussion Ensemble
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 258
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/258">
+                                        Piano Ensemble
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 260
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/260">
+                                        Oratorio Society
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 261
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/261">
+                                        University Chorus
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 262
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/262">
+                                        Women&#039;s Glee Club
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 263
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/263">
+                                        Men&#039;s Glee Club
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 265
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/265">
+                                        Opera
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 266
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/266">
+                                        Jazz Ensemble
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 267
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/267">
+                                        Chamber Music
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 268
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/268">
+                                        Wind Symphony
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 269
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/269">
+                                        Wind Orchestra
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 271
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/271">
+                                        Hindsley Symphonic Band
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 272
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/272">
+                                        Concert Band
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 274
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/274">
+                                        Basketball Band
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 299
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/299">
+                                        Thesis/Adv UG Honors in Music
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 314
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/314">
+                                        The History of Music II
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 320
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/320">
+                                        Pre-Student Tchng Experience
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 331
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/331">
+                                        Choral Tch and Rehearsal Tch
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 332
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/332">
+                                        Adv Conducting/Tch Strats-Band
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 335
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/335">
+                                        Elem and Mid Sch Instrum Music
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 339
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/339">
+                                        Princpls and Technqs in Mus Ed
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 343
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/343">
+                                        Tchg Music in Middle School
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 344
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/344">
+                                        Tchng Secondary Inst Music
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 348
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/348">
+                                        Rep for Scndry Sch Chor Prog
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 361
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/361">
+                                        Jazz Improv:Theory and Prac II
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 363
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/363">
+                                        Jazz Arranging II
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 365
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/365">
+                                        Jazz Composition II
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 369
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/369">
+                                        Jazz Improvisation Styles II
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 404
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/404">
+                                        Contemp Compos Techniques
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 406
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/406">
+                                        Advanced Composition
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 408
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/408">
+                                        Analysis of Musical Form
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 409
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/409">
+                                        Elec Music Techniques II
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 413
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/413">
+                                        Music and Performance
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 418
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/418">
+                                        Regional Studies in Musicology
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 430
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/430">
+                                        Applied Music Pedagogy
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 432
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/432">
+                                        Piano Pedagogy II
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 440
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/440">
+                                        Marching Band Procedures
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 441
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/441">
+                                        Contemp Issues in Inst Mus Ed
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 443
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/443">
+                                        Orchestral Repertory
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 448
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/448">
+                                        Computer Music
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 450
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/450">
+                                        Advanced Ensemble Music
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 452
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/452">
+                                        Special Topics in Harpsichord
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 453
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/453">
+                                        Special Topics in Organ
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 455
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/455">
+                                        Advanced Keyboard Skills II
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 456
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/456">
+                                        Adv Jazz Piano Improvisation
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 459
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/459">
+                                        Professional Internship
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 461
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/461">
+                                        Improv: Theory and Practice IV
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 463
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/463">
+                                        Jazz Listening Seminar II
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 465
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/465">
+                                        Jazz History II
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 466
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/466">
+                                        Applied Jazz Instruction
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 468
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/468">
+                                        Opera Studio
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 475
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/475">
+                                        Vocal Repertoire II
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 477
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/477">
+                                        Principles of Accompanying
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 479
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/479">
+                                        Harpsichord
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 480
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/480">
+                                        Piano
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 481
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/481">
+                                        Voice
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 482
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/482">
+                                        Organ
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 483
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/483">
+                                        Violin
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 484
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/484">
+                                        Viola
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 485
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/485">
+                                        Cello
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 486
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/486">
+                                        Double Bass
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 487
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/487">
+                                        Harp
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 488
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/488">
+                                        Flute
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 489
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/489">
+                                        Clarinet
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 490
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/490">
+                                        Oboe
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 491
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/491">
+                                        Bassoon
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 492
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/492">
+                                        Saxophone
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 493
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/493">
+                                        Trumpet
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 494
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/494">
+                                        Horn
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 495
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/495">
+                                        Trombone
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 496
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/496">
+                                        Euphonium
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 497
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/497">
+                                        Tuba
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 498
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/498">
+                                        Percussion
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 499
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/499">
+                                        Proseminar in Music
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 500
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/500">
+                                        Artist Diploma Recital
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 501
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/501">
+                                        Grad Music History Review
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 502
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/502">
+                                        Graduate Theory Review
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 505
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/505">
+                                        Individ Topics in Music Theory
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 506
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/506">
+                                        Graduate Level Composition
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 512
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/512">
+                                        Fdns/Methods of Musicology II
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 518
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/518">
+                                        Topics in Opera History
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 521
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/521">
+                                        Hist Studies in 20thC Music
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 523
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/523">
+                                        Seminar in Musicology
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 524
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/524">
+                                        Sem in Wrks of Select Composer
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 525
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/525">
+                                        Rdgs in Musicol and Mus Theory
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 526
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/526">
+                                        Baroque Performance Practice
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 528
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/528">
+                                        Res &amp; Bibliography in Music
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 529
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/529">
+                                        Transformative Music Education
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 530
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/530">
+                                        Critical Readings in Mus Ed
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 532
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/532">
+                                        Global Perspectives on Mus Ed
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 534
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/534">
+                                        Doctoral Research in Mus Ed
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 540
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/540">
+                                        Graduate Wind Band Conducting
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 544
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/544">
+                                        Doctoral Sem in Music Educ
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 547
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/547">
+                                        Orchestral Literature II
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 549
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/549">
+                                        Advanced Jazz Harmony II
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 553
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/553">
+                                        Graduate Orchestral Conducting
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 554
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/554">
+                                        Wind Band Lit &amp; Hist 1
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 557
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/557">
+                                        Piano Literature
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 558
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/558">
+                                        Vocal Literature
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 559
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/559">
+                                        Organ Literature
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 560
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/560">
+                                        String Instrument Literature
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 561
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/561">
+                                        Wind Instrument Literature
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 562
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/562">
+                                        Percussion Instruments Lit
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 563
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/563">
+                                        Hist of Voc Ens and Chor Music
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 565
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/565">
+                                        Adv Choral Perform Techniques
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 566
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/566">
+                                        Graduate Applied Jazz Instruc
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 568
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/568">
+                                        Advanced Instrumentation: Band
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 569
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/569">
+                                        Music Education Thesis
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 571
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/571">
+                                        Practicum in Piano Tchg Adults
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 572
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/572">
+                                        Doctoral Orchestral Conducting
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 573
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/573">
+                                        Doctoral Wind Band Conducting
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 575
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/575">
+                                        Jazz Arranging IV
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 576
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/576">
+                                        Doctoral Projects
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 577
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/577">
+                                        Advanced Accompanying
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 579
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/579">
+                                        Graduate Level Harpischord
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 580
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/580">
+                                        Graduate Level Piano
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 581
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/581">
+                                        Graduate Level Voice
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 582
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/582">
+                                        Graduate Level Organ
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 583
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/583">
+                                        Graduate Level Violin
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 584
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/584">
+                                        Graduate Level Viola
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 585
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/585">
+                                        Graduate Level Cello
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 586
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/586">
+                                        Graduate Level Double Bass
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 587
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/587">
+                                        Graduate Level Harp
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 588
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/588">
+                                        Graduate Level Flute
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 589
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/589">
+                                        Graduate Level Clarinet
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 590
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/590">
+                                        Graduate Level Oboe
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 591
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/591">
+                                        Graduate Level Bassoon
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 592
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/592">
+                                        Graduate Level Saxophone
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 593
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/593">
+                                        Graduate Level Trumpet
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 594
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/594">
+                                        Graduate Level Horn
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 595
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/595">
+                                        Graduate Level Trombone
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 596
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/596">
+                                        Graduate Level Euphonium
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 597
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/597">
+                                        Graduate Level Tuba
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 598
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/598">
+                                        Graduate Level Percussion
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MUS 599
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MUS/599">
+                                        Thesis Research
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                        
+                </tbody>
+            </table>
+
+        </div> <!-- end col-sm-9 -->
+
+        <div class="col-sm-3">
+            <div class="panel-group" id="accordionQuick">
+                <div class="panel panel-default" role="navigation" aria-label="Term">
+                    <div class="panel-heading">
+                        <a class="accordion-toggle ql-links" data-toggle="collapse" data-parent="#accordionQuick" 
+                                                             data-ajaxpath="courses-schedule-term-MUS" href="#collapseTerms"
+                                                             aria-expanded="false" aria-controls="collapseTerms">
+                            <span class="right-caret"></span> Term 
+                        </a>
+                    </div>
+                    <div id="collapseTerms" class="accordion-body collapse ql-tog-event" aria-hidden="true">
+                        <div class="panel-body">
+                            <ul class="list-unstyled">
+                            
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default" role="navigation" aria-label="Part of Term">
+                    <div class="panel-heading">
+                        <a class="accordion-toggle ql-links" data-toggle="collapse" data-parent="#accordionQuick" 
+                                                             data-ajaxpath="courses-sessions-2015-spring-MUS" href="#collapseSessions"
+                                                             aria-expanded="false" aria-controls="collapseSessions">
+                            <span class="right-caret"></span> Part of Term
+                        </a>
+                    </div>
+                    <div id="collapseSessions" class="accordion-body collapse ql-tog-event" aria-hidden="true">
+                        <div class="panel-body">
+                            <ul class="list-unstyled">
+                            
+                            </ul>
+                        </div>
+                    </div>
+                </div>         
+                <div class="panel panel-default" role="navigation" aria-label="Resources">
+    <div class="panel-heading">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionQuick" href="#collapseRes" aria-expanded="false" aria-controls="collapseRes">
+            <span class="right-caret"></span> Resources
+        </a>
+    </div>
+    <div id="collapseRes" class="panel-collapse collapse ql-tog-event" aria-hidden="true">
+        <div class="panel-body">
+            <ul class="list-unstyled">
+                <li><a target="_BLANK" href="http://apps.uillinois.edu/selfservice/">Student Self-Service</a></li>
+                <li><a target="_BLANK" href="http://catalog.illinois.edu/">Academic Catalog</a></li>
+                <li><a target="_BLANK" href="http://provost.illinois.edu/programs/advising/ICTTOC.html">Changing Majors</a></li>
+            </ul>
+        </div>    
+    </div>
+</div>
+            </div>
+            <hr/>
+<div role="navigation" aria-label="Registration Resources">
+    <ul class="list-unstyled" >
+        <li>
+            <a href="http://catalog.illinois.edu/" class="btn btn-large app-btn-link">
+                Academic Catalog
+            </a>
+        </li>
+        <li>
+            <a href="http://registrar.illinois.edu/" class="btn btn-large app-btn-link app-margtop15">
+                Office <small>of the</small> Registrar
+            </a>
+        </li>
+    </ul>
+</div>
+
+        </div> <!-- end col-sm-3 -->
+    </div> <!-- end row -->
+
+    
+</div> 
+
+
+    </div> 
+
+    
+    <div id="push"></div>
+
+    </div> 
+
+    
+    <footer id="footer" role="contentinfo">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-1">
+                <a target="_blank" href="http://illinois.edu" class="pull-right">
+                    <img alt="Illinois logo" src="/static/images/footer-imark.gif" />
+                </a>
+            </div>
+            <div class="col-sm-11">
+                <p>
+                    <strong>
+                        <a href="http://registrar.illinois.edu/">OFFICE OF THE REGISTRAR</a>
+                    </strong> | 901 W. Illinois Street, Suite 140, Urbana, Illinois 61801</p>
+                <p>
+                    Site developed by: <strong>
+                        <a target="_blank" href="http://www.cites.illinois.edu/">C I T E S</a>
+                    </strong>  |  
+                    <a target="_blank" href="http://illinois.edu/">UNIVERSITY OF ILLINOIS AT URBANA-CHAMPAIGN</a>
+                </p>
+                <p>1102 Digital Computer Laboratory | MC-256 | Urbana, IL 61801 
+                    | phone <a href="tel:2172447000">217-244-7000</a> 
+                    | email <a href="https://illinois.edu/fb/sec/2080949">Course Explorer Feedback</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="/static/js/application.js"></script>
+
+
+
+
+
+    
+    
+    <noscript>
+        <div id="noscript-warning">Course Explorer works best with JavaScript enabled</div>
+    </noscript>
+</body>
+</html>

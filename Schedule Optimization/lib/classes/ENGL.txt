@@ -1,0 +1,1260 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html lang="en">
+    <head>
+        <title>Course Explorer</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="image/x-icon" href="/static/images/favicon.ico" rel="icon">
+        
+    
+        <!-- PROD -->
+<link rel="stylesheet" href="/static/css/cis/cis.min.css">
+
+<!--[if lte IE 9]>
+    <script src="/static/bootstrap/common/html5shiv.min.js"></script>
+    <script src="/static/bootstrap/common/respond.js"></script>
+ <![endif]-->
+
+<script src="/static/js/cis.min.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-52702852-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+
+    
+    
+        
+    
+
+
+
+
+
+    </head>
+    <body>
+        
+        
+        <noscript><div id="noscript-padding"></div></noscript>
+        
+        
+        <div id="wrap">
+            
+            
+            <div role="banner">
+    <div id="header-wrap">
+        <div id="header-container" class="container">
+            <div class="row">
+                <div id="header" class="span12 hidden-xs">
+                    <a id="header-title" href="http://illinois.edu/" target="_blank">University of Illinois at Urbana-Champaign</a>
+                    <ul id="login-info" class="list-unstyled list-inline pull-right">
+                        <li><b>Hello Guest</b></li>
+                        <li><a href="https://illinois.edu/fb/sec/2080949">Contact Us</a></li>
+                        <li>
+                            
+                                <a href="/login">Login</a>
+                            
+                            
+                        </li>
+                    </ul>
+                </div>
+                <div id="header-mobile" class="span12 visible-xs-block">
+                    <a id="header-title" href="http://illinois.edu/" target="_blank">University of Illinois at Urbana-Champaign</a>
+                    <br/>
+                    <ul id="login-info" class="list-unstyled list-inline">
+                        <li><b>Hello Guest</b></li>
+                        <li><a href="https://illinois.edu/fb/sec/2080949">Contact Us</a></li>
+                        <li>
+                            
+                                <a href="/login">Login</a>
+                            
+                             
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>    
+    <div id="header-brand-wrap" class="hidden-xs">
+        <div class="container">
+            <div class="row">
+                <div id="header-brand" class="span12">
+                    <a target="_blank" href="http://illinois.edu">
+                        <img alt="Illinois logo" src="/static/images/siteid-iblock.png" />
+                    </a>
+                    <a id="header-brand-title" class="noxs" href="/">Course Explorer</a>
+                </div>
+            </div>    
+        </div>
+    </div>
+    <div id="header-brand-wrap-xs" class="visible-xs-block">            
+        <div class="container">
+            <div class="row">
+                <div id="header-brand" class="span12">
+                    <a id="header-brand-title-xs" href="/">Course Explorer</a>
+                </div>
+            </div>    
+        </div>
+    </div>
+</div>
+            
+            
+            <div class="container">
+
+                
+                <div id="app-main-nav" class="navbar navbar-default" role="navigation" aria-label="primary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+    </div>
+    
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav nav-justified">
+            
+            
+                
+                
+                    <li><a href="/">Home</a></li>
+                
+            
+                
+            
+                
+                    <li class="navbar-text">Schedule</li>
+                
+                
+            
+                
+            
+                
+                
+                    <li><a href="/gened/DEFAULT/DEFAULT">GenEd&#160;REQs</a></li>
+                
+            
+                
+            
+                
+                
+                    <li><a href="/search/form">Search</a></li>
+                
+            
+                
+            
+                
+                
+                    <li><a href="/resources">Resources</a></li>
+                
+                
+            
+            
+        </ul>
+        
+    </div> 
+</div> 
+
+<div id="app-content" role="main">
+    
+    
+    
+    
+    
+    
+        
+        
+        
+    
+
+    
+    
+    
+        <ol class="breadcrumb app-breadcrumb" role="navigation" aria-label="breadcrumbs">
+            <li><a href="/schedule">schedule</a></li>
+            <li><a href="/schedule/2015">2015</a></li>
+            <li><a href="/schedule/2015/spring">spring</a></li>
+            <li class="active">ENGL</li>
+        </ol>
+    
+    
+
+    <div class="lead app-table-lead">
+        <div class="row">
+            <div class="col-sm-9">
+                <h1 class="app-inline">English</h1>
+                <div class="app-text-engage pull-right">
+                    <span class="app-cap">spring&#160;2015</span>
+                    <div class="pull-right app-text-focus" style="font-size: 12px;line-height:13px;padding-left:10px;">
+                        <div>&#160;</div>
+                        <div>All Classes</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-sm-9">
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <div class="row">
+                <div class="col-xs-10">
+                    <div id="program-info" aria-label="program information">
+    <address>
+        <ul class="list-unstyled">
+            <li><a href="http://www.english.uiuc.edu" target="_blank"/>English</a></li>
+            <li><span class="text-muted">Head of Department:</span> Michael Rothberg</li>
+            <li><span class="text-muted">Department Office:</span> 208 English Building, 608 South Wright, Urbana</li>
+            <li><span class="text-muted"><abbr title="Phone">P:</abbr></span> 333-2391</li>
+        </ul>
+    </address>
+      
+        <div>
+            <span class="text-muted">Subjects associated with this department include: Business and Technical Writing (BTW), Creative Writing (CW), English (ENGL), and Rhetoric and Composition (RHET).</span>
+        </div>
+    
+</div>        
+                </div>
+                <div class="col-xs-2">
+                    
+                        <span class="pull-right" style="font-size:14px;">
+                           <a href="/pdf/schedule/2015/spring/ENGL" class="get-pdf">
+                                PDF <img src="/static/images/pdf.png"/>
+                            </a>
+                        </span>
+                           
+                </div>
+            </div>
+            
+            <table id="default-dt" class="table table-striped table-bordered table-condensed">
+                <thead>
+                    <tr>
+                        <th>COURSE NUMBER</th>
+                        <th>COURSE TITLE</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                        
+                            <tr>
+                                <td>
+                                    ENGL 101
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ENGL/101">
+                                        Intro to Poetry
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ENGL 103
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ENGL/103">
+                                        Intro to Fiction
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ENGL 104
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ENGL/104">
+                                        Intro to Film
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ENGL 109
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ENGL/109">
+                                        Intro to Fiction-ACP
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ENGL 115
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ENGL/115">
+                                        Intro to British Literature
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ENGL 116
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ENGL/116">
+                                        Intro to American Literature
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ENGL 119
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ENGL/119">
+                                        Literature of Fantasy
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ENGL 121
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ENGL/121">
+                                        Comics and Graphic Narratives
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ENGL 150
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ENGL/150">
+                                        Black Literature in America
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ENGL 191
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ENGL/191">
+                                        Freshman Honors Tutorial
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ENGL 199
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ENGL/199">
+                                        Undergraduate Open Seminar
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ENGL 200
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ENGL/200">
+                                        Intro to the Study of Lit
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ENGL 202
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ENGL/202">
+                                        Medieval Lit and Culture
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ENGL 204
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ENGL/204">
+                                        Renaissance Lit and Culture
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ENGL 206
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ENGL/206">
+                                        Enlightenment Lit and Culture
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ENGL 207
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ENGL/207">
+                                        Romantic Lit and Culture
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ENGL 208
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ENGL/208">
+                                        Victorian Lit and Culture
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ENGL 209
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ENGL/209">
+                                        British Lit to 1800
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ENGL 210
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ENGL/210">
+                                        British Lit 1800 to Present
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ENGL 218
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ENGL/218">
+                                        Introduction to Shakespeare
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ENGL 241
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ENGL/241">
+                                        Beginnings of Modern Poetry
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ENGL 245
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ENGL/245">
+                                        The Short Story
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ENGL 247
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ENGL/247">
+                                        The British Novel
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ENGL 248
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ENGL/248">
+                                        Brit, Amer &amp; Contin Fiction
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ENGL 251
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ENGL/251">
+                                        The American Novel Since 1914
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ENGL 255
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ENGL/255">
+                                        Survey of American Lit I
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ENGL 256
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ENGL/256">
+                                        Survey of American Lit II
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ENGL 260
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ENGL/260">
+                                        Afro-American Literature II
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ENGL 261
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ENGL/261">
+                                        Topics in Lit and Culture
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ENGL 267
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ENGL/267">
+                                        Grimms&#039; Fairy Tales - ACP
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ENGL 268
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ENGL/268">
+                                        The Holocaust in Context - ACP
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ENGL 270
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ENGL/270">
+                                        American Film Genres
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ENGL 273
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ENGL/273">
+                                        American Cinema Since 1950
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ENGL 274
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ENGL/274">
+                                        Literature and Society
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ENGL 275
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ENGL/275">
+                                        Am Indian and Indigenous Film
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ENGL 281
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ENGL/281">
+                                        Women in the Lit Imagination
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ENGL 286
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ENGL/286">
+                                        Asian American Literature
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ENGL 290
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ENGL/290">
+                                        Individual Study
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ENGL 300
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ENGL/300">
+                                        Writing About Lit Text&amp;Culture
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ENGL 301
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ENGL/301">
+                                        CriticalApproaches to Lit&amp;Text
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ENGL 325
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ENGL/325">
+                                        Topics in LGBT Lit &amp; Film
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ENGL 359
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ENGL/359">
+                                        Lit Responses to the Holocaust
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ENGL 373
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ENGL/373">
+                                        Special Topics in Film Studies
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ENGL 378
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ENGL/378">
+                                        Fairy Tales &amp; Gender Formation
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ENGL 380
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ENGL/380">
+                                        Topics in Writing Studies
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ENGL 390
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ENGL/390">
+                                        Advanced Individual Study
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ENGL 391
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ENGL/391">
+                                        Honors Individual Study
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ENGL 396
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ENGL/396">
+                                        Honors Seminar I
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ENGL 402
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ENGL/402">
+                                        Descriptive English Grammar
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ENGL 404
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ENGL/404">
+                                        Engl Grammar for ESL Teachers
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ENGL 418
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ENGL/418">
+                                        Shakespeare
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ENGL 426
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ENGL/426">
+                                        Early 18th Century Literature
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ENGL 431
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ENGL/431">
+                                        Topics in British Romantic Lit
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ENGL 450
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ENGL/450">
+                                        American Lit 1865-1914
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ENGL 455
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ENGL/455">
+                                        Major Authors
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ENGL 459
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ENGL/459">
+                                        Topics in American Indian Lit
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ENGL 460
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ENGL/460">
+                                        Lit of American Minorities
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ENGL 461
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ENGL/461">
+                                        Topics in Literature
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ENGL 462
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ENGL/462">
+                                        Topics in Modern Fiction
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ENGL 470
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ENGL/470">
+                                        Modern African Fiction
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ENGL 475
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ENGL/475">
+                                        Lit and Other Disciplines
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ENGL 476
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ENGL/476">
+                                        Topics in Lit &amp; Environment
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ENGL 481
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ENGL/481">
+                                        Comp Theory and Practice
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ENGL 482
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ENGL/482">
+                                        Writing Technologies
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ENGL 503
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ENGL/503">
+                                        Historiography of Cinema
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ENGL 533
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ENGL/533">
+                                        Seminar Romantic Lit
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ENGL 537
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ENGL/537">
+                                        Seminar Victorian Lit
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ENGL 553
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ENGL/553">
+                                        Seminar Later American Lit
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ENGL 559
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ENGL/559">
+                                        Seminar Afro-American Lit
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ENGL 578
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ENGL/578">
+                                        Seminar Lit &amp;Other Disciplines
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ENGL 581
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ENGL/581">
+                                        Seminar Literary Theory
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ENGL 582
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ENGL/582">
+                                        Topics Research and Writing
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ENGL 584
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ENGL/584">
+                                        Topics Discourse and Writing
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ENGL 591
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ENGL/591">
+                                        Research in Special Topics
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ENGL 592
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ENGL/592">
+                                        Masters Exam Tutorial
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ENGL 593
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ENGL/593">
+                                        Prof Seminar College Tchg
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ENGL 599
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ENGL/599">
+                                        Thesis Research
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                        
+                </tbody>
+            </table>
+
+        </div> <!-- end col-sm-9 -->
+
+        <div class="col-sm-3">
+            <div class="panel-group" id="accordionQuick">
+                <div class="panel panel-default" role="navigation" aria-label="Term">
+                    <div class="panel-heading">
+                        <a class="accordion-toggle ql-links" data-toggle="collapse" data-parent="#accordionQuick" 
+                                                             data-ajaxpath="courses-schedule-term-ENGL" href="#collapseTerms"
+                                                             aria-expanded="false" aria-controls="collapseTerms">
+                            <span class="right-caret"></span> Term 
+                        </a>
+                    </div>
+                    <div id="collapseTerms" class="accordion-body collapse ql-tog-event" aria-hidden="true">
+                        <div class="panel-body">
+                            <ul class="list-unstyled">
+                            
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default" role="navigation" aria-label="Part of Term">
+                    <div class="panel-heading">
+                        <a class="accordion-toggle ql-links" data-toggle="collapse" data-parent="#accordionQuick" 
+                                                             data-ajaxpath="courses-sessions-2015-spring-ENGL" href="#collapseSessions"
+                                                             aria-expanded="false" aria-controls="collapseSessions">
+                            <span class="right-caret"></span> Part of Term
+                        </a>
+                    </div>
+                    <div id="collapseSessions" class="accordion-body collapse ql-tog-event" aria-hidden="true">
+                        <div class="panel-body">
+                            <ul class="list-unstyled">
+                            
+                            </ul>
+                        </div>
+                    </div>
+                </div>         
+                <div class="panel panel-default" role="navigation" aria-label="Resources">
+    <div class="panel-heading">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionQuick" href="#collapseRes" aria-expanded="false" aria-controls="collapseRes">
+            <span class="right-caret"></span> Resources
+        </a>
+    </div>
+    <div id="collapseRes" class="panel-collapse collapse ql-tog-event" aria-hidden="true">
+        <div class="panel-body">
+            <ul class="list-unstyled">
+                <li><a target="_BLANK" href="http://apps.uillinois.edu/selfservice/">Student Self-Service</a></li>
+                <li><a target="_BLANK" href="http://catalog.illinois.edu/">Academic Catalog</a></li>
+                <li><a target="_BLANK" href="http://provost.illinois.edu/programs/advising/ICTTOC.html">Changing Majors</a></li>
+            </ul>
+        </div>    
+    </div>
+</div>
+            </div>
+            <hr/>
+<div role="navigation" aria-label="Registration Resources">
+    <ul class="list-unstyled" >
+        <li>
+            <a href="http://catalog.illinois.edu/" class="btn btn-large app-btn-link">
+                Academic Catalog
+            </a>
+        </li>
+        <li>
+            <a href="http://registrar.illinois.edu/" class="btn btn-large app-btn-link app-margtop15">
+                Office <small>of the</small> Registrar
+            </a>
+        </li>
+    </ul>
+</div>
+
+        </div> <!-- end col-sm-3 -->
+    </div> <!-- end row -->
+
+    
+</div> 
+
+
+    </div> 
+
+    
+    <div id="push"></div>
+
+    </div> 
+
+    
+    <footer id="footer" role="contentinfo">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-1">
+                <a target="_blank" href="http://illinois.edu" class="pull-right">
+                    <img alt="Illinois logo" src="/static/images/footer-imark.gif" />
+                </a>
+            </div>
+            <div class="col-sm-11">
+                <p>
+                    <strong>
+                        <a href="http://registrar.illinois.edu/">OFFICE OF THE REGISTRAR</a>
+                    </strong> | 901 W. Illinois Street, Suite 140, Urbana, Illinois 61801</p>
+                <p>
+                    Site developed by: <strong>
+                        <a target="_blank" href="http://www.cites.illinois.edu/">C I T E S</a>
+                    </strong>  |  
+                    <a target="_blank" href="http://illinois.edu/">UNIVERSITY OF ILLINOIS AT URBANA-CHAMPAIGN</a>
+                </p>
+                <p>1102 Digital Computer Laboratory | MC-256 | Urbana, IL 61801 
+                    | phone <a href="tel:2172447000">217-244-7000</a> 
+                    | email <a href="https://illinois.edu/fb/sec/2080949">Course Explorer Feedback</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="/static/js/application.js"></script>
+
+
+
+
+
+    
+    
+    <noscript>
+        <div id="noscript-warning">Course Explorer works best with JavaScript enabled</div>
+    </noscript>
+</body>
+</html>

@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html lang="en">
+    <head>
+        <title>Course Explorer</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="image/x-icon" href="/static/images/favicon.ico" rel="icon">
+        
+    
+        <!-- PROD -->
+<link rel="stylesheet" href="/static/css/cis/cis.min.css">
+
+<!--[if lte IE 9]>
+    <script src="/static/bootstrap/common/html5shiv.min.js"></script>
+    <script src="/static/bootstrap/common/respond.js"></script>
+ <![endif]-->
+
+<script src="/static/js/cis.min.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-52702852-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+
+    
+    
+        
+    
+
+
+
+
+
+    </head>
+    <body>
+        
+        
+        <noscript><div id="noscript-padding"></div></noscript>
+        
+        
+        <div id="wrap">
+            
+            
+            <div role="banner">
+    <div id="header-wrap">
+        <div id="header-container" class="container">
+            <div class="row">
+                <div id="header" class="span12 hidden-xs">
+                    <a id="header-title" href="http://illinois.edu/" target="_blank">University of Illinois at Urbana-Champaign</a>
+                    <ul id="login-info" class="list-unstyled list-inline pull-right">
+                        <li><b>Hello Guest</b></li>
+                        <li><a href="https://illinois.edu/fb/sec/2080949">Contact Us</a></li>
+                        <li>
+                            
+                                <a href="/login">Login</a>
+                            
+                            
+                        </li>
+                    </ul>
+                </div>
+                <div id="header-mobile" class="span12 visible-xs-block">
+                    <a id="header-title" href="http://illinois.edu/" target="_blank">University of Illinois at Urbana-Champaign</a>
+                    <br/>
+                    <ul id="login-info" class="list-unstyled list-inline">
+                        <li><b>Hello Guest</b></li>
+                        <li><a href="https://illinois.edu/fb/sec/2080949">Contact Us</a></li>
+                        <li>
+                            
+                                <a href="/login">Login</a>
+                            
+                             
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>    
+    <div id="header-brand-wrap" class="hidden-xs">
+        <div class="container">
+            <div class="row">
+                <div id="header-brand" class="span12">
+                    <a target="_blank" href="http://illinois.edu">
+                        <img alt="Illinois logo" src="/static/images/siteid-iblock.png" />
+                    </a>
+                    <a id="header-brand-title" class="noxs" href="/">Course Explorer</a>
+                </div>
+            </div>    
+        </div>
+    </div>
+    <div id="header-brand-wrap-xs" class="visible-xs-block">            
+        <div class="container">
+            <div class="row">
+                <div id="header-brand" class="span12">
+                    <a id="header-brand-title-xs" href="/">Course Explorer</a>
+                </div>
+            </div>    
+        </div>
+    </div>
+</div>
+            
+            
+            <div class="container">
+
+                
+                <div id="app-main-nav" class="navbar navbar-default" role="navigation" aria-label="primary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+    </div>
+    
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav nav-justified">
+            
+            
+                
+                
+                    <li><a href="/">Home</a></li>
+                
+            
+                
+            
+                
+                    <li class="navbar-text">Schedule</li>
+                
+                
+            
+                
+            
+                
+                
+                    <li><a href="/gened/DEFAULT/DEFAULT">GenEd&#160;REQs</a></li>
+                
+            
+                
+            
+                
+                
+                    <li><a href="/search/form">Search</a></li>
+                
+            
+                
+            
+                
+                
+                    <li><a href="/resources">Resources</a></li>
+                
+                
+            
+            
+        </ul>
+        
+    </div> 
+</div> 
+
+<div id="app-content" role="main">
+    
+    
+    
+    
+    
+    
+        
+        
+        
+    
+
+    
+    
+    
+        <ol class="breadcrumb app-breadcrumb" role="navigation" aria-label="breadcrumbs">
+            <li><a href="/schedule">schedule</a></li>
+            <li><a href="/schedule/2015">2015</a></li>
+            <li><a href="/schedule/2015/spring">spring</a></li>
+            <li class="active">CI</li>
+        </ol>
+    
+    
+
+    <div class="lead app-table-lead">
+        <div class="row">
+            <div class="col-sm-9">
+                <h1 class="app-inline">Curriculum and Instruction</h1>
+                <div class="app-text-engage pull-right">
+                    <span class="app-cap">spring&#160;2015</span>
+                    <div class="pull-right app-text-focus" style="font-size: 12px;line-height:13px;padding-left:10px;">
+                        <div>&#160;</div>
+                        <div>All Classes</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-sm-9">
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <div class="row">
+                <div class="col-xs-10">
+                    <div id="program-info" aria-label="program information">
+    <address>
+        <ul class="list-unstyled">
+            <li><a href="http://www.ed.uiuc.edu/coe/ci" target="_blank"/>Curriculum and Instruction</a></li>
+            <li><span class="text-muted">Head of Department:</span> Fouad Abd-El-Khalick</li>
+            <li><span class="text-muted">Department Office:</span> 311 Education Building, 1310 South Sixth, Champaign</li>
+            <li><span class="text-muted"><abbr title="Phone">P:</abbr></span> 244-8286</li>
+        </ul>
+    </address>
+    
+</div>        
+                </div>
+                <div class="col-xs-2">
+                    
+                        <span class="pull-right" style="font-size:14px;">
+                           <a href="/pdf/schedule/2015/spring/CI" class="get-pdf">
+                                PDF <img src="/static/images/pdf.png"/>
+                            </a>
+                        </span>
+                           
+                </div>
+            </div>
+            
+            <table id="default-dt" class="table table-striped table-bordered table-condensed">
+                <thead>
+                    <tr>
+                        <th>COURSE NUMBER</th>
+                        <th>COURSE TITLE</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                        
+                            <tr>
+                                <td>
+                                    CI 199
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CI/199">
+                                        Undergraduate Open Seminar
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CI 395
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CI/395">
+                                        Independent Study
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CI 402
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CI/402">
+                                        Tchg Diverse Middle Grade Stu
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CI 404
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CI/404">
+                                        Tchg and Assessing Sec Sch Stu
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CI 405
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CI/405">
+                                        Intro Tchg Elem Age Children
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CI 407
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CI/407">
+                                        Thry Prac in Elem Schl Tchg II
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CI 415
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CI/415">
+                                        Lang Varieties,Cult,&amp; Learning
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CI 420
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CI/420">
+                                        Found of Early Childhood Educ
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CI 424
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CI/424">
+                                        Child Development &amp; Technology
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CI 430
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CI/430">
+                                        Teaching Children Mathematics
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CI 431
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CI/431">
+                                        Tchg Elementary Mathematics
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CI 434
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CI/434">
+                                        Teaching Secondary Math
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CI 435
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CI/435">
+                                        Computer-Assisted Instruction
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CI 437
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CI/437">
+                                        Educational Game Design
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CI 442
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CI/442">
+                                        Math, Sci, Tech in Early Child
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CI 444
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CI/444">
+                                        Social Stud Early Childhood Ed
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CI 447
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CI/447">
+                                        Iss Prac in Address Diversity
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CI 450
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CI/450">
+                                        Tchg Elem Science I
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CI 465
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CI/465">
+                                        Lang Literacy in EC Educ I
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CI 466
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CI/466">
+                                        Lang Literacy in EC Educ II
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CI 467
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CI/467">
+                                        Princ Tchg Lit to Child Youth
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CI 473
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CI/473">
+                                        Literacy in Content Areas
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CI 475
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CI/475">
+                                        Teach Elem Rdg &amp; Lang Arts I
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CI 476
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CI/476">
+                                        Teach Elem Rdg &amp; Lang Arts II
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CI 477
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CI/477">
+                                        Biling ESL Methods &amp; Material
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CI 484
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CI/484">
+                                        Learning Technologies
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CI 501
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CI/501">
+                                        Fundamentals of Curr Develop
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CI 507
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CI/507">
+                                        Prob Trends in Spec Fields
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CI 517
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CI/517">
+                                        Bilingual and ESL Assessment
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CI 537
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CI/537">
+                                        Discourse in STEM Classrooms
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CI 543
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CI/543">
+                                        Constructivism and MST Educ
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CI 552
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CI/552">
+                                        Qualitative Writing
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CI 565
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CI/565">
+                                        Topics Research and Writing
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CI 569
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CI/569">
+                                        Topics Discourse and Writing
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CI 576
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CI/576">
+                                        Assessment-Based Reading Instr
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CI 582
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CI/582">
+                                        Rdg and Wrtg Across the Curr
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CI 585
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CI/585">
+                                        Informational Children&#039;s Lit
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CI 590
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CI/590">
+                                        Sem for Adv Stu of Education
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CI 591
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CI/591">
+                                        Field Study &amp; Thesis Seminar
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CI 595
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CI/595">
+                                        Independent Study
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CI 599
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CI/599">
+                                        Thesis Research
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                        
+                </tbody>
+            </table>
+
+        </div> <!-- end col-sm-9 -->
+
+        <div class="col-sm-3">
+            <div class="panel-group" id="accordionQuick">
+                <div class="panel panel-default" role="navigation" aria-label="Term">
+                    <div class="panel-heading">
+                        <a class="accordion-toggle ql-links" data-toggle="collapse" data-parent="#accordionQuick" 
+                                                             data-ajaxpath="courses-schedule-term-CI" href="#collapseTerms"
+                                                             aria-expanded="false" aria-controls="collapseTerms">
+                            <span class="right-caret"></span> Term 
+                        </a>
+                    </div>
+                    <div id="collapseTerms" class="accordion-body collapse ql-tog-event" aria-hidden="true">
+                        <div class="panel-body">
+                            <ul class="list-unstyled">
+                            
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default" role="navigation" aria-label="Part of Term">
+                    <div class="panel-heading">
+                        <a class="accordion-toggle ql-links" data-toggle="collapse" data-parent="#accordionQuick" 
+                                                             data-ajaxpath="courses-sessions-2015-spring-CI" href="#collapseSessions"
+                                                             aria-expanded="false" aria-controls="collapseSessions">
+                            <span class="right-caret"></span> Part of Term
+                        </a>
+                    </div>
+                    <div id="collapseSessions" class="accordion-body collapse ql-tog-event" aria-hidden="true">
+                        <div class="panel-body">
+                            <ul class="list-unstyled">
+                            
+                            </ul>
+                        </div>
+                    </div>
+                </div>         
+                <div class="panel panel-default" role="navigation" aria-label="Resources">
+    <div class="panel-heading">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionQuick" href="#collapseRes" aria-expanded="false" aria-controls="collapseRes">
+            <span class="right-caret"></span> Resources
+        </a>
+    </div>
+    <div id="collapseRes" class="panel-collapse collapse ql-tog-event" aria-hidden="true">
+        <div class="panel-body">
+            <ul class="list-unstyled">
+                <li><a target="_BLANK" href="http://apps.uillinois.edu/selfservice/">Student Self-Service</a></li>
+                <li><a target="_BLANK" href="http://catalog.illinois.edu/">Academic Catalog</a></li>
+                <li><a target="_BLANK" href="http://provost.illinois.edu/programs/advising/ICTTOC.html">Changing Majors</a></li>
+            </ul>
+        </div>    
+    </div>
+</div>
+            </div>
+            <hr/>
+<div role="navigation" aria-label="Registration Resources">
+    <ul class="list-unstyled" >
+        <li>
+            <a href="http://catalog.illinois.edu/" class="btn btn-large app-btn-link">
+                Academic Catalog
+            </a>
+        </li>
+        <li>
+            <a href="http://registrar.illinois.edu/" class="btn btn-large app-btn-link app-margtop15">
+                Office <small>of the</small> Registrar
+            </a>
+        </li>
+    </ul>
+</div>
+
+        </div> <!-- end col-sm-3 -->
+    </div> <!-- end row -->
+
+    
+</div> 
+
+
+    </div> 
+
+    
+    <div id="push"></div>
+
+    </div> 
+
+    
+    <footer id="footer" role="contentinfo">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-1">
+                <a target="_blank" href="http://illinois.edu" class="pull-right">
+                    <img alt="Illinois logo" src="/static/images/footer-imark.gif" />
+                </a>
+            </div>
+            <div class="col-sm-11">
+                <p>
+                    <strong>
+                        <a href="http://registrar.illinois.edu/">OFFICE OF THE REGISTRAR</a>
+                    </strong> | 901 W. Illinois Street, Suite 140, Urbana, Illinois 61801</p>
+                <p>
+                    Site developed by: <strong>
+                        <a target="_blank" href="http://www.cites.illinois.edu/">C I T E S</a>
+                    </strong>  |  
+                    <a target="_blank" href="http://illinois.edu/">UNIVERSITY OF ILLINOIS AT URBANA-CHAMPAIGN</a>
+                </p>
+                <p>1102 Digital Computer Laboratory | MC-256 | Urbana, IL 61801 
+                    | phone <a href="tel:2172447000">217-244-7000</a> 
+                    | email <a href="https://illinois.edu/fb/sec/2080949">Course Explorer Feedback</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="/static/js/application.js"></script>
+
+
+
+
+
+    
+    
+    <noscript>
+        <div id="noscript-warning">Course Explorer works best with JavaScript enabled</div>
+    </noscript>
+</body>
+</html>

@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html lang="en">
+    <head>
+        <title>Course Explorer</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="image/x-icon" href="/static/images/favicon.ico" rel="icon">
+        
+    
+        <!-- PROD -->
+<link rel="stylesheet" href="/static/css/cis/cis.min.css">
+
+<!--[if lte IE 9]>
+    <script src="/static/bootstrap/common/html5shiv.min.js"></script>
+    <script src="/static/bootstrap/common/respond.js"></script>
+ <![endif]-->
+
+<script src="/static/js/cis.min.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-52702852-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+
+    
+    
+        
+    
+
+
+
+
+
+    </head>
+    <body>
+        
+        
+        <noscript><div id="noscript-padding"></div></noscript>
+        
+        
+        <div id="wrap">
+            
+            
+            <div role="banner">
+    <div id="header-wrap">
+        <div id="header-container" class="container">
+            <div class="row">
+                <div id="header" class="span12 hidden-xs">
+                    <a id="header-title" href="http://illinois.edu/" target="_blank">University of Illinois at Urbana-Champaign</a>
+                    <ul id="login-info" class="list-unstyled list-inline pull-right">
+                        <li><b>Hello Guest</b></li>
+                        <li><a href="https://illinois.edu/fb/sec/2080949">Contact Us</a></li>
+                        <li>
+                            
+                                <a href="/login">Login</a>
+                            
+                            
+                        </li>
+                    </ul>
+                </div>
+                <div id="header-mobile" class="span12 visible-xs-block">
+                    <a id="header-title" href="http://illinois.edu/" target="_blank">University of Illinois at Urbana-Champaign</a>
+                    <br/>
+                    <ul id="login-info" class="list-unstyled list-inline">
+                        <li><b>Hello Guest</b></li>
+                        <li><a href="https://illinois.edu/fb/sec/2080949">Contact Us</a></li>
+                        <li>
+                            
+                                <a href="/login">Login</a>
+                            
+                             
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>    
+    <div id="header-brand-wrap" class="hidden-xs">
+        <div class="container">
+            <div class="row">
+                <div id="header-brand" class="span12">
+                    <a target="_blank" href="http://illinois.edu">
+                        <img alt="Illinois logo" src="/static/images/siteid-iblock.png" />
+                    </a>
+                    <a id="header-brand-title" class="noxs" href="/">Course Explorer</a>
+                </div>
+            </div>    
+        </div>
+    </div>
+    <div id="header-brand-wrap-xs" class="visible-xs-block">            
+        <div class="container">
+            <div class="row">
+                <div id="header-brand" class="span12">
+                    <a id="header-brand-title-xs" href="/">Course Explorer</a>
+                </div>
+            </div>    
+        </div>
+    </div>
+</div>
+            
+            
+            <div class="container">
+
+                
+                <div id="app-main-nav" class="navbar navbar-default" role="navigation" aria-label="primary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+    </div>
+    
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav nav-justified">
+            
+            
+                
+                
+                    <li><a href="/">Home</a></li>
+                
+            
+                
+            
+                
+                    <li class="navbar-text">Schedule</li>
+                
+                
+            
+                
+            
+                
+                
+                    <li><a href="/gened/DEFAULT/DEFAULT">GenEd&#160;REQs</a></li>
+                
+            
+                
+            
+                
+                
+                    <li><a href="/search/form">Search</a></li>
+                
+            
+                
+            
+                
+                
+                    <li><a href="/resources">Resources</a></li>
+                
+                
+            
+            
+        </ul>
+        
+    </div> 
+</div> 
+
+<div id="app-content" role="main">
+    
+    
+    
+    
+    
+    
+        
+        
+        
+    
+
+    
+    
+    
+        <ol class="breadcrumb app-breadcrumb" role="navigation" aria-label="breadcrumbs">
+            <li><a href="/schedule">schedule</a></li>
+            <li><a href="/schedule/2015">2015</a></li>
+            <li><a href="/schedule/2015/spring">spring</a></li>
+            <li class="active">CHBE</li>
+        </ol>
+    
+    
+
+    <div class="lead app-table-lead">
+        <div class="row">
+            <div class="col-sm-9">
+                <h1 class="app-inline">Chemical and Biomolecular Engineering</h1>
+                <div class="app-text-engage pull-right">
+                    <span class="app-cap">spring&#160;2015</span>
+                    <div class="pull-right app-text-focus" style="font-size: 12px;line-height:13px;padding-left:10px;">
+                        <div>&#160;</div>
+                        <div>All Classes</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-sm-9">
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <div class="row">
+                <div class="col-xs-10">
+                    <div id="program-info" aria-label="program information">
+    <address>
+        <ul class="list-unstyled">
+            <li><a href="http://www.scs.illinois.edu/chem_eng" target="_blank"/>Chemical and Biomolecular Engineering</a></li>
+            <li><span class="text-muted">Head of Department:</span> Paul J. A. Kenis</li>
+            <li><span class="text-muted">Department Office:</span> 114 Roger Adams Laboratory, 600 South Mathews, Urbana</li>
+            <li><span class="text-muted"><abbr title="Phone">P:</abbr></span> 244-9214</li>
+        </ul>
+    </address>
+    
+</div>        
+                </div>
+                <div class="col-xs-2">
+                    
+                        <span class="pull-right" style="font-size:14px;">
+                           <a href="/pdf/schedule/2015/spring/CHBE" class="get-pdf">
+                                PDF <img src="/static/images/pdf.png"/>
+                            </a>
+                        </span>
+                           
+                </div>
+            </div>
+            
+            <table id="default-dt" class="table table-striped table-bordered table-condensed">
+                <thead>
+                    <tr>
+                        <th>COURSE NUMBER</th>
+                        <th>COURSE TITLE</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                        
+                            <tr>
+                                <td>
+                                    CHBE 101
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CHBE/101">
+                                        Hidden World of Engineering
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CHBE 121
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CHBE/121">
+                                        CHBE Profession
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CHBE 199
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CHBE/199">
+                                        Undergraduate Open Seminar
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CHBE 202
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CHBE/202">
+                                        Cooperative Education Practice
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CHBE 210
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CHBE/210">
+                                        CHBE Internship
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CHBE 221
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CHBE/221">
+                                        Principles of CHE
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CHBE 297
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CHBE/297">
+                                        Individual Study Sophomores
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CHBE 321
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CHBE/321">
+                                        Thermodynamics
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CHBE 397
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CHBE/397">
+                                        Individual Study for Juniors
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CHBE 421
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CHBE/421">
+                                        Momentum and Heat Transfer
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CHBE 422
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CHBE/422">
+                                        Mass Transfer Operations
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CHBE 424
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CHBE/424">
+                                        Chemical Reaction Engineering
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CHBE 430
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CHBE/430">
+                                        Unit Operations Laboratory
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CHBE 431
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CHBE/431">
+                                        Process Design
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CHBE 471
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CHBE/471">
+                                        Biochemical Engineering
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CHBE 472
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CHBE/472">
+                                        Techniques in Biomolecular Eng
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CHBE 476
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CHBE/476">
+                                        Biotransport
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CHBE 478
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CHBE/478">
+                                        Bioenergy Technology
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CHBE 494
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CHBE/494">
+                                        Special Topics
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CHBE 497
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CHBE/497">
+                                        Individual Study for Seniors
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CHBE 499
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CHBE/499">
+                                        Senior Thesis
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CHBE 522
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CHBE/522">
+                                        Fluid Dynamics
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CHBE 565
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CHBE/565">
+                                        CHBE Seminar
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CHBE 571
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CHBE/571">
+                                        Bioinformatics
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CHBE 593
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CHBE/593">
+                                        Individual Study
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CHBE 594
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CHBE/594">
+                                        Special Topics
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CHBE 597
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CHBE/597">
+                                        Special Problems
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CHBE 598
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CHBE/598">
+                                        Research Seminar
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CHBE 599
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CHBE/599">
+                                        Thesis Research
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                        
+                </tbody>
+            </table>
+
+        </div> <!-- end col-sm-9 -->
+
+        <div class="col-sm-3">
+            <div class="panel-group" id="accordionQuick">
+                <div class="panel panel-default" role="navigation" aria-label="Term">
+                    <div class="panel-heading">
+                        <a class="accordion-toggle ql-links" data-toggle="collapse" data-parent="#accordionQuick" 
+                                                             data-ajaxpath="courses-schedule-term-CHBE" href="#collapseTerms"
+                                                             aria-expanded="false" aria-controls="collapseTerms">
+                            <span class="right-caret"></span> Term 
+                        </a>
+                    </div>
+                    <div id="collapseTerms" class="accordion-body collapse ql-tog-event" aria-hidden="true">
+                        <div class="panel-body">
+                            <ul class="list-unstyled">
+                            
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default" role="navigation" aria-label="Part of Term">
+                    <div class="panel-heading">
+                        <a class="accordion-toggle ql-links" data-toggle="collapse" data-parent="#accordionQuick" 
+                                                             data-ajaxpath="courses-sessions-2015-spring-CHBE" href="#collapseSessions"
+                                                             aria-expanded="false" aria-controls="collapseSessions">
+                            <span class="right-caret"></span> Part of Term
+                        </a>
+                    </div>
+                    <div id="collapseSessions" class="accordion-body collapse ql-tog-event" aria-hidden="true">
+                        <div class="panel-body">
+                            <ul class="list-unstyled">
+                            
+                            </ul>
+                        </div>
+                    </div>
+                </div>         
+                <div class="panel panel-default" role="navigation" aria-label="Resources">
+    <div class="panel-heading">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionQuick" href="#collapseRes" aria-expanded="false" aria-controls="collapseRes">
+            <span class="right-caret"></span> Resources
+        </a>
+    </div>
+    <div id="collapseRes" class="panel-collapse collapse ql-tog-event" aria-hidden="true">
+        <div class="panel-body">
+            <ul class="list-unstyled">
+                <li><a target="_BLANK" href="http://apps.uillinois.edu/selfservice/">Student Self-Service</a></li>
+                <li><a target="_BLANK" href="http://catalog.illinois.edu/">Academic Catalog</a></li>
+                <li><a target="_BLANK" href="http://provost.illinois.edu/programs/advising/ICTTOC.html">Changing Majors</a></li>
+            </ul>
+        </div>    
+    </div>
+</div>
+            </div>
+            <hr/>
+<div role="navigation" aria-label="Registration Resources">
+    <ul class="list-unstyled" >
+        <li>
+            <a href="http://catalog.illinois.edu/" class="btn btn-large app-btn-link">
+                Academic Catalog
+            </a>
+        </li>
+        <li>
+            <a href="http://registrar.illinois.edu/" class="btn btn-large app-btn-link app-margtop15">
+                Office <small>of the</small> Registrar
+            </a>
+        </li>
+    </ul>
+</div>
+
+        </div> <!-- end col-sm-3 -->
+    </div> <!-- end row -->
+
+    
+</div> 
+
+
+    </div> 
+
+    
+    <div id="push"></div>
+
+    </div> 
+
+    
+    <footer id="footer" role="contentinfo">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-1">
+                <a target="_blank" href="http://illinois.edu" class="pull-right">
+                    <img alt="Illinois logo" src="/static/images/footer-imark.gif" />
+                </a>
+            </div>
+            <div class="col-sm-11">
+                <p>
+                    <strong>
+                        <a href="http://registrar.illinois.edu/">OFFICE OF THE REGISTRAR</a>
+                    </strong> | 901 W. Illinois Street, Suite 140, Urbana, Illinois 61801</p>
+                <p>
+                    Site developed by: <strong>
+                        <a target="_blank" href="http://www.cites.illinois.edu/">C I T E S</a>
+                    </strong>  |  
+                    <a target="_blank" href="http://illinois.edu/">UNIVERSITY OF ILLINOIS AT URBANA-CHAMPAIGN</a>
+                </p>
+                <p>1102 Digital Computer Laboratory | MC-256 | Urbana, IL 61801 
+                    | phone <a href="tel:2172447000">217-244-7000</a> 
+                    | email <a href="https://illinois.edu/fb/sec/2080949">Course Explorer Feedback</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="/static/js/application.js"></script>
+
+
+
+
+
+    
+    
+    <noscript>
+        <div id="noscript-warning">Course Explorer works best with JavaScript enabled</div>
+    </noscript>
+</body>
+</html>

@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html lang="en">
+    <head>
+        <title>Course Explorer</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="image/x-icon" href="/static/images/favicon.ico" rel="icon">
+        
+    
+        <!-- PROD -->
+<link rel="stylesheet" href="/static/css/cis/cis.min.css">
+
+<!--[if lte IE 9]>
+    <script src="/static/bootstrap/common/html5shiv.min.js"></script>
+    <script src="/static/bootstrap/common/respond.js"></script>
+ <![endif]-->
+
+<script src="/static/js/cis.min.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-52702852-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+
+    
+    
+        
+    
+
+
+
+
+
+    </head>
+    <body>
+        
+        
+        <noscript><div id="noscript-padding"></div></noscript>
+        
+        
+        <div id="wrap">
+            
+            
+            <div role="banner">
+    <div id="header-wrap">
+        <div id="header-container" class="container">
+            <div class="row">
+                <div id="header" class="span12 hidden-xs">
+                    <a id="header-title" href="http://illinois.edu/" target="_blank">University of Illinois at Urbana-Champaign</a>
+                    <ul id="login-info" class="list-unstyled list-inline pull-right">
+                        <li><b>Hello Guest</b></li>
+                        <li><a href="https://illinois.edu/fb/sec/2080949">Contact Us</a></li>
+                        <li>
+                            
+                                <a href="/login">Login</a>
+                            
+                            
+                        </li>
+                    </ul>
+                </div>
+                <div id="header-mobile" class="span12 visible-xs-block">
+                    <a id="header-title" href="http://illinois.edu/" target="_blank">University of Illinois at Urbana-Champaign</a>
+                    <br/>
+                    <ul id="login-info" class="list-unstyled list-inline">
+                        <li><b>Hello Guest</b></li>
+                        <li><a href="https://illinois.edu/fb/sec/2080949">Contact Us</a></li>
+                        <li>
+                            
+                                <a href="/login">Login</a>
+                            
+                             
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>    
+    <div id="header-brand-wrap" class="hidden-xs">
+        <div class="container">
+            <div class="row">
+                <div id="header-brand" class="span12">
+                    <a target="_blank" href="http://illinois.edu">
+                        <img alt="Illinois logo" src="/static/images/siteid-iblock.png" />
+                    </a>
+                    <a id="header-brand-title" class="noxs" href="/">Course Explorer</a>
+                </div>
+            </div>    
+        </div>
+    </div>
+    <div id="header-brand-wrap-xs" class="visible-xs-block">            
+        <div class="container">
+            <div class="row">
+                <div id="header-brand" class="span12">
+                    <a id="header-brand-title-xs" href="/">Course Explorer</a>
+                </div>
+            </div>    
+        </div>
+    </div>
+</div>
+            
+            
+            <div class="container">
+
+                
+                <div id="app-main-nav" class="navbar navbar-default" role="navigation" aria-label="primary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+    </div>
+    
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav nav-justified">
+            
+            
+                
+                
+                    <li><a href="/">Home</a></li>
+                
+            
+                
+            
+                
+                    <li class="navbar-text">Schedule</li>
+                
+                
+            
+                
+            
+                
+                
+                    <li><a href="/gened/DEFAULT/DEFAULT">GenEd&#160;REQs</a></li>
+                
+            
+                
+            
+                
+                
+                    <li><a href="/search/form">Search</a></li>
+                
+            
+                
+            
+                
+                
+                    <li><a href="/resources">Resources</a></li>
+                
+                
+            
+            
+        </ul>
+        
+    </div> 
+</div> 
+
+<div id="app-content" role="main">
+    
+    
+    
+    
+    
+    
+        
+        
+        
+    
+
+    
+    
+    
+        <ol class="breadcrumb app-breadcrumb" role="navigation" aria-label="breadcrumbs">
+            <li><a href="/schedule">schedule</a></li>
+            <li><a href="/schedule/2015">2015</a></li>
+            <li><a href="/schedule/2015/spring">spring</a></li>
+            <li class="active">SOCW</li>
+        </ol>
+    
+    
+
+    <div class="lead app-table-lead">
+        <div class="row">
+            <div class="col-sm-9">
+                <h1 class="app-inline">Social Work</h1>
+                <div class="app-text-engage pull-right">
+                    <span class="app-cap">spring&#160;2015</span>
+                    <div class="pull-right app-text-focus" style="font-size: 12px;line-height:13px;padding-left:10px;">
+                        <div>&#160;</div>
+                        <div>All Classes</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-sm-9">
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <div class="row">
+                <div class="col-xs-10">
+                    <div id="program-info" aria-label="program information">
+    <address>
+        <ul class="list-unstyled">
+            <li><a href="http://www.social.uiuc.edu" target="_blank"/>Social Work, School of</a></li>
+            <li><span class="text-muted">Dean:</span> Wynne Korr</li>
+            <li><span class="text-muted">School Office:</span> 1010 West Nevada Street, Urbana</li>
+            <li><span class="text-muted"><abbr title="Phone">P:</abbr></span> 333-2261</li>
+        </ul>
+    </address>
+    
+</div>        
+                </div>
+                <div class="col-xs-2">
+                    
+                        <span class="pull-right" style="font-size:14px;">
+                           <a href="/pdf/schedule/2015/spring/SOCW" class="get-pdf">
+                                PDF <img src="/static/images/pdf.png"/>
+                            </a>
+                        </span>
+                           
+                </div>
+            </div>
+            
+            <table id="default-dt" class="table table-striped table-bordered table-condensed">
+                <thead>
+                    <tr>
+                        <th>COURSE NUMBER</th>
+                        <th>COURSE TITLE</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                        
+                            <tr>
+                                <td>
+                                    SOCW 199
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/SOCW/199">
+                                        Undergraduate Open Seminar
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    SOCW 200
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/SOCW/200">
+                                        Introduction to Social Work
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    SOCW 225
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/SOCW/225">
+                                        Intro Stat for Social Work
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    SOCW 297
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/SOCW/297">
+                                        Asian Families in America
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    SOCW 300
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/SOCW/300">
+                                        Diversity: Identities &amp; Issues
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    SOCW 310
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/SOCW/310">
+                                        UG Research Assistance
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    SOCW 321
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/SOCW/321">
+                                        Social Entre &amp; Social Change
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    SOCW 360
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/SOCW/360">
+                                        Social Work and the Military
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    SOCW 380
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/SOCW/380">
+                                        Current Topics in Social Work
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    SOCW 401
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/SOCW/401">
+                                        Practice I
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    SOCW 402
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/SOCW/402">
+                                        Practice II
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    SOCW 403
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/SOCW/403">
+                                        Practice III
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    SOCW 410
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/SOCW/410">
+                                        Social Welfare Pol and Svcs
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    SOCW 418
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/SOCW/418">
+                                        Independent Study
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    SOCW 420
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/SOCW/420">
+                                        Subst Use in Social Context
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    SOCW 427
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/SOCW/427">
+                                        Social Work Research Methods
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    SOCW 451
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/SOCW/451">
+                                        HBSE I: Human Development
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    SOCW 457
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/SOCW/457">
+                                        Health Planning
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    SOCW 461
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/SOCW/461">
+                                        Prof Practice Seminar I
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    SOCW 470
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/SOCW/470">
+                                        Field Practicum
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    SOCW 471
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/SOCW/471">
+                                        Prof Practice Seminar II
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    SOCW 472
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/SOCW/472">
+                                        BSW Special Field Project
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    SOCW 473
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/SOCW/473">
+                                        Immigration, Health &amp; Society
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    SOCW 475
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/SOCW/475">
+                                        Undergraduate Research Abroad
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    SOCW 480
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/SOCW/480">
+                                        UG Research Project
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    SOCW 500
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/SOCW/500">
+                                        SW Practice with Indiv and Fam
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    SOCW 501
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/SOCW/501">
+                                        SW Practice with Groups
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    SOCW 503
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/SOCW/503">
+                                        Trauma Informed SW Practice
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    SOCW 504
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/SOCW/504">
+                                        Substance Abuse Trt in S W
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    SOCW 505
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/SOCW/505">
+                                        Behav and Cogn Methods for SW
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    SOCW 506
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/SOCW/506">
+                                        SW Practice with Child/Adol
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    SOCW 507
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/SOCW/507">
+                                        School Social Work Practice
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    SOCW 508
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/SOCW/508">
+                                        Family Therapy Seminar
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    SOCW 509
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/SOCW/509">
+                                        Adv Clin Assess &amp; Interviewing
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    SOCW 513
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/SOCW/513">
+                                        Delivery of Health Care
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    SOCW 514
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/SOCW/514">
+                                        Mental Health Pol and Svcs
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    SOCW 516
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/SOCW/516">
+                                        Child, Youth and Family Svcs
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    SOCW 519
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/SOCW/519">
+                                        Public School Policy/Services
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    SOCW 521
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/SOCW/521">
+                                        Leadership and Social Change
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    SOCW 526
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/SOCW/526">
+                                        Managing Human Service Orgs
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    SOCW 532
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/SOCW/532">
+                                        Practice Evaluation
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    SOCW 541
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/SOCW/541">
+                                        Clinical Research Seminar
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    SOCW 542
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/SOCW/542">
+                                        Program Evaluation
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    SOCW 551
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/SOCW/551">
+                                        HBSE II: Women&#039;s Issues
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    SOCW 552
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/SOCW/552">
+                                        HBSE II: Mental Disorders
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    SOCW 553
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/SOCW/553">
+                                        HBSE II: Health and Rehab
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    SOCW 554
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/SOCW/554">
+                                        Social Ent in Diverse Society
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    SOCW 561
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/SOCW/561">
+                                        Special Studies in Soc Work I
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    SOCW 569
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/SOCW/569">
+                                        Field Instruction II
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    SOCW 579
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/SOCW/579">
+                                        Social Work Practice Theories
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    SOCW 580
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/SOCW/580">
+                                        Advanced Child Welfare
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    SOCW 585
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/SOCW/585">
+                                        National Soc Welfare Policy II
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    SOCW 589
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/SOCW/589">
+                                        Social Work and the Law
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    SOCW 594
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/SOCW/594">
+                                        Individual Research
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    SOCW 595
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/SOCW/595">
+                                        Quantitative Research Designs
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    SOCW 599
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/SOCW/599">
+                                        Dissertation Research
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                        
+                </tbody>
+            </table>
+
+        </div> <!-- end col-sm-9 -->
+
+        <div class="col-sm-3">
+            <div class="panel-group" id="accordionQuick">
+                <div class="panel panel-default" role="navigation" aria-label="Term">
+                    <div class="panel-heading">
+                        <a class="accordion-toggle ql-links" data-toggle="collapse" data-parent="#accordionQuick" 
+                                                             data-ajaxpath="courses-schedule-term-SOCW" href="#collapseTerms"
+                                                             aria-expanded="false" aria-controls="collapseTerms">
+                            <span class="right-caret"></span> Term 
+                        </a>
+                    </div>
+                    <div id="collapseTerms" class="accordion-body collapse ql-tog-event" aria-hidden="true">
+                        <div class="panel-body">
+                            <ul class="list-unstyled">
+                            
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default" role="navigation" aria-label="Part of Term">
+                    <div class="panel-heading">
+                        <a class="accordion-toggle ql-links" data-toggle="collapse" data-parent="#accordionQuick" 
+                                                             data-ajaxpath="courses-sessions-2015-spring-SOCW" href="#collapseSessions"
+                                                             aria-expanded="false" aria-controls="collapseSessions">
+                            <span class="right-caret"></span> Part of Term
+                        </a>
+                    </div>
+                    <div id="collapseSessions" class="accordion-body collapse ql-tog-event" aria-hidden="true">
+                        <div class="panel-body">
+                            <ul class="list-unstyled">
+                            
+                            </ul>
+                        </div>
+                    </div>
+                </div>         
+                <div class="panel panel-default" role="navigation" aria-label="Resources">
+    <div class="panel-heading">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionQuick" href="#collapseRes" aria-expanded="false" aria-controls="collapseRes">
+            <span class="right-caret"></span> Resources
+        </a>
+    </div>
+    <div id="collapseRes" class="panel-collapse collapse ql-tog-event" aria-hidden="true">
+        <div class="panel-body">
+            <ul class="list-unstyled">
+                <li><a target="_BLANK" href="http://apps.uillinois.edu/selfservice/">Student Self-Service</a></li>
+                <li><a target="_BLANK" href="http://catalog.illinois.edu/">Academic Catalog</a></li>
+                <li><a target="_BLANK" href="http://provost.illinois.edu/programs/advising/ICTTOC.html">Changing Majors</a></li>
+            </ul>
+        </div>    
+    </div>
+</div>
+            </div>
+            <hr/>
+<div role="navigation" aria-label="Registration Resources">
+    <ul class="list-unstyled" >
+        <li>
+            <a href="http://catalog.illinois.edu/" class="btn btn-large app-btn-link">
+                Academic Catalog
+            </a>
+        </li>
+        <li>
+            <a href="http://registrar.illinois.edu/" class="btn btn-large app-btn-link app-margtop15">
+                Office <small>of the</small> Registrar
+            </a>
+        </li>
+    </ul>
+</div>
+
+        </div> <!-- end col-sm-3 -->
+    </div> <!-- end row -->
+
+    
+</div> 
+
+
+    </div> 
+
+    
+    <div id="push"></div>
+
+    </div> 
+
+    
+    <footer id="footer" role="contentinfo">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-1">
+                <a target="_blank" href="http://illinois.edu" class="pull-right">
+                    <img alt="Illinois logo" src="/static/images/footer-imark.gif" />
+                </a>
+            </div>
+            <div class="col-sm-11">
+                <p>
+                    <strong>
+                        <a href="http://registrar.illinois.edu/">OFFICE OF THE REGISTRAR</a>
+                    </strong> | 901 W. Illinois Street, Suite 140, Urbana, Illinois 61801</p>
+                <p>
+                    Site developed by: <strong>
+                        <a target="_blank" href="http://www.cites.illinois.edu/">C I T E S</a>
+                    </strong>  |  
+                    <a target="_blank" href="http://illinois.edu/">UNIVERSITY OF ILLINOIS AT URBANA-CHAMPAIGN</a>
+                </p>
+                <p>1102 Digital Computer Laboratory | MC-256 | Urbana, IL 61801 
+                    | phone <a href="tel:2172447000">217-244-7000</a> 
+                    | email <a href="https://illinois.edu/fb/sec/2080949">Course Explorer Feedback</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="/static/js/application.js"></script>
+
+
+
+
+
+    
+    
+    <noscript>
+        <div id="noscript-warning">Course Explorer works best with JavaScript enabled</div>
+    </noscript>
+</body>
+</html>

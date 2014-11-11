@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html lang="en">
+    <head>
+        <title>Course Explorer</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="image/x-icon" href="/static/images/favicon.ico" rel="icon">
+        
+    
+        <!-- PROD -->
+<link rel="stylesheet" href="/static/css/cis/cis.min.css">
+
+<!--[if lte IE 9]>
+    <script src="/static/bootstrap/common/html5shiv.min.js"></script>
+    <script src="/static/bootstrap/common/respond.js"></script>
+ <![endif]-->
+
+<script src="/static/js/cis.min.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-52702852-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+
+    
+    
+        
+    
+
+
+
+
+
+    </head>
+    <body>
+        
+        
+        <noscript><div id="noscript-padding"></div></noscript>
+        
+        
+        <div id="wrap">
+            
+            
+            <div role="banner">
+    <div id="header-wrap">
+        <div id="header-container" class="container">
+            <div class="row">
+                <div id="header" class="span12 hidden-xs">
+                    <a id="header-title" href="http://illinois.edu/" target="_blank">University of Illinois at Urbana-Champaign</a>
+                    <ul id="login-info" class="list-unstyled list-inline pull-right">
+                        <li><b>Hello Guest</b></li>
+                        <li><a href="https://illinois.edu/fb/sec/2080949">Contact Us</a></li>
+                        <li>
+                            
+                                <a href="/login">Login</a>
+                            
+                            
+                        </li>
+                    </ul>
+                </div>
+                <div id="header-mobile" class="span12 visible-xs-block">
+                    <a id="header-title" href="http://illinois.edu/" target="_blank">University of Illinois at Urbana-Champaign</a>
+                    <br/>
+                    <ul id="login-info" class="list-unstyled list-inline">
+                        <li><b>Hello Guest</b></li>
+                        <li><a href="https://illinois.edu/fb/sec/2080949">Contact Us</a></li>
+                        <li>
+                            
+                                <a href="/login">Login</a>
+                            
+                             
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>    
+    <div id="header-brand-wrap" class="hidden-xs">
+        <div class="container">
+            <div class="row">
+                <div id="header-brand" class="span12">
+                    <a target="_blank" href="http://illinois.edu">
+                        <img alt="Illinois logo" src="/static/images/siteid-iblock.png" />
+                    </a>
+                    <a id="header-brand-title" class="noxs" href="/">Course Explorer</a>
+                </div>
+            </div>    
+        </div>
+    </div>
+    <div id="header-brand-wrap-xs" class="visible-xs-block">            
+        <div class="container">
+            <div class="row">
+                <div id="header-brand" class="span12">
+                    <a id="header-brand-title-xs" href="/">Course Explorer</a>
+                </div>
+            </div>    
+        </div>
+    </div>
+</div>
+            
+            
+            <div class="container">
+
+                
+                <div id="app-main-nav" class="navbar navbar-default" role="navigation" aria-label="primary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+    </div>
+    
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav nav-justified">
+            
+            
+                
+                
+                    <li><a href="/">Home</a></li>
+                
+            
+                
+            
+                
+                    <li class="navbar-text">Schedule</li>
+                
+                
+            
+                
+            
+                
+                
+                    <li><a href="/gened/DEFAULT/DEFAULT">GenEd&#160;REQs</a></li>
+                
+            
+                
+            
+                
+                
+                    <li><a href="/search/form">Search</a></li>
+                
+            
+                
+            
+                
+                
+                    <li><a href="/resources">Resources</a></li>
+                
+                
+            
+            
+        </ul>
+        
+    </div> 
+</div> 
+
+<div id="app-content" role="main">
+    
+    
+    
+    
+    
+    
+        
+        
+        
+    
+
+    
+    
+    
+        <ol class="breadcrumb app-breadcrumb" role="navigation" aria-label="breadcrumbs">
+            <li><a href="/schedule">schedule</a></li>
+            <li><a href="/schedule/2015">2015</a></li>
+            <li><a href="/schedule/2015/spring">spring</a></li>
+            <li class="active">PS</li>
+        </ol>
+    
+    
+
+    <div class="lead app-table-lead">
+        <div class="row">
+            <div class="col-sm-9">
+                <h1 class="app-inline">Political Science</h1>
+                <div class="app-text-engage pull-right">
+                    <span class="app-cap">spring&#160;2015</span>
+                    <div class="pull-right app-text-focus" style="font-size: 12px;line-height:13px;padding-left:10px;">
+                        <div>&#160;</div>
+                        <div>All Classes</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-sm-9">
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <div class="row">
+                <div class="col-xs-10">
+                    <div id="program-info" aria-label="program information">
+    <address>
+        <ul class="list-unstyled">
+            <li><a href="http://www.pol.illinois.edu" target="_blank"/>Political Science</a></li>
+            <li><span class="text-muted">Head of Department:</span> William Bernhard</li>
+            <li><span class="text-muted">Department Office:</span> 420 David Kinley Hall, 1407 W. Gregory Dr., Urbana</li>
+            <li><span class="text-muted"><abbr title="Phone">P:</abbr></span> 333-3881</li>
+        </ul>
+    </address>
+    
+</div>        
+                </div>
+                <div class="col-xs-2">
+                    
+                        <span class="pull-right" style="font-size:14px;">
+                           <a href="/pdf/schedule/2015/spring/PS" class="get-pdf">
+                                PDF <img src="/static/images/pdf.png"/>
+                            </a>
+                        </span>
+                           
+                </div>
+            </div>
+            
+            <table id="default-dt" class="table table-striped table-bordered table-condensed">
+                <thead>
+                    <tr>
+                        <th>COURSE NUMBER</th>
+                        <th>COURSE TITLE</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                        
+                            <tr>
+                                <td>
+                                    PS 100
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PS/100">
+                                        Intro to Political Science
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PS 101
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PS/101">
+                                        Intro to US Gov &amp; Pol
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PS 180
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PS/180">
+                                        IntroPolitics of Globalization
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PS 199
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PS/199">
+                                        Undergraduate Open Seminar
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PS 202
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PS/202">
+                                        Religion &amp; Politics in the US
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PS 220
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PS/220">
+                                        Intro to Public Policy
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PS 222
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PS/222">
+                                        Ethics and Public Policy
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PS 225
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PS/225">
+                                        Environmental Politics &amp;Policy
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PS 240
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PS/240">
+                                        Intro to Comp Politics
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PS 241
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PS/241">
+                                        Comp Politics in Dev Nations
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PS 273
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PS/273">
+                                        Environment and Society
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PS 280
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PS/280">
+                                        Intro to Intl Relations
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PS 281
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PS/281">
+                                        Intro to Intl Relations-ACP
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PS 282
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PS/282">
+                                        Governing Globalization
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PS 299
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PS/299">
+                                        Study Abroad
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PS 300
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PS/300">
+                                        Special Topics
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PS 302
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PS/302">
+                                        The US Constitution II
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PS 303
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PS/303">
+                                        The US Congress
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PS 313
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PS/313">
+                                        Congress and Foreign Policy
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PS 317
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PS/317">
+                                        Asian American Politics
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PS 321
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PS/321">
+                                        Principles of Public Policy
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PS 322
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PS/322">
+                                        Law and Public Policy
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PS 323
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PS/323">
+                                        Law and Representation
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PS 339
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PS/339">
+                                        Political Violence
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PS 341
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PS/341">
+                                        Gov &amp; Pol in Africa
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PS 345
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PS/345">
+                                        Gov &amp; Pol of SE Asia
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PS 372
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PS/372">
+                                        Modern Political Theory
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PS 376
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PS/376">
+                                        American Political Theory
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PS 377
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PS/377">
+                                        Topics Contemp Pol Theory
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PS 389
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PS/389">
+                                        International Communications
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PS 390
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PS/390">
+                                        American Foreign Policy
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PS 391
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PS/391">
+                                        Soviet &amp; Post-Sov Foreign Pol
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PS 396
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PS/396">
+                                        International Conflict
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PS 398
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PS/398">
+                                        Strategic Interntl Relations
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PS 413
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PS/413">
+                                        Sex, Power and Politics
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PS 418
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PS/418">
+                                        Language&amp;Minorities in Europe
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PS 452
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PS/452">
+                                        Normative Perspec Amer Pol
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PS 490
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PS/490">
+                                        Individual Study
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PS 491
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PS/491">
+                                        Internship
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PS 492
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PS/492">
+                                        UG Research Assistance
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PS 494
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PS/494">
+                                        Junior Honors Seminar
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PS 496
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PS/496">
+                                        Senior Honors Thesis
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PS 501
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PS/501">
+                                        Democratic Political Inst I
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PS 514
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PS/514">
+                                        Founds of Organizational Behav
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PS 519
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PS/519">
+                                        Topics in American Politics
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PS 522
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PS/522">
+                                        Research Design and Techniques
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PS 531
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PS/531">
+                                        Quant Pol Analysis II
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PS 546
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PS/546">
+                                        Comparative Political Behavior
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PS 579
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PS/579">
+                                        Topics in Pol Theory
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PS 587
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PS/587">
+                                        Research Seminar in IR
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PS 590
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PS/590">
+                                        Research in Selected Topics
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PS 598
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PS/598">
+                                        Dissertation Design Seminar
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PS 599
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PS/599">
+                                        Thesis Research
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                        
+                </tbody>
+            </table>
+
+        </div> <!-- end col-sm-9 -->
+
+        <div class="col-sm-3">
+            <div class="panel-group" id="accordionQuick">
+                <div class="panel panel-default" role="navigation" aria-label="Term">
+                    <div class="panel-heading">
+                        <a class="accordion-toggle ql-links" data-toggle="collapse" data-parent="#accordionQuick" 
+                                                             data-ajaxpath="courses-schedule-term-PS" href="#collapseTerms"
+                                                             aria-expanded="false" aria-controls="collapseTerms">
+                            <span class="right-caret"></span> Term 
+                        </a>
+                    </div>
+                    <div id="collapseTerms" class="accordion-body collapse ql-tog-event" aria-hidden="true">
+                        <div class="panel-body">
+                            <ul class="list-unstyled">
+                            
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default" role="navigation" aria-label="Part of Term">
+                    <div class="panel-heading">
+                        <a class="accordion-toggle ql-links" data-toggle="collapse" data-parent="#accordionQuick" 
+                                                             data-ajaxpath="courses-sessions-2015-spring-PS" href="#collapseSessions"
+                                                             aria-expanded="false" aria-controls="collapseSessions">
+                            <span class="right-caret"></span> Part of Term
+                        </a>
+                    </div>
+                    <div id="collapseSessions" class="accordion-body collapse ql-tog-event" aria-hidden="true">
+                        <div class="panel-body">
+                            <ul class="list-unstyled">
+                            
+                            </ul>
+                        </div>
+                    </div>
+                </div>         
+                <div class="panel panel-default" role="navigation" aria-label="Resources">
+    <div class="panel-heading">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionQuick" href="#collapseRes" aria-expanded="false" aria-controls="collapseRes">
+            <span class="right-caret"></span> Resources
+        </a>
+    </div>
+    <div id="collapseRes" class="panel-collapse collapse ql-tog-event" aria-hidden="true">
+        <div class="panel-body">
+            <ul class="list-unstyled">
+                <li><a target="_BLANK" href="http://apps.uillinois.edu/selfservice/">Student Self-Service</a></li>
+                <li><a target="_BLANK" href="http://catalog.illinois.edu/">Academic Catalog</a></li>
+                <li><a target="_BLANK" href="http://provost.illinois.edu/programs/advising/ICTTOC.html">Changing Majors</a></li>
+            </ul>
+        </div>    
+    </div>
+</div>
+            </div>
+            <hr/>
+<div role="navigation" aria-label="Registration Resources">
+    <ul class="list-unstyled" >
+        <li>
+            <a href="http://catalog.illinois.edu/" class="btn btn-large app-btn-link">
+                Academic Catalog
+            </a>
+        </li>
+        <li>
+            <a href="http://registrar.illinois.edu/" class="btn btn-large app-btn-link app-margtop15">
+                Office <small>of the</small> Registrar
+            </a>
+        </li>
+    </ul>
+</div>
+
+        </div> <!-- end col-sm-3 -->
+    </div> <!-- end row -->
+
+    
+</div> 
+
+
+    </div> 
+
+    
+    <div id="push"></div>
+
+    </div> 
+
+    
+    <footer id="footer" role="contentinfo">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-1">
+                <a target="_blank" href="http://illinois.edu" class="pull-right">
+                    <img alt="Illinois logo" src="/static/images/footer-imark.gif" />
+                </a>
+            </div>
+            <div class="col-sm-11">
+                <p>
+                    <strong>
+                        <a href="http://registrar.illinois.edu/">OFFICE OF THE REGISTRAR</a>
+                    </strong> | 901 W. Illinois Street, Suite 140, Urbana, Illinois 61801</p>
+                <p>
+                    Site developed by: <strong>
+                        <a target="_blank" href="http://www.cites.illinois.edu/">C I T E S</a>
+                    </strong>  |  
+                    <a target="_blank" href="http://illinois.edu/">UNIVERSITY OF ILLINOIS AT URBANA-CHAMPAIGN</a>
+                </p>
+                <p>1102 Digital Computer Laboratory | MC-256 | Urbana, IL 61801 
+                    | phone <a href="tel:2172447000">217-244-7000</a> 
+                    | email <a href="https://illinois.edu/fb/sec/2080949">Course Explorer Feedback</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="/static/js/application.js"></script>
+
+
+
+
+
+    
+    
+    <noscript>
+        <div id="noscript-warning">Course Explorer works best with JavaScript enabled</div>
+    </noscript>
+</body>
+</html>

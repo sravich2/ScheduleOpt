@@ -1,0 +1,1443 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html lang="en">
+    <head>
+        <title>Course Explorer</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="image/x-icon" href="/static/images/favicon.ico" rel="icon">
+        
+    
+        <!-- PROD -->
+<link rel="stylesheet" href="/static/css/cis/cis.min.css">
+
+<!--[if lte IE 9]>
+    <script src="/static/bootstrap/common/html5shiv.min.js"></script>
+    <script src="/static/bootstrap/common/respond.js"></script>
+ <![endif]-->
+
+<script src="/static/js/cis.min.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-52702852-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+
+    
+    
+        
+    
+
+
+
+
+
+    </head>
+    <body>
+        
+        
+        <noscript><div id="noscript-padding"></div></noscript>
+        
+        
+        <div id="wrap">
+            
+            
+            <div role="banner">
+    <div id="header-wrap">
+        <div id="header-container" class="container">
+            <div class="row">
+                <div id="header" class="span12 hidden-xs">
+                    <a id="header-title" href="http://illinois.edu/" target="_blank">University of Illinois at Urbana-Champaign</a>
+                    <ul id="login-info" class="list-unstyled list-inline pull-right">
+                        <li><b>Hello Guest</b></li>
+                        <li><a href="https://illinois.edu/fb/sec/2080949">Contact Us</a></li>
+                        <li>
+                            
+                                <a href="/login">Login</a>
+                            
+                            
+                        </li>
+                    </ul>
+                </div>
+                <div id="header-mobile" class="span12 visible-xs-block">
+                    <a id="header-title" href="http://illinois.edu/" target="_blank">University of Illinois at Urbana-Champaign</a>
+                    <br/>
+                    <ul id="login-info" class="list-unstyled list-inline">
+                        <li><b>Hello Guest</b></li>
+                        <li><a href="https://illinois.edu/fb/sec/2080949">Contact Us</a></li>
+                        <li>
+                            
+                                <a href="/login">Login</a>
+                            
+                             
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>    
+    <div id="header-brand-wrap" class="hidden-xs">
+        <div class="container">
+            <div class="row">
+                <div id="header-brand" class="span12">
+                    <a target="_blank" href="http://illinois.edu">
+                        <img alt="Illinois logo" src="/static/images/siteid-iblock.png" />
+                    </a>
+                    <a id="header-brand-title" class="noxs" href="/">Course Explorer</a>
+                </div>
+            </div>    
+        </div>
+    </div>
+    <div id="header-brand-wrap-xs" class="visible-xs-block">            
+        <div class="container">
+            <div class="row">
+                <div id="header-brand" class="span12">
+                    <a id="header-brand-title-xs" href="/">Course Explorer</a>
+                </div>
+            </div>    
+        </div>
+    </div>
+</div>
+            
+            
+            <div class="container">
+
+                
+                <div id="app-main-nav" class="navbar navbar-default" role="navigation" aria-label="primary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+    </div>
+    
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav nav-justified">
+            
+            
+                
+                
+                    <li><a href="/">Home</a></li>
+                
+            
+                
+            
+                
+                    <li class="navbar-text">Schedule</li>
+                
+                
+            
+                
+            
+                
+                
+                    <li><a href="/gened/DEFAULT/DEFAULT">GenEd&#160;REQs</a></li>
+                
+            
+                
+            
+                
+                
+                    <li><a href="/search/form">Search</a></li>
+                
+            
+                
+            
+                
+                
+                    <li><a href="/resources">Resources</a></li>
+                
+                
+            
+            
+        </ul>
+        
+    </div> 
+</div> 
+
+<div id="app-content" role="main">
+    
+    
+    
+    
+    
+    
+        
+        
+        
+    
+
+    
+    
+    
+        <ol class="breadcrumb app-breadcrumb" role="navigation" aria-label="breadcrumbs">
+            <li><a href="/schedule">schedule</a></li>
+            <li><a href="/schedule/2015">2015</a></li>
+            <li><a href="/schedule/2015/spring">spring</a></li>
+            <li class="active">ECE</li>
+        </ol>
+    
+    
+
+    <div class="lead app-table-lead">
+        <div class="row">
+            <div class="col-sm-9">
+                <h1 class="app-inline">Electrical and Computer Engineering</h1>
+                <div class="app-text-engage pull-right">
+                    <span class="app-cap">spring&#160;2015</span>
+                    <div class="pull-right app-text-focus" style="font-size: 12px;line-height:13px;padding-left:10px;">
+                        <div>&#160;</div>
+                        <div>All Classes</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-sm-9">
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <div class="row">
+                <div class="col-xs-10">
+                    <div id="program-info" aria-label="program information">
+    <address>
+        <ul class="list-unstyled">
+            <li><a href="http://www.ece.illinois.edu" target="_blank"/>Electrical and Computer Engineering</a></li>
+            <li><span class="text-muted">Head of Department:</span> William H. Sanders</li>
+            <li><span class="text-muted">Department Office:</span> 2120 Electrical and Computer Eng. Bldg, 306 N. Wright Street, Urbana</li>
+            <li><span class="text-muted"><abbr title="Phone">P:</abbr></span> 217-333-2300</li>
+        </ul>
+    </address>
+    
+</div>        
+                </div>
+                <div class="col-xs-2">
+                    
+                        <span class="pull-right" style="font-size:14px;">
+                           <a href="/pdf/schedule/2015/spring/ECE" class="get-pdf">
+                                PDF <img src="/static/images/pdf.png"/>
+                            </a>
+                        </span>
+                           
+                </div>
+            </div>
+            
+            <table id="default-dt" class="table table-striped table-bordered table-condensed">
+                <thead>
+                    <tr>
+                        <th>COURSE NUMBER</th>
+                        <th>COURSE TITLE</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                        
+                            <tr>
+                                <td>
+                                    ECE 110
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ECE/110">
+                                        Introduction to Electronics
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ECE 120
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ECE/120">
+                                        Introduction to Computing
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ECE 200
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ECE/200">
+                                        Seminar
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ECE 205
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ECE/205">
+                                        Elec &amp; Electronic Circuits
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ECE 206
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ECE/206">
+                                        Elec &amp; Electronic Circuits Lab
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ECE 210
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ECE/210">
+                                        Analog Signal Processing
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ECE 211
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ECE/211">
+                                        Analog Circuits &amp; Systems
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ECE 220
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ECE/220">
+                                        Computer Systems &amp; Programming
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ECE 297
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ECE/297">
+                                        Individual Study
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ECE 304
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ECE/304">
+                                        Photonic Devices
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ECE 307
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ECE/307">
+                                        Techniques for Engrg Decisions
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ECE 310
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ECE/310">
+                                        Digital Signal Processing
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ECE 311
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ECE/311">
+                                        Digital Signal Processing Lab
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ECE 313
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ECE/313">
+                                        Probability with Engrg Applic
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ECE 316
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ECE/316">
+                                        Ethics and Engineering
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ECE 317
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ECE/317">
+                                        ECE Technology &amp; Management
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ECE 329
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ECE/329">
+                                        Fields and Waves I
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ECE 330
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ECE/330">
+                                        Power Ckts &amp; Electromechanics
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ECE 333
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ECE/333">
+                                        Green Electric Energy
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ECE 340
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ECE/340">
+                                        Semiconductor Electronics
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ECE 342
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ECE/342">
+                                        Electronic Circuits
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ECE 343
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ECE/343">
+                                        Electronic Circuits Laboratory
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ECE 350
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ECE/350">
+                                        Fields and Waves II
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ECE 361
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ECE/361">
+                                        Digital Communications
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ECE 385
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ECE/385">
+                                        Digital Systems Laboratory
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ECE 391
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ECE/391">
+                                        Computer Systems Engineering
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ECE 395
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ECE/395">
+                                        Advanced Digital Projects Lab
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ECE 396
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ECE/396">
+                                        Honors Project
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ECE 397
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ECE/397">
+                                        Individual Study in ECE
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ECE 398
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ECE/398">
+                                        Special Topics in ECE
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ECE 402
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ECE/402">
+                                        Electronic Music Synthesis
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ECE 403
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ECE/403">
+                                        Audio Engineering
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ECE 411
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ECE/411">
+                                        Computer Organization &amp; Design
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ECE 414
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ECE/414">
+                                        Biomedical Instrumentation
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ECE 415
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ECE/415">
+                                        Biomedical Instrumentation Lab
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ECE 416
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ECE/416">
+                                        Biosensors
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ECE 417
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ECE/417">
+                                        Multimedia Signal Processing
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ECE 418
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ECE/418">
+                                        Image &amp; Video Processing
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ECE 419
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ECE/419">
+                                        Security Laboratory
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ECE 420
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ECE/420">
+                                        Embedded DSP Laboratory
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ECE 422
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ECE/422">
+                                        Computer Security I
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ECE 424
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ECE/424">
+                                        Computer Security II
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ECE 428
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ECE/428">
+                                        Distributed Systems
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ECE 431
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ECE/431">
+                                        Electric Machinery
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ECE 438
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ECE/438">
+                                        Communication Networks
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ECE 441
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ECE/441">
+                                        Physcs &amp; Modeling Semicond Dev
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ECE 444
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ECE/444">
+                                        IC Device Theory &amp; Fabrication
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ECE 445
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ECE/445">
+                                        Senior Design Project Lab
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ECE 447
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ECE/447">
+                                        Active Microwave Ckt Design
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ECE 448
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ECE/448">
+                                        Artificial Intelligence
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ECE 453
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ECE/453">
+                                        Wireless Communication Systems
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ECE 454
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ECE/454">
+                                        Antennas
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ECE 457
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ECE/457">
+                                        Microwave Devices &amp; Circuits
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ECE 458
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ECE/458">
+                                        Applic of Radio Wave Propag
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ECE 467
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ECE/467">
+                                        Biophotonics
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ECE 473
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ECE/473">
+                                        Fund of Engrg Acoustics
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ECE 478
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ECE/478">
+                                        Formal Software Devel Methods
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ECE 481
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ECE/481">
+                                        Nanotechnology
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ECE 483
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ECE/483">
+                                        Analog IC Design
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ECE 486
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ECE/486">
+                                        Control Systems
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ECE 488
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ECE/488">
+                                        Compound Semicond &amp; Devices
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ECE 490
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ECE/490">
+                                        Introduction to Optimization
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ECE 491
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ECE/491">
+                                        Numerical Analysis
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ECE 493
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ECE/493">
+                                        Advanced Engineering Math
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ECE 495
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ECE/495">
+                                        Photonic Device Laboratory
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ECE 496
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ECE/496">
+                                        Senior Research Project
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ECE 498
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ECE/498">
+                                        Special Topics in ECE
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ECE 499
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ECE/499">
+                                        Senior Thesis
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ECE 500
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ECE/500">
+                                        ECE Colloquium
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ECE 515
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ECE/515">
+                                        Control System Theory &amp; Design
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ECE 528
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ECE/528">
+                                        Analysis of Nonlinear Systems
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ECE 534
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ECE/534">
+                                        Random Processes
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ECE 536
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ECE/536">
+                                        Integ Optics &amp; Optoelectronics
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ECE 540
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ECE/540">
+                                        Computational Electromagnetics
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ECE 542
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ECE/542">
+                                        Fault-Tolerant Dig Syst Design
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ECE 548
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ECE/548">
+                                        Models of Cognitive Processes
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ECE 549
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ECE/549">
+                                        Computer Vision
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ECE 552
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ECE/552">
+                                        Numerical Circuit Analysis
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ECE 553
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ECE/553">
+                                        Optimum Control Systems
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ECE 554
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ECE/554">
+                                        Dynamic System Reliability
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ECE 555
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ECE/555">
+                                        Control of Stochastic Systems
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ECE 558
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ECE/558">
+                                        Digital Imaging
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ECE 560
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ECE/560">
+                                        VLSI in DSP &amp; Communication
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ECE 561
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ECE/561">
+                                        Detection &amp; Estimation Theory
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ECE 564
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ECE/564">
+                                        Modern Light Microscopy
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ECE 567
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ECE/567">
+                                        Communication Network Analysis
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ECE 574
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ECE/574">
+                                        Nanophotonics
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ECE 579
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ECE/579">
+                                        Computational Complexity
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ECE 580
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ECE/580">
+                                        Optimiz by Vector Space Methds
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ECE 590
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ECE/590">
+                                        Grad Sem in Special Topics
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ECE 594
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ECE/594">
+                                        Math Models of Language
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ECE 597
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ECE/597">
+                                        Individual Study in ECE
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ECE 598
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ECE/598">
+                                        Special Topics in ECE
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    ECE 599
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/ECE/599">
+                                        Thesis Research
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                        
+                </tbody>
+            </table>
+
+        </div> <!-- end col-sm-9 -->
+
+        <div class="col-sm-3">
+            <div class="panel-group" id="accordionQuick">
+                <div class="panel panel-default" role="navigation" aria-label="Term">
+                    <div class="panel-heading">
+                        <a class="accordion-toggle ql-links" data-toggle="collapse" data-parent="#accordionQuick" 
+                                                             data-ajaxpath="courses-schedule-term-ECE" href="#collapseTerms"
+                                                             aria-expanded="false" aria-controls="collapseTerms">
+                            <span class="right-caret"></span> Term 
+                        </a>
+                    </div>
+                    <div id="collapseTerms" class="accordion-body collapse ql-tog-event" aria-hidden="true">
+                        <div class="panel-body">
+                            <ul class="list-unstyled">
+                            
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default" role="navigation" aria-label="Part of Term">
+                    <div class="panel-heading">
+                        <a class="accordion-toggle ql-links" data-toggle="collapse" data-parent="#accordionQuick" 
+                                                             data-ajaxpath="courses-sessions-2015-spring-ECE" href="#collapseSessions"
+                                                             aria-expanded="false" aria-controls="collapseSessions">
+                            <span class="right-caret"></span> Part of Term
+                        </a>
+                    </div>
+                    <div id="collapseSessions" class="accordion-body collapse ql-tog-event" aria-hidden="true">
+                        <div class="panel-body">
+                            <ul class="list-unstyled">
+                            
+                            </ul>
+                        </div>
+                    </div>
+                </div>         
+                <div class="panel panel-default" role="navigation" aria-label="Resources">
+    <div class="panel-heading">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionQuick" href="#collapseRes" aria-expanded="false" aria-controls="collapseRes">
+            <span class="right-caret"></span> Resources
+        </a>
+    </div>
+    <div id="collapseRes" class="panel-collapse collapse ql-tog-event" aria-hidden="true">
+        <div class="panel-body">
+            <ul class="list-unstyled">
+                <li><a target="_BLANK" href="http://apps.uillinois.edu/selfservice/">Student Self-Service</a></li>
+                <li><a target="_BLANK" href="http://catalog.illinois.edu/">Academic Catalog</a></li>
+                <li><a target="_BLANK" href="http://provost.illinois.edu/programs/advising/ICTTOC.html">Changing Majors</a></li>
+            </ul>
+        </div>    
+    </div>
+</div>
+            </div>
+            <hr/>
+<div role="navigation" aria-label="Registration Resources">
+    <ul class="list-unstyled" >
+        <li>
+            <a href="http://catalog.illinois.edu/" class="btn btn-large app-btn-link">
+                Academic Catalog
+            </a>
+        </li>
+        <li>
+            <a href="http://registrar.illinois.edu/" class="btn btn-large app-btn-link app-margtop15">
+                Office <small>of the</small> Registrar
+            </a>
+        </li>
+    </ul>
+</div>
+
+        </div> <!-- end col-sm-3 -->
+    </div> <!-- end row -->
+
+    
+</div> 
+
+
+    </div> 
+
+    
+    <div id="push"></div>
+
+    </div> 
+
+    
+    <footer id="footer" role="contentinfo">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-1">
+                <a target="_blank" href="http://illinois.edu" class="pull-right">
+                    <img alt="Illinois logo" src="/static/images/footer-imark.gif" />
+                </a>
+            </div>
+            <div class="col-sm-11">
+                <p>
+                    <strong>
+                        <a href="http://registrar.illinois.edu/">OFFICE OF THE REGISTRAR</a>
+                    </strong> | 901 W. Illinois Street, Suite 140, Urbana, Illinois 61801</p>
+                <p>
+                    Site developed by: <strong>
+                        <a target="_blank" href="http://www.cites.illinois.edu/">C I T E S</a>
+                    </strong>  |  
+                    <a target="_blank" href="http://illinois.edu/">UNIVERSITY OF ILLINOIS AT URBANA-CHAMPAIGN</a>
+                </p>
+                <p>1102 Digital Computer Laboratory | MC-256 | Urbana, IL 61801 
+                    | phone <a href="tel:2172447000">217-244-7000</a> 
+                    | email <a href="https://illinois.edu/fb/sec/2080949">Course Explorer Feedback</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="/static/js/application.js"></script>
+
+
+
+
+
+    
+    
+    <noscript>
+        <div id="noscript-warning">Course Explorer works best with JavaScript enabled</div>
+    </noscript>
+</body>
+</html>

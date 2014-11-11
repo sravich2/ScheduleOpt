@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html lang="en">
+    <head>
+        <title>Course Explorer</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="image/x-icon" href="/static/images/favicon.ico" rel="icon">
+        
+    
+        <!-- PROD -->
+<link rel="stylesheet" href="/static/css/cis/cis.min.css">
+
+<!--[if lte IE 9]>
+    <script src="/static/bootstrap/common/html5shiv.min.js"></script>
+    <script src="/static/bootstrap/common/respond.js"></script>
+ <![endif]-->
+
+<script src="/static/js/cis.min.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-52702852-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+
+    
+    
+        
+    
+
+
+
+
+
+    </head>
+    <body>
+        
+        
+        <noscript><div id="noscript-padding"></div></noscript>
+        
+        
+        <div id="wrap">
+            
+            
+            <div role="banner">
+    <div id="header-wrap">
+        <div id="header-container" class="container">
+            <div class="row">
+                <div id="header" class="span12 hidden-xs">
+                    <a id="header-title" href="http://illinois.edu/" target="_blank">University of Illinois at Urbana-Champaign</a>
+                    <ul id="login-info" class="list-unstyled list-inline pull-right">
+                        <li><b>Hello Guest</b></li>
+                        <li><a href="https://illinois.edu/fb/sec/2080949">Contact Us</a></li>
+                        <li>
+                            
+                                <a href="/login">Login</a>
+                            
+                            
+                        </li>
+                    </ul>
+                </div>
+                <div id="header-mobile" class="span12 visible-xs-block">
+                    <a id="header-title" href="http://illinois.edu/" target="_blank">University of Illinois at Urbana-Champaign</a>
+                    <br/>
+                    <ul id="login-info" class="list-unstyled list-inline">
+                        <li><b>Hello Guest</b></li>
+                        <li><a href="https://illinois.edu/fb/sec/2080949">Contact Us</a></li>
+                        <li>
+                            
+                                <a href="/login">Login</a>
+                            
+                             
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>    
+    <div id="header-brand-wrap" class="hidden-xs">
+        <div class="container">
+            <div class="row">
+                <div id="header-brand" class="span12">
+                    <a target="_blank" href="http://illinois.edu">
+                        <img alt="Illinois logo" src="/static/images/siteid-iblock.png" />
+                    </a>
+                    <a id="header-brand-title" class="noxs" href="/">Course Explorer</a>
+                </div>
+            </div>    
+        </div>
+    </div>
+    <div id="header-brand-wrap-xs" class="visible-xs-block">            
+        <div class="container">
+            <div class="row">
+                <div id="header-brand" class="span12">
+                    <a id="header-brand-title-xs" href="/">Course Explorer</a>
+                </div>
+            </div>    
+        </div>
+    </div>
+</div>
+            
+            
+            <div class="container">
+
+                
+                <div id="app-main-nav" class="navbar navbar-default" role="navigation" aria-label="primary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+    </div>
+    
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav nav-justified">
+            
+            
+                
+                
+                    <li><a href="/">Home</a></li>
+                
+            
+                
+            
+                
+                    <li class="navbar-text">Schedule</li>
+                
+                
+            
+                
+            
+                
+                
+                    <li><a href="/gened/DEFAULT/DEFAULT">GenEd&#160;REQs</a></li>
+                
+            
+                
+            
+                
+                
+                    <li><a href="/search/form">Search</a></li>
+                
+            
+                
+            
+                
+                
+                    <li><a href="/resources">Resources</a></li>
+                
+                
+            
+            
+        </ul>
+        
+    </div> 
+</div> 
+
+<div id="app-content" role="main">
+    
+    
+    
+    
+    
+    
+        
+        
+        
+    
+
+    
+    
+    
+        <ol class="breadcrumb app-breadcrumb" role="navigation" aria-label="breadcrumbs">
+            <li><a href="/schedule">schedule</a></li>
+            <li><a href="/schedule/2015">2015</a></li>
+            <li><a href="/schedule/2015/spring">spring</a></li>
+            <li class="active">CHEM</li>
+        </ol>
+    
+    
+
+    <div class="lead app-table-lead">
+        <div class="row">
+            <div class="col-sm-9">
+                <h1 class="app-inline">Chemistry</h1>
+                <div class="app-text-engage pull-right">
+                    <span class="app-cap">spring&#160;2015</span>
+                    <div class="pull-right app-text-focus" style="font-size: 12px;line-height:13px;padding-left:10px;">
+                        <div>&#160;</div>
+                        <div>All Classes</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-sm-9">
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <div class="row">
+                <div class="col-xs-10">
+                    <div id="program-info" aria-label="program information">
+    <address>
+        <ul class="list-unstyled">
+            <li><a href="http://www.chemistry.illinois.edu" target="_blank"/>Chemistry</a></li>
+            <li><span class="text-muted">Head of Department:</span> Greg Girolami</li>
+            <li><span class="text-muted">Department Office:</span> 107 Noyes Laboratory, 505 South Mathews, Urbana</li>
+            <li><span class="text-muted"><abbr title="Phone">P:</abbr></span> 333-5071</li>
+        </ul>
+    </address>
+    
+</div>        
+                </div>
+                <div class="col-xs-2">
+                    
+                        <span class="pull-right" style="font-size:14px;">
+                           <a href="/pdf/schedule/2015/spring/CHEM" class="get-pdf">
+                                PDF <img src="/static/images/pdf.png"/>
+                            </a>
+                        </span>
+                           
+                </div>
+            </div>
+            
+            <table id="default-dt" class="table table-striped table-bordered table-condensed">
+                <thead>
+                    <tr>
+                        <th>COURSE NUMBER</th>
+                        <th>COURSE TITLE</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                        
+                            <tr>
+                                <td>
+                                    CHEM 101
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CHEM/101">
+                                        Introductory Chemistry
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CHEM 102
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CHEM/102">
+                                        General Chemistry I
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CHEM 103
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CHEM/103">
+                                        General Chemistry Lab I
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CHEM 104
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CHEM/104">
+                                        General Chemistry II
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CHEM 105
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CHEM/105">
+                                        General Chemistry Lab II
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CHEM 108
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CHEM/108">
+                                        Chemistry, Everyday Phenomena
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CHEM 197
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CHEM/197">
+                                        Individual Study Freshman
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CHEM 199
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CHEM/199">
+                                        Undergraduate Open Seminar
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CHEM 204
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CHEM/204">
+                                        Accelerated Chemistry II
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CHEM 205
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CHEM/205">
+                                        Accelerated Chemistry Lab II
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CHEM 232
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CHEM/232">
+                                        Elementary Organic Chemistry I
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CHEM 233
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CHEM/233">
+                                        Elementary Organic Chem Lab I
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CHEM 236
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CHEM/236">
+                                        Fundamental Organic Chem I
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CHEM 237
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CHEM/237">
+                                        Structure and Synthesis
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CHEM 293
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CHEM/293">
+                                        Cooperative Education Practice
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CHEM 295
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CHEM/295">
+                                        Chemistry Internship
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CHEM 297
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CHEM/297">
+                                        Individual Study Sophomore
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CHEM 312
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CHEM/312">
+                                        Inorganic Chemistry
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CHEM 315
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CHEM/315">
+                                        Instrumental Chem Systems Lab
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CHEM 332
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CHEM/332">
+                                        Elementary Organic Chem II
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CHEM 360
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CHEM/360">
+                                        Chemistry of the Environment
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CHEM 397
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CHEM/397">
+                                        Individual Study Junior
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CHEM 420
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CHEM/420">
+                                        Instrumental Characterization
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CHEM 436
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CHEM/436">
+                                        Fundamental Organic Chem II
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CHEM 437
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CHEM/437">
+                                        Organic Chemistry Lab
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CHEM 442
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CHEM/442">
+                                        Physical Chemistry I
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CHEM 444
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CHEM/444">
+                                        Physical Chemistry II
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CHEM 445
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CHEM/445">
+                                        Physical Principles Lab I
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CHEM 447
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CHEM/447">
+                                        Physical Principles Lab II
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CHEM 472
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CHEM/472">
+                                        Physical Biochemistry
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CHEM 482
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CHEM/482">
+                                        Polymer Physical Chemistry
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CHEM 483
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CHEM/483">
+                                        Solid State Structural Anlys
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CHEM 494
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CHEM/494">
+                                        Lab Safety Fundamentals
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CHEM 497
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CHEM/497">
+                                        Individual Study Senior
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CHEM 499
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CHEM/499">
+                                        Senior Thesis
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CHEM 515
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CHEM/515">
+                                        Inorganic Chemistry Seminar
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CHEM 516
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CHEM/516">
+                                        Physical Inorganic Chemistry
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CHEM 524
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CHEM/524">
+                                        Electrochemical Methods
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CHEM 525
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CHEM/525">
+                                        Analytical Chemistry Seminar
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CHEM 530
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CHEM/530">
+                                        Structure and Spectroscopy
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CHEM 535
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CHEM/535">
+                                        Organic Chemistry Seminar
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CHEM 536
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CHEM/536">
+                                        Organic Chemistry Research
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CHEM 538
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CHEM/538">
+                                        Topics in Organic Chemistry
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CHEM 542
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CHEM/542">
+                                        Quantum Mech and Spectroscopy
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CHEM 545
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CHEM/545">
+                                        Physical Chemistry Seminar
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CHEM 546
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CHEM/546">
+                                        Advanced Statistical Mechanics
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CHEM 548
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CHEM/548">
+                                        Molecular Electronic Structure
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CHEM 571
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CHEM/571">
+                                        Chemical Biology Laboratory
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CHEM 575
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CHEM/575">
+                                        Chemical Biology Seminar
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CHEM 585
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CHEM/585">
+                                        Materials Chemistry Seminar
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CHEM 588
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CHEM/588">
+                                        Physical Methods Mat Chem
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CHEM 590
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CHEM/590">
+                                        Special Topics in Chemistry
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    CHEM 599
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/CHEM/599">
+                                        Thesis Research
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                        
+                </tbody>
+            </table>
+
+        </div> <!-- end col-sm-9 -->
+
+        <div class="col-sm-3">
+            <div class="panel-group" id="accordionQuick">
+                <div class="panel panel-default" role="navigation" aria-label="Term">
+                    <div class="panel-heading">
+                        <a class="accordion-toggle ql-links" data-toggle="collapse" data-parent="#accordionQuick" 
+                                                             data-ajaxpath="courses-schedule-term-CHEM" href="#collapseTerms"
+                                                             aria-expanded="false" aria-controls="collapseTerms">
+                            <span class="right-caret"></span> Term 
+                        </a>
+                    </div>
+                    <div id="collapseTerms" class="accordion-body collapse ql-tog-event" aria-hidden="true">
+                        <div class="panel-body">
+                            <ul class="list-unstyled">
+                            
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default" role="navigation" aria-label="Part of Term">
+                    <div class="panel-heading">
+                        <a class="accordion-toggle ql-links" data-toggle="collapse" data-parent="#accordionQuick" 
+                                                             data-ajaxpath="courses-sessions-2015-spring-CHEM" href="#collapseSessions"
+                                                             aria-expanded="false" aria-controls="collapseSessions">
+                            <span class="right-caret"></span> Part of Term
+                        </a>
+                    </div>
+                    <div id="collapseSessions" class="accordion-body collapse ql-tog-event" aria-hidden="true">
+                        <div class="panel-body">
+                            <ul class="list-unstyled">
+                            
+                            </ul>
+                        </div>
+                    </div>
+                </div>         
+                <div class="panel panel-default" role="navigation" aria-label="Resources">
+    <div class="panel-heading">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionQuick" href="#collapseRes" aria-expanded="false" aria-controls="collapseRes">
+            <span class="right-caret"></span> Resources
+        </a>
+    </div>
+    <div id="collapseRes" class="panel-collapse collapse ql-tog-event" aria-hidden="true">
+        <div class="panel-body">
+            <ul class="list-unstyled">
+                <li><a target="_BLANK" href="http://apps.uillinois.edu/selfservice/">Student Self-Service</a></li>
+                <li><a target="_BLANK" href="http://catalog.illinois.edu/">Academic Catalog</a></li>
+                <li><a target="_BLANK" href="http://provost.illinois.edu/programs/advising/ICTTOC.html">Changing Majors</a></li>
+            </ul>
+        </div>    
+    </div>
+</div>
+            </div>
+            <hr/>
+<div role="navigation" aria-label="Registration Resources">
+    <ul class="list-unstyled" >
+        <li>
+            <a href="http://catalog.illinois.edu/" class="btn btn-large app-btn-link">
+                Academic Catalog
+            </a>
+        </li>
+        <li>
+            <a href="http://registrar.illinois.edu/" class="btn btn-large app-btn-link app-margtop15">
+                Office <small>of the</small> Registrar
+            </a>
+        </li>
+    </ul>
+</div>
+
+        </div> <!-- end col-sm-3 -->
+    </div> <!-- end row -->
+
+    
+</div> 
+
+
+    </div> 
+
+    
+    <div id="push"></div>
+
+    </div> 
+
+    
+    <footer id="footer" role="contentinfo">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-1">
+                <a target="_blank" href="http://illinois.edu" class="pull-right">
+                    <img alt="Illinois logo" src="/static/images/footer-imark.gif" />
+                </a>
+            </div>
+            <div class="col-sm-11">
+                <p>
+                    <strong>
+                        <a href="http://registrar.illinois.edu/">OFFICE OF THE REGISTRAR</a>
+                    </strong> | 901 W. Illinois Street, Suite 140, Urbana, Illinois 61801</p>
+                <p>
+                    Site developed by: <strong>
+                        <a target="_blank" href="http://www.cites.illinois.edu/">C I T E S</a>
+                    </strong>  |  
+                    <a target="_blank" href="http://illinois.edu/">UNIVERSITY OF ILLINOIS AT URBANA-CHAMPAIGN</a>
+                </p>
+                <p>1102 Digital Computer Laboratory | MC-256 | Urbana, IL 61801 
+                    | phone <a href="tel:2172447000">217-244-7000</a> 
+                    | email <a href="https://illinois.edu/fb/sec/2080949">Course Explorer Feedback</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="/static/js/application.js"></script>
+
+
+
+
+
+    
+    
+    <noscript>
+        <div id="noscript-warning">Course Explorer works best with JavaScript enabled</div>
+    </noscript>
+</body>
+</html>

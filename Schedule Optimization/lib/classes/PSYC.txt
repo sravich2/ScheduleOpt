@@ -1,0 +1,1267 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html lang="en">
+    <head>
+        <title>Course Explorer</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="image/x-icon" href="/static/images/favicon.ico" rel="icon">
+        
+    
+        <!-- PROD -->
+<link rel="stylesheet" href="/static/css/cis/cis.min.css">
+
+<!--[if lte IE 9]>
+    <script src="/static/bootstrap/common/html5shiv.min.js"></script>
+    <script src="/static/bootstrap/common/respond.js"></script>
+ <![endif]-->
+
+<script src="/static/js/cis.min.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-52702852-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+
+    
+    
+        
+    
+
+
+
+
+
+    </head>
+    <body>
+        
+        
+        <noscript><div id="noscript-padding"></div></noscript>
+        
+        
+        <div id="wrap">
+            
+            
+            <div role="banner">
+    <div id="header-wrap">
+        <div id="header-container" class="container">
+            <div class="row">
+                <div id="header" class="span12 hidden-xs">
+                    <a id="header-title" href="http://illinois.edu/" target="_blank">University of Illinois at Urbana-Champaign</a>
+                    <ul id="login-info" class="list-unstyled list-inline pull-right">
+                        <li><b>Hello Guest</b></li>
+                        <li><a href="https://illinois.edu/fb/sec/2080949">Contact Us</a></li>
+                        <li>
+                            
+                                <a href="/login">Login</a>
+                            
+                            
+                        </li>
+                    </ul>
+                </div>
+                <div id="header-mobile" class="span12 visible-xs-block">
+                    <a id="header-title" href="http://illinois.edu/" target="_blank">University of Illinois at Urbana-Champaign</a>
+                    <br/>
+                    <ul id="login-info" class="list-unstyled list-inline">
+                        <li><b>Hello Guest</b></li>
+                        <li><a href="https://illinois.edu/fb/sec/2080949">Contact Us</a></li>
+                        <li>
+                            
+                                <a href="/login">Login</a>
+                            
+                             
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>    
+    <div id="header-brand-wrap" class="hidden-xs">
+        <div class="container">
+            <div class="row">
+                <div id="header-brand" class="span12">
+                    <a target="_blank" href="http://illinois.edu">
+                        <img alt="Illinois logo" src="/static/images/siteid-iblock.png" />
+                    </a>
+                    <a id="header-brand-title" class="noxs" href="/">Course Explorer</a>
+                </div>
+            </div>    
+        </div>
+    </div>
+    <div id="header-brand-wrap-xs" class="visible-xs-block">            
+        <div class="container">
+            <div class="row">
+                <div id="header-brand" class="span12">
+                    <a id="header-brand-title-xs" href="/">Course Explorer</a>
+                </div>
+            </div>    
+        </div>
+    </div>
+</div>
+            
+            
+            <div class="container">
+
+                
+                <div id="app-main-nav" class="navbar navbar-default" role="navigation" aria-label="primary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+    </div>
+    
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav nav-justified">
+            
+            
+                
+                
+                    <li><a href="/">Home</a></li>
+                
+            
+                
+            
+                
+                    <li class="navbar-text">Schedule</li>
+                
+                
+            
+                
+            
+                
+                
+                    <li><a href="/gened/DEFAULT/DEFAULT">GenEd&#160;REQs</a></li>
+                
+            
+                
+            
+                
+                
+                    <li><a href="/search/form">Search</a></li>
+                
+            
+                
+            
+                
+                
+                    <li><a href="/resources">Resources</a></li>
+                
+                
+            
+            
+        </ul>
+        
+    </div> 
+</div> 
+
+<div id="app-content" role="main">
+    
+    
+    
+    
+    
+    
+        
+        
+        
+    
+
+    
+    
+    
+        <ol class="breadcrumb app-breadcrumb" role="navigation" aria-label="breadcrumbs">
+            <li><a href="/schedule">schedule</a></li>
+            <li><a href="/schedule/2015">2015</a></li>
+            <li><a href="/schedule/2015/spring">spring</a></li>
+            <li class="active">PSYC</li>
+        </ol>
+    
+    
+
+    <div class="lead app-table-lead">
+        <div class="row">
+            <div class="col-sm-9">
+                <h1 class="app-inline">Psychology</h1>
+                <div class="app-text-engage pull-right">
+                    <span class="app-cap">spring&#160;2015</span>
+                    <div class="pull-right app-text-focus" style="font-size: 12px;line-height:13px;padding-left:10px;">
+                        <div>&#160;</div>
+                        <div>All Classes</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-sm-9">
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <div class="row">
+                <div class="col-xs-10">
+                    <div id="program-info" aria-label="program information">
+    <address>
+        <ul class="list-unstyled">
+            <li><a href="http://www.psych.illinois.edu" target="_blank"/>Psychology</a></li>
+            <li><span class="text-muted">Head of Department:</span> David Irwin</li>
+            <li><span class="text-muted">Department Office:</span> 315 Psychology Building, 603 East Daniel, Champaign</li>
+            <li><span class="text-muted"><abbr title="Phone">P:</abbr></span> 333-0631</li>
+        </ul>
+    </address>
+    
+</div>        
+                </div>
+                <div class="col-xs-2">
+                    
+                        <span class="pull-right" style="font-size:14px;">
+                           <a href="/pdf/schedule/2015/spring/PSYC" class="get-pdf">
+                                PDF <img src="/static/images/pdf.png"/>
+                            </a>
+                        </span>
+                           
+                </div>
+            </div>
+            
+            <table id="default-dt" class="table table-striped table-bordered table-condensed">
+                <thead>
+                    <tr>
+                        <th>COURSE NUMBER</th>
+                        <th>COURSE TITLE</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                        
+                            <tr>
+                                <td>
+                                    PSYC 100
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PSYC/100">
+                                        Intro Psych
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PSYC 102
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PSYC/102">
+                                        Psych Orientation
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PSYC 105
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PSYC/105">
+                                        Psych Introduction
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PSYC 199
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PSYC/199">
+                                        Undergraduate Open Seminar
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PSYC 201
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PSYC/201">
+                                        Intro to Social Psych
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PSYC 204
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PSYC/204">
+                                        Intro to Brain and Cognition
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PSYC 210
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PSYC/210">
+                                        Behavioral Neuroscience
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PSYC 216
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PSYC/216">
+                                        Child Psych
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PSYC 230
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PSYC/230">
+                                        Perception &amp; Sensory Processes
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PSYC 235
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PSYC/235">
+                                        Intro to Statistics
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PSYC 238
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PSYC/238">
+                                        Abnormal Psych
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PSYC 239
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PSYC/239">
+                                        Community Psych
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PSYC 245
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PSYC/245">
+                                        Industrial Org Psych
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PSYC 250
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PSYC/250">
+                                        Psych of Personality
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PSYC 290
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PSYC/290">
+                                        Research Experience in Psych
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PSYC 301
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PSYC/301">
+                                        Psychological Statistics
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PSYC 311
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PSYC/311">
+                                        Behavioral Neuroscience Lab
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PSYC 318
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PSYC/318">
+                                        Psych of the Infant
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PSYC 322
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PSYC/322">
+                                        Intro Intellectual Disability
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PSYC 324
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PSYC/324">
+                                        Developmental Psychopathology
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PSYC 331
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PSYC/331">
+                                        Cognitive Psych Lab
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PSYC 332
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PSYC/332">
+                                        Social Psych Methods Lab
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PSYC 341
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PSYC/341">
+                                        Advanced Community Projects
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PSYC 353
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PSYC/353">
+                                        Social Cognition
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PSYC 361
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PSYC/361">
+                                        The Psychology of Aging
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PSYC 363
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PSYC/363">
+                                        Developmental Child Psych Lab
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PSYC 379
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PSYC/379">
+                                        Clinical/Abnormal Psych Lab
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PSYC 383
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PSYC/383">
+                                        Adv Prac in Mental Hlth I
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PSYC 385
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PSYC/385">
+                                        Adv Prac in Mental Hlth II
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PSYC 396
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PSYC/396">
+                                        Intermed Curr Topics in Psyc
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PSYC 398
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PSYC/398">
+                                        Junior Honors Seminar
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PSYC 404
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PSYC/404">
+                                        Cognitive Neuroscience
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PSYC 407
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PSYC/407">
+                                        Statistical Methods II
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PSYC 410
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PSYC/410">
+                                        Hate Crimes
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PSYC 413
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PSYC/413">
+                                        Psychopharmacology
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PSYC 414
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PSYC/414">
+                                        Brain, Learning, and Memory
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PSYC 420
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PSYC/420">
+                                        Theories of Psychotherapy
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PSYC 427
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PSYC/427">
+                                        Language and the Brain
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PSYC 432
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PSYC/432">
+                                        Genes and Behavior
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PSYC 443
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PSYC/443">
+                                        Psychophysiology in Ex &amp; Sport
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PSYC 450
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PSYC/450">
+                                        Cognitive Psychophysiology
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PSYC 455
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PSYC/455">
+                                        Organizational Psych
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PSYC 462
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PSYC/462">
+                                        How Children Think
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PSYC 465
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PSYC/465">
+                                        Personality and Soc Dev
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PSYC 491
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PSYC/491">
+                                        Honors Individual Study
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PSYC 492
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PSYC/492">
+                                        Capstone Undergrad Research
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PSYC 493
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PSYC/493">
+                                        Honors Senior Thesis
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PSYC 494
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PSYC/494">
+                                        Advanced Research in Psych
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PSYC 496
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PSYC/496">
+                                        Adv Current Topics in Psych
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PSYC 504
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PSYC/504">
+                                        Theories of Attention
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PSYC 510
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PSYC/510">
+                                        Advances in Psychobiology
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PSYC 515
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PSYC/515">
+                                        Neurotoxicology
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PSYC 524
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PSYC/524">
+                                        Dev Psycholinguistics
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PSYC 532
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PSYC/532">
+                                        Intro to Clin-Comm Psych III
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PSYC 534
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PSYC/534">
+                                        Models of Decision and Choice
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PSYC 541
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PSYC/541">
+                                        Personality and Behav Dynamics
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PSYC 545
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PSYC/545">
+                                        Intro to Clin-Comm Psych IV
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PSYC 546
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PSYC/546">
+                                        Intervention &amp; Assessment
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PSYC 553
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PSYC/553">
+                                        Founds of Organizational Behav
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PSYC 567
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PSYC/567">
+                                        Personality Assessment
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PSYC 570
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PSYC/570">
+                                        Prin and Meth of Tchg Psych
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PSYC 573
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PSYC/573">
+                                        Clin/Comm: History &amp; Systems
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PSYC 574
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PSYC/574">
+                                        Microskills &amp; Prof Standards
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PSYC 575
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PSYC/575">
+                                        Clinical/Community: Diversity
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PSYC 576
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PSYC/576">
+                                        Clinical/Community: Biological
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PSYC 577
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PSYC/577">
+                                        Clinical/Community:Cog/Affect
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PSYC 578
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PSYC/578">
+                                        Clinical/Community:Development
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PSYC 579
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PSYC/579">
+                                        Clinical/Community: Social
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PSYC 581
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PSYC/581">
+                                        Applied Regression Analysis
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PSYC 588
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PSYC/588">
+                                        Covar Struct and Factor Models
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PSYC 589
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PSYC/589">
+                                        Categorical Data in Ed/Psyc
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PSYC 590
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PSYC/590">
+                                        Individual Research
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PSYC 593
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PSYC/593">
+                                        Seminar
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PSYC 594
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PSYC/594">
+                                        Multivar Anlys in Psych and Ed
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PSYC 595
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PSYC/595">
+                                        Theories of Measurement I
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PSYC 596
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PSYC/596">
+                                        Theories of Measurement II
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PSYC 598
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PSYC/598">
+                                        Proseminar in Psychology
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    PSYC 599
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/PSYC/599">
+                                        Thesis Research
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                        
+                </tbody>
+            </table>
+
+        </div> <!-- end col-sm-9 -->
+
+        <div class="col-sm-3">
+            <div class="panel-group" id="accordionQuick">
+                <div class="panel panel-default" role="navigation" aria-label="Term">
+                    <div class="panel-heading">
+                        <a class="accordion-toggle ql-links" data-toggle="collapse" data-parent="#accordionQuick" 
+                                                             data-ajaxpath="courses-schedule-term-PSYC" href="#collapseTerms"
+                                                             aria-expanded="false" aria-controls="collapseTerms">
+                            <span class="right-caret"></span> Term 
+                        </a>
+                    </div>
+                    <div id="collapseTerms" class="accordion-body collapse ql-tog-event" aria-hidden="true">
+                        <div class="panel-body">
+                            <ul class="list-unstyled">
+                            
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default" role="navigation" aria-label="Part of Term">
+                    <div class="panel-heading">
+                        <a class="accordion-toggle ql-links" data-toggle="collapse" data-parent="#accordionQuick" 
+                                                             data-ajaxpath="courses-sessions-2015-spring-PSYC" href="#collapseSessions"
+                                                             aria-expanded="false" aria-controls="collapseSessions">
+                            <span class="right-caret"></span> Part of Term
+                        </a>
+                    </div>
+                    <div id="collapseSessions" class="accordion-body collapse ql-tog-event" aria-hidden="true">
+                        <div class="panel-body">
+                            <ul class="list-unstyled">
+                            
+                            </ul>
+                        </div>
+                    </div>
+                </div>         
+                <div class="panel panel-default" role="navigation" aria-label="Resources">
+    <div class="panel-heading">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionQuick" href="#collapseRes" aria-expanded="false" aria-controls="collapseRes">
+            <span class="right-caret"></span> Resources
+        </a>
+    </div>
+    <div id="collapseRes" class="panel-collapse collapse ql-tog-event" aria-hidden="true">
+        <div class="panel-body">
+            <ul class="list-unstyled">
+                <li><a target="_BLANK" href="http://apps.uillinois.edu/selfservice/">Student Self-Service</a></li>
+                <li><a target="_BLANK" href="http://catalog.illinois.edu/">Academic Catalog</a></li>
+                <li><a target="_BLANK" href="http://provost.illinois.edu/programs/advising/ICTTOC.html">Changing Majors</a></li>
+            </ul>
+        </div>    
+    </div>
+</div>
+            </div>
+            <hr/>
+<div role="navigation" aria-label="Registration Resources">
+    <ul class="list-unstyled" >
+        <li>
+            <a href="http://catalog.illinois.edu/" class="btn btn-large app-btn-link">
+                Academic Catalog
+            </a>
+        </li>
+        <li>
+            <a href="http://registrar.illinois.edu/" class="btn btn-large app-btn-link app-margtop15">
+                Office <small>of the</small> Registrar
+            </a>
+        </li>
+    </ul>
+</div>
+
+        </div> <!-- end col-sm-3 -->
+    </div> <!-- end row -->
+
+    
+</div> 
+
+
+    </div> 
+
+    
+    <div id="push"></div>
+
+    </div> 
+
+    
+    <footer id="footer" role="contentinfo">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-1">
+                <a target="_blank" href="http://illinois.edu" class="pull-right">
+                    <img alt="Illinois logo" src="/static/images/footer-imark.gif" />
+                </a>
+            </div>
+            <div class="col-sm-11">
+                <p>
+                    <strong>
+                        <a href="http://registrar.illinois.edu/">OFFICE OF THE REGISTRAR</a>
+                    </strong> | 901 W. Illinois Street, Suite 140, Urbana, Illinois 61801</p>
+                <p>
+                    Site developed by: <strong>
+                        <a target="_blank" href="http://www.cites.illinois.edu/">C I T E S</a>
+                    </strong>  |  
+                    <a target="_blank" href="http://illinois.edu/">UNIVERSITY OF ILLINOIS AT URBANA-CHAMPAIGN</a>
+                </p>
+                <p>1102 Digital Computer Laboratory | MC-256 | Urbana, IL 61801 
+                    | phone <a href="tel:2172447000">217-244-7000</a> 
+                    | email <a href="https://illinois.edu/fb/sec/2080949">Course Explorer Feedback</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="/static/js/application.js"></script>
+
+
+
+
+
+    
+    
+    <noscript>
+        <div id="noscript-warning">Course Explorer works best with JavaScript enabled</div>
+    </noscript>
+</body>
+</html>

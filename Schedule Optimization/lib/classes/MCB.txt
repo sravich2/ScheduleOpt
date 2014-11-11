@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html lang="en">
+    <head>
+        <title>Course Explorer</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="image/x-icon" href="/static/images/favicon.ico" rel="icon">
+        
+    
+        <!-- PROD -->
+<link rel="stylesheet" href="/static/css/cis/cis.min.css">
+
+<!--[if lte IE 9]>
+    <script src="/static/bootstrap/common/html5shiv.min.js"></script>
+    <script src="/static/bootstrap/common/respond.js"></script>
+ <![endif]-->
+
+<script src="/static/js/cis.min.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-52702852-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+
+    
+    
+        
+    
+
+
+
+
+
+    </head>
+    <body>
+        
+        
+        <noscript><div id="noscript-padding"></div></noscript>
+        
+        
+        <div id="wrap">
+            
+            
+            <div role="banner">
+    <div id="header-wrap">
+        <div id="header-container" class="container">
+            <div class="row">
+                <div id="header" class="span12 hidden-xs">
+                    <a id="header-title" href="http://illinois.edu/" target="_blank">University of Illinois at Urbana-Champaign</a>
+                    <ul id="login-info" class="list-unstyled list-inline pull-right">
+                        <li><b>Hello Guest</b></li>
+                        <li><a href="https://illinois.edu/fb/sec/2080949">Contact Us</a></li>
+                        <li>
+                            
+                                <a href="/login">Login</a>
+                            
+                            
+                        </li>
+                    </ul>
+                </div>
+                <div id="header-mobile" class="span12 visible-xs-block">
+                    <a id="header-title" href="http://illinois.edu/" target="_blank">University of Illinois at Urbana-Champaign</a>
+                    <br/>
+                    <ul id="login-info" class="list-unstyled list-inline">
+                        <li><b>Hello Guest</b></li>
+                        <li><a href="https://illinois.edu/fb/sec/2080949">Contact Us</a></li>
+                        <li>
+                            
+                                <a href="/login">Login</a>
+                            
+                             
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>    
+    <div id="header-brand-wrap" class="hidden-xs">
+        <div class="container">
+            <div class="row">
+                <div id="header-brand" class="span12">
+                    <a target="_blank" href="http://illinois.edu">
+                        <img alt="Illinois logo" src="/static/images/siteid-iblock.png" />
+                    </a>
+                    <a id="header-brand-title" class="noxs" href="/">Course Explorer</a>
+                </div>
+            </div>    
+        </div>
+    </div>
+    <div id="header-brand-wrap-xs" class="visible-xs-block">            
+        <div class="container">
+            <div class="row">
+                <div id="header-brand" class="span12">
+                    <a id="header-brand-title-xs" href="/">Course Explorer</a>
+                </div>
+            </div>    
+        </div>
+    </div>
+</div>
+            
+            
+            <div class="container">
+
+                
+                <div id="app-main-nav" class="navbar navbar-default" role="navigation" aria-label="primary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+    </div>
+    
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav nav-justified">
+            
+            
+                
+                
+                    <li><a href="/">Home</a></li>
+                
+            
+                
+            
+                
+                    <li class="navbar-text">Schedule</li>
+                
+                
+            
+                
+            
+                
+                
+                    <li><a href="/gened/DEFAULT/DEFAULT">GenEd&#160;REQs</a></li>
+                
+            
+                
+            
+                
+                
+                    <li><a href="/search/form">Search</a></li>
+                
+            
+                
+            
+                
+                
+                    <li><a href="/resources">Resources</a></li>
+                
+                
+            
+            
+        </ul>
+        
+    </div> 
+</div> 
+
+<div id="app-content" role="main">
+    
+    
+    
+    
+    
+    
+        
+        
+        
+    
+
+    
+    
+    
+        <ol class="breadcrumb app-breadcrumb" role="navigation" aria-label="breadcrumbs">
+            <li><a href="/schedule">schedule</a></li>
+            <li><a href="/schedule/2015">2015</a></li>
+            <li><a href="/schedule/2015/spring">spring</a></li>
+            <li class="active">MCB</li>
+        </ol>
+    
+    
+
+    <div class="lead app-table-lead">
+        <div class="row">
+            <div class="col-sm-9">
+                <h1 class="app-inline">Molecular and Cell Biology</h1>
+                <div class="app-text-engage pull-right">
+                    <span class="app-cap">spring&#160;2015</span>
+                    <div class="pull-right app-text-focus" style="font-size: 12px;line-height:13px;padding-left:10px;">
+                        <div>&#160;</div>
+                        <div>All Classes</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-sm-9">
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <div class="row">
+                <div class="col-xs-10">
+                    <div id="program-info" aria-label="program information">
+    <address>
+        <ul class="list-unstyled">
+            <li><a href="http://www.mcb.illinois.edu" target="_blank"/>Molecular and Cellular Biology, School of</a></li>
+            <li><span class="text-muted">Director of School:</span> Stephen Sligar</li>
+            <li><span class="text-muted">School Office:</span> 393 Morrill Hall, 505 South Goodwin Avenue, Urbana</li>
+            <li><span class="text-muted"><abbr title="Phone">P:</abbr></span> 217-333-3166</li>
+        </ul>
+    </address>
+      
+        <div>
+            <span class="text-muted">Subjects associated with this department include: Biophysics (BIOP), Molecular and Cellular Biology (MCB), and Neuroscience (NEUR).</span>
+        </div>
+    
+</div>        
+                </div>
+                <div class="col-xs-2">
+                    
+                        <span class="pull-right" style="font-size:14px;">
+                           <a href="/pdf/schedule/2015/spring/MCB" class="get-pdf">
+                                PDF <img src="/static/images/pdf.png"/>
+                            </a>
+                        </span>
+                           
+                </div>
+            </div>
+            
+            <table id="default-dt" class="table table-striped table-bordered table-condensed">
+                <thead>
+                    <tr>
+                        <th>COURSE NUMBER</th>
+                        <th>COURSE TITLE</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                        
+                            <tr>
+                                <td>
+                                    MCB 100
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MCB/100">
+                                        Introductory Microbiology
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MCB 101
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MCB/101">
+                                        Intro Microbiology Laboratory
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MCB 150
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MCB/150">
+                                        Molec &amp; Cellular Basis of Life
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MCB 151
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MCB/151">
+                                        Molec &amp; Cellular Laboratory
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MCB 199
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MCB/199">
+                                        Undergraduate Open Seminar
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MCB 246
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MCB/246">
+                                        Human Anatomy &amp; Physiology II
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MCB 247
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MCB/247">
+                                        Human Anat &amp; Physiol Lab II
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MCB 250
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MCB/250">
+                                        Molecular Genetics
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MCB 251
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MCB/251">
+                                        Exp Techniqs in Molecular Biol
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MCB 252
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MCB/252">
+                                        Cells, Tissues &amp; Development
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MCB 253
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MCB/253">
+                                        Exp Techniqs in Cellular Biol
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MCB 290
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MCB/290">
+                                        Undergraduate Research
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MCB 297
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MCB/297">
+                                        MCB Honors Discussion
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MCB 298
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MCB/298">
+                                        MCB Honors Lab Discussion
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MCB 299
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MCB/299">
+                                        MCB Merit Program Discussion
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MCB 300
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MCB/300">
+                                        Microbiology
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MCB 301
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MCB/301">
+                                        Experimental Microbiology
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MCB 312
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MCB/312">
+                                        Applied Microbiology Methods
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MCB 317
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MCB/317">
+                                        Genetics and Genomics
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MCB 320
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MCB/320">
+                                        Mechanisms of Human Disease
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MCB 354
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MCB/354">
+                                        Biochem &amp; Phys Basis of Life
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MCB 396
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MCB/396">
+                                        Special Topics Brain Physiol
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MCB 402
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MCB/402">
+                                        Sys &amp; Integrative Physiology
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MCB 404
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MCB/404">
+                                        Sys &amp; Integrative Physiol Lab
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MCB 406
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MCB/406">
+                                        Gene Expression
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MCB 408
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MCB/408">
+                                        Immunology
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MCB 410
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MCB/410">
+                                        Developmental Biology
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MCB 419
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MCB/419">
+                                        Brain, Behavior &amp; Info Process
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MCB 429
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MCB/429">
+                                        Cellular Microbiology &amp;Disease
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MCB 432
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MCB/432">
+                                        Computing in Molecular Biology
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MCB 433
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MCB/433">
+                                        Virology &amp; Viral Pathogenesis
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MCB 434
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MCB/434">
+                                        Food &amp; Industrial Microbiology
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MCB 435
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MCB/435">
+                                        Microbial Ecology &amp; Evolution
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MCB 446
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MCB/446">
+                                        Physical Biochemistry
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MCB 450
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MCB/450">
+                                        Introductory Biochemistry
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MCB 462
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MCB/462">
+                                        Integrative Neuroscience
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MCB 492
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MCB/492">
+                                        Senior Thesis
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MCB 493
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MCB/493">
+                                        Special Topics Mol Cell Biol
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MCB 529
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MCB/529">
+                                        Special Topics Cell Devel Biol
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MCB 530
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MCB/530">
+                                        Reproductive Physiol Seminar
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MCB 539
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MCB/539">
+                                        Advanced Cellular Microbiology
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MCB 550
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MCB/550">
+                                        Biomolecular Physics
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MCB 571
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MCB/571">
+                                        Bioinformatics
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MCB 581
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MCB/581">
+                                        Laboratory Rotation I
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MCB 582
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MCB/582">
+                                        Laboratory Rotation II
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MCB 583
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MCB/583">
+                                        Laboratory Rotation III
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    MCB 585
+                                </td>
+                                <td>
+                                    <a href="/schedule/2015/spring/MCB/585">
+                                        Current Topics in Microbiology
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                        
+                </tbody>
+            </table>
+
+        </div> <!-- end col-sm-9 -->
+
+        <div class="col-sm-3">
+            <div class="panel-group" id="accordionQuick">
+                <div class="panel panel-default" role="navigation" aria-label="Term">
+                    <div class="panel-heading">
+                        <a class="accordion-toggle ql-links" data-toggle="collapse" data-parent="#accordionQuick" 
+                                                             data-ajaxpath="courses-schedule-term-MCB" href="#collapseTerms"
+                                                             aria-expanded="false" aria-controls="collapseTerms">
+                            <span class="right-caret"></span> Term 
+                        </a>
+                    </div>
+                    <div id="collapseTerms" class="accordion-body collapse ql-tog-event" aria-hidden="true">
+                        <div class="panel-body">
+                            <ul class="list-unstyled">
+                            
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default" role="navigation" aria-label="Part of Term">
+                    <div class="panel-heading">
+                        <a class="accordion-toggle ql-links" data-toggle="collapse" data-parent="#accordionQuick" 
+                                                             data-ajaxpath="courses-sessions-2015-spring-MCB" href="#collapseSessions"
+                                                             aria-expanded="false" aria-controls="collapseSessions">
+                            <span class="right-caret"></span> Part of Term
+                        </a>
+                    </div>
+                    <div id="collapseSessions" class="accordion-body collapse ql-tog-event" aria-hidden="true">
+                        <div class="panel-body">
+                            <ul class="list-unstyled">
+                            
+                            </ul>
+                        </div>
+                    </div>
+                </div>         
+                <div class="panel panel-default" role="navigation" aria-label="Resources">
+    <div class="panel-heading">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionQuick" href="#collapseRes" aria-expanded="false" aria-controls="collapseRes">
+            <span class="right-caret"></span> Resources
+        </a>
+    </div>
+    <div id="collapseRes" class="panel-collapse collapse ql-tog-event" aria-hidden="true">
+        <div class="panel-body">
+            <ul class="list-unstyled">
+                <li><a target="_BLANK" href="http://apps.uillinois.edu/selfservice/">Student Self-Service</a></li>
+                <li><a target="_BLANK" href="http://catalog.illinois.edu/">Academic Catalog</a></li>
+                <li><a target="_BLANK" href="http://provost.illinois.edu/programs/advising/ICTTOC.html">Changing Majors</a></li>
+            </ul>
+        </div>    
+    </div>
+</div>
+            </div>
+            <hr/>
+<div role="navigation" aria-label="Registration Resources">
+    <ul class="list-unstyled" >
+        <li>
+            <a href="http://catalog.illinois.edu/" class="btn btn-large app-btn-link">
+                Academic Catalog
+            </a>
+        </li>
+        <li>
+            <a href="http://registrar.illinois.edu/" class="btn btn-large app-btn-link app-margtop15">
+                Office <small>of the</small> Registrar
+            </a>
+        </li>
+    </ul>
+</div>
+
+        </div> <!-- end col-sm-3 -->
+    </div> <!-- end row -->
+
+    
+</div> 
+
+
+    </div> 
+
+    
+    <div id="push"></div>
+
+    </div> 
+
+    
+    <footer id="footer" role="contentinfo">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-1">
+                <a target="_blank" href="http://illinois.edu" class="pull-right">
+                    <img alt="Illinois logo" src="/static/images/footer-imark.gif" />
+                </a>
+            </div>
+            <div class="col-sm-11">
+                <p>
+                    <strong>
+                        <a href="http://registrar.illinois.edu/">OFFICE OF THE REGISTRAR</a>
+                    </strong> | 901 W. Illinois Street, Suite 140, Urbana, Illinois 61801</p>
+                <p>
+                    Site developed by: <strong>
+                        <a target="_blank" href="http://www.cites.illinois.edu/">C I T E S</a>
+                    </strong>  |  
+                    <a target="_blank" href="http://illinois.edu/">UNIVERSITY OF ILLINOIS AT URBANA-CHAMPAIGN</a>
+                </p>
+                <p>1102 Digital Computer Laboratory | MC-256 | Urbana, IL 61801 
+                    | phone <a href="tel:2172447000">217-244-7000</a> 
+                    | email <a href="https://illinois.edu/fb/sec/2080949">Course Explorer Feedback</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="/static/js/application.js"></script>
+
+
+
+
+
+    
+    
+    <noscript>
+        <div id="noscript-warning">Course Explorer works best with JavaScript enabled</div>
+    </noscript>
+</body>
+</html>
