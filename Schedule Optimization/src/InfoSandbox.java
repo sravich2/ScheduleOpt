@@ -11,7 +11,9 @@ public class InfoSandbox {
 		String re = "<section id=\"[1-9].*?\" href=\"(.*)\">(.*)<";
 		re = "<section id=\"([1-9].*?)\" href=\"(.*?)\">(.*?)<";
 		
-		//System.out.println(checkDept("MATHs"));
+		System.out.println(check("MATH",241));
+		System.out.println(check("CS", 0));
+		System.out.println(check("ancd",1));
 		String contents = ir.getPageXML(url);
 		String sections = contents.substring(contents.indexOf("<sections>")+10);
 		//ir.getCourseInfo("HIST",241,2014,"fall");
@@ -21,25 +23,28 @@ public class InfoSandbox {
 		System.out.println((System.currentTimeMillis()-currentTime));
 	}
 	//@author tushar
-	public static boolean checkDept(String dept)
+	public static boolean check(String dept, int course)
 	{
+		dept=dept.toUpperCase();
 		boolean check=false;
 		TextIO.readFile("dept.txt");
-		String[] list= new String[200];
-		int i=0;
-		while (!TextIO.eof())
+		
+		while (!TextIO.eof()&& !check)
 		{
-			String line=TextIO.getln();
-			line=line.trim();
-			if (line.equals("<td>"))
-				list[i++]=TextIO.getln().trim();
-			TextIO.getln();
-			TextIO.getln();
+			check=dept.equals(TextIO.getln());
 		}
 		
-		for (int a=0; a<list.length;a++)
-			if (dept.equals(list[a]))
-				check=true;
+		if (check)
+		{
+			check=false;
+			String fileName=new String("lib\\classes\\"+dept+".txt");
+			TextIO.readFile(fileName);
+			while (!TextIO.eof()&& !check)
+			{
+				String temp=new String(dept+" "+course);
+				check=temp.equals(TextIO.getln());
+			}
+		}
 		return check;
 	}
 
