@@ -6,7 +6,6 @@
  */
 public class Course {
 
-	public int CRN;
 	public int creditHours;
 	public int numberOfModules;
 	public Module[][] modulesAvailable;

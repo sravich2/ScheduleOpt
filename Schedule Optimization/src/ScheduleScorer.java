@@ -5,7 +5,7 @@ public class ScheduleScorer
 {
 
 	Worker help = new Worker();
-	Preferences pref = new Preferences(true, 300, 300, 1, 4);
+	Preferences pref = new Preferences(true, 240, 240, 1, 4);
 	
 	public int[] sortedNotableTimes;
 	public StringBuilder log = new StringBuilder();
@@ -18,10 +18,10 @@ public class ScheduleScorer
 	 * @param schedule		Module[][] which represents prospective schedule
 	 * @return				Score for given prospective schedule. Higher is better.
 	 */
-	public int scoreSchedule(Module[][] schedule)
+	public double scoreSchedule(Module[][] schedule)
 	{
 		log.setLength(0);
-		int score = 0;
+		double score = 0;
 		String periodOfDay = "";
 		String days[] = new String[] {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday"};
 		
@@ -44,7 +44,7 @@ public class ScheduleScorer
 				if (!this.checkLunchBreak(schedule[i]))
 				{
 					log.append("No lunch break on " + days[i] + "\n");
-					score -= 10;
+					score -= 15;
 				}
 			}
 		}
@@ -99,7 +99,7 @@ public class ScheduleScorer
 				if (pref.avoidBreaksBetweenClasses > 2 && allBreaks > 0)
 
 				{
-					score -= 2 * allBreaks;
+					score -= 2.5 * allBreaks;
 					log.append(allBreaks + " break(s)" + " on " + days[i] + "\n");
 				}
 			}
@@ -155,8 +155,6 @@ public class ScheduleScorer
 			count += 2;
 		}
 		Arrays.sort(notableTimes);
-		//this.sortedNotableTimes = Arrays.copyOf(notableTimes, notableTimes.length);
-		//System.out.println(Arrays.toString(sortedNotableTimes));
 
 		for (int i = 0; i < notableTimes.length / 2 - 1; i++)
 		{
@@ -286,17 +284,14 @@ public class ScheduleScorer
 		int[] howLateAreYouGoingToBe = new int[10];
 		int count = 0;
 		Module[] scheduleForOneDay2 = help.sortByTimeScheduleForOneDay(scheduleForOneDay);
-		//System.out.println((scheduleForOneDay[1].building));
+
 		for (int i = 0;i<scheduleForOneDay2.length-1;i++)
 		{
 			try{
-			travelInfo = matrix.getTravelTimeAndDistance("http://www.mapquestapi.com/directions/v2/route?key=Fmjtd%7Cluurn9u7ng%2Cbx%3Do5-9wznl0&outFormat=json&routeType=pedestrian&enhancedNarrative=true&locale=en_US&from=1304+w+springfield+avenue+urbana&to=201+n+goodwin+avenue+Urbana");
-			//System.out.println(Arrays.toString(travelInfo));
-			} //catch (IOException e){
-				//System.out.println("You messed up! " + e.getMessage());
-			//}
+				travelInfo = matrix.getTravelTimeAndDistance("http://www.mapquestapi.com/directions/v2/route?key=Fmjtd%7Cluurn9u7ng%2Cbx%3Do5-9wznl0&outFormat=json&routeType=pedestrian&enhancedNarrative=true&locale=en_US&from=1304+w+springfield+avenue+urbana&to=201+n+goodwin+avenue+Urbana");
+			}
 			catch (Exception e){
-				//System.out.println("You messed up! " + e.getMessage());
+				System.out.println(e.getMessage());
 			}
 			
 			if (travelInfo[0] > scheduleForOneDay2[i+1].startTime-scheduleForOneDay2[i].endTime)

@@ -16,8 +16,9 @@ public class InfoSandbox {
 		String sections = contents.substring(contents.indexOf("<sections>")+10);
 		//ir.getCourseInfo("HIST",241,2014,"fall");
 		//ir.getCourseInfo("CS",241,2014,"fall");
-		ir.getCourseInfo("CS",173,2015,"spring");
-
+		long currentTime = System.currentTimeMillis();
+		ir.getCourseInfo("ENG",100,2014,"fall");
+		System.out.println((System.currentTimeMillis()-currentTime));
 	}
 	//@author tushar
 	public static boolean checkDept(String dept)

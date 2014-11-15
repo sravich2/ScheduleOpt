@@ -9,16 +9,13 @@ public class CourseBuilder
 	{
 		while (true)
 		{
-			//Module[] finalClasses = new Module[0];
 			ArrayList<Module> finalClasses = new ArrayList<Module>();
 
 			for (int i = 0; i < coursesTaken.length; i++)
 			{
 				ArrayList<Module> modulesForThisCourse = new ArrayList<Module>();
 				modulesForThisCourse = (help.chooseRandomModules(coursesTaken[i]));
-				//Module[] modulesForThisCourse = help.chooseRandomModules(coursesTaken[i]);
 				finalClasses.addAll(modulesForThisCourse);
-				//finalClasses = help.addModuleArray(modulesForThisCourse, finalClasses);
 			}
 
 			String output = "";

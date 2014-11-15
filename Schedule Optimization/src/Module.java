@@ -13,6 +13,7 @@ public class Module {
 	
 	public Worker help = new Worker();
 	
+	public int CRN;
 	public String moduleName;
 	public String section;
 	public char[] days;

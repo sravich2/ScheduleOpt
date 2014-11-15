@@ -118,12 +118,11 @@ public class Driver
 		MATH241.modulesAvailable[0][0] = new Module("MTWR", "1400", "1450");
 		MATH241.modulesAvailable[0][1] = new Module("MTWR", "1300", "1350");
 
-		//Module[][][] best2DSchedule = new Module[0][0][0];
+		/*
 		ArrayList<Module[]> bestSchedule = new ArrayList<Module[]>();
-		//Module[][] bestSchedule = new Module[20][0];
 		String[] scheduleReadable = new String[500];
 		
-		int bestScore = -999;
+		double bestScore = -999;
 		int numberOfLegalSchedules = 1;
 		int countOfBestSchedule = 0;
 		
@@ -137,7 +136,7 @@ public class Driver
 		
 		long initialTime = System.currentTimeMillis();
 		//while (numberOfLegalSchedules < 438000)
-		while (System.currentTimeMillis() - initialTime < 10000)
+		//while (System.currentTimeMillis() - initialTime < 10000)
 		{
 			countOfExecutions++;
 
@@ -159,7 +158,7 @@ public class Driver
 				}
 				repeat = false;
 			}
-			/*
+			
 			//This code counts the number of legal schedules (without clashes)
 			for (int i = 0;i<numberOfLegalSchedules;i++)
 			{
@@ -175,27 +174,26 @@ public class Driver
 			} 
 			allLegalSchedules.add(scheduleForSemester);
 			//System.out.println(help.toString(allLegalSchedules[numberOfLegalSchedules]));
-			*/
+			
 
 			numberOfLegalSchedules++;
 			Module[][] finalSchedule = help.convertModuleArrayToSchedule(scheduleForSemester);
 
-			int currentScore = (scorer.scoreSchedule(finalSchedule));
+			double currentScore = (scorer.scoreSchedule(finalSchedule));
 			//System.out.println(currentScore);
 			if (currentScore > bestScore)
 			{
-				//bestSchedule = new Module[200][0];
 				bestSchedule.clear();
-				bestLog = new StringBuilder[200];
 				scheduleReadable = new String[200];
+				bestLog = new StringBuilder[200];
 				countOfBestSchedule = 0;
+				
 				bestLog[countOfBestSchedule] = new StringBuilder(scorer.log);
 				bestSchedule.add(help.deepCopyModuleArray(scheduleForSemester));
-				//bestSchedule[countOfBestSchedule] = help.deepCopyModuleArray(scheduleForSemester);
 				scheduleReadable[countOfBestSchedule] = help.toString(finalSchedule);
 				bestScore = currentScore;
+				
 				countOfBestSchedule++;
-				//best2DSchedule[countOfBestSchedule] = finalSchedule;
 			} 
 			else if (currentScore == bestScore)
 			{
@@ -212,7 +210,6 @@ public class Driver
 		System.out.println("Found " + (countOfBestSchedule) + " optimal schedules\n");
 		for (int i = 0; i < countOfBestSchedule; i++)
 		{
-			//System.out.println(help.toString((bestSchedule.get(i))));
 			System.out.println(scheduleReadable[i]);
 			System.out.println(bestLog[i]);
 			System.out.println("--------------------------------------------------------------------------------");
@@ -222,6 +219,103 @@ public class Driver
 		System.out.println("Score: " + bestScore);
 		System.out.println("Number of runs: " + numberOfLegalSchedules);
 		System.out.println("Runtime: "+ ((System.currentTimeMillis() -initialTime)/Double.valueOf(1000)) + " seconds");
+	
+		*/
+		
+		CourseBuilder2 cb2 = new CourseBuilder2();
+		ArrayList<Course> coursesTaken = new ArrayList<Course>();
+		coursesTaken.add(MATH415);
+		coursesTaken.add(MATH461);
+		coursesTaken.add(CS233);
+		coursesTaken.add(CS225);
+		long initialTime = System.currentTimeMillis();
+		ArrayList<Module[]> allSchedules = ((cb2.getAllSchedulesFromCourses(coursesTaken)));
+		System.out.println(System.currentTimeMillis()-initialTime);
+		/*
+		for (int i = 0;i<allSchedules.size();i++)
+		{
+			loop:
+			for (int j = 0;j<allSchedules.get(i).length;j++)
+			{
+				for (int k = j+1;k<allSchedules.get(i).length;k++)
+				{
+					if (j != k && help.checkConflict(allSchedules.get(i)[j], allSchedules.get(i)[k]))
+					{
+						allSchedules.remove(i);
+						i--;
+						break loop;
+					}
+				}
+			}
+		
+		}
+		System.out.println(System.currentTimeMillis()-initialTime);
+		*/
+		
+		ArrayList<Module[]> bestSchedule = new ArrayList<Module[]>();
+		String[] scheduleReadable = new String[500];
+		
+		double bestScore = -999;
+		int countOfBestSchedule = 0;
+		int countOfExecutions = 0;
+		
+		StringBuilder[] bestLog = new StringBuilder[3000];
+		
+
+		
+		while (countOfExecutions<allSchedules.size())
+		{
+			//System.out.println(help.toString(allSchedules.get(countOfExecutions)));
+			Module[] scheduleForSemester = allSchedules.get(countOfExecutions);
+			Module[][] finalSchedule = help.convertModuleArrayToSchedule(scheduleForSemester);
+			//System.out.println(help.toString(finalSchedule));
+			double currentScore = (scorer.scoreSchedule(finalSchedule));
+			
+			if (currentScore > bestScore)
+			{
+				bestSchedule.clear();
+				scheduleReadable = new String[1000];
+				bestLog = new StringBuilder[1000];
+				countOfBestSchedule = 0;
+				
+				bestLog[countOfBestSchedule] = new StringBuilder(scorer.log);
+				bestSchedule.add(help.deepCopyModuleArray(scheduleForSemester));
+				scheduleReadable[countOfBestSchedule] = help.toString(finalSchedule);
+				bestScore = currentScore;
+				
+				countOfBestSchedule++;
+			} 
+			else if (currentScore == bestScore)
+			{
+				{
+					
+					bestLog[countOfBestSchedule] = new StringBuilder(scorer.log);
+					//bestSchedule[countOfBestSchedule] = help.deepCopyModuleArray(scheduleForSemester);
+					bestSchedule.add(help.deepCopyModuleArray(scheduleForSemester));
+					scheduleReadable[countOfBestSchedule] = help.toString(finalSchedule);
+					countOfBestSchedule++;
+				}
+			}
+			countOfExecutions++;
+			
+			
+		}
+		
+		System.out.println("Found " + (countOfBestSchedule) + " optimal schedules\n");
+		for (int i = 0; i < countOfBestSchedule; i++)
+		{
+			System.out.println(scheduleReadable[i]);
+			System.out.println(bestLog[i]);
+			System.out.println("--------------------------------------------------------------------------------");
+			
+		}
+
+		System.out.println("Score: " + bestScore);
+		System.out.println("Number of runs: " + countOfExecutions);
+		System.out.println("Runtime: "+ ((System.currentTimeMillis() -initialTime)/Double.valueOf(1000)) + " seconds");
+	
+		
+		
 		
 	}
 

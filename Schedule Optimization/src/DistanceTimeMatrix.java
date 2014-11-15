@@ -7,7 +7,7 @@ import java.util.Arrays;
 public class DistanceTimeMatrix {
 	
 	
-	public double[] getTravelTimeAndDistance(String urlString) {
+	public static double[] getTravelTimeAndDistance(String urlString) {
 		Worker help = new Worker();
 		double[] values = new double[2];
 		
@@ -23,8 +23,6 @@ public class DistanceTimeMatrix {
 	        line = reader.readLine();
 	        values[0] = Double.valueOf(line.substring(line.indexOf("distance")+10, line.indexOf("distance")+19).split(",")[0]);
 	        values[1] = Double.valueOf(line.substring(line.indexOf("time")+6, line.indexOf("time")+13).split(",")[0]);
-	        System.out.println(values[0]);
-	        System.out.println(values[1]);
 	        
 	        return values;
 	    } catch (IOException e)
@@ -42,6 +40,11 @@ public class DistanceTimeMatrix {
 	            }
 	    }
 	    return null;
+	}
+	public static void main(String[] args)
+	{
+		double[] matrix = getTravelTimeAndDistance("http://www.mapquestapi.com/directions/v2/route?key=Fmjtd%7Cluurn9u7ng%2Cbx%3Do5-9wznl0&outFormat=json&routeType=pedestrian&enhancedNarrative=true&locale=en_US&from=1304+w+springfield+avenue+urbana&to=201+n+goodwin+avenue+Urbana");
+		System.out.println(Arrays.toString(matrix));
 	}
 	
 }
