@@ -87,7 +87,7 @@ public class Driver
 		MATH461.modulesAvailable[0][3] = new Module("TR", "0930", "1050", "Altgeld Hall Urbana");
 		MATH461.modulesAvailable[0][4] = new Module("TR", "1230", "1350", "Altgeld Hall Urbana");
 
-		CS100.modulesAvailable[0][0] = new Module("W", "1600", "1650");
+		CS100.modulesAvailable[0][0] = new Module("W", "1600", "1650", "abc");
 
 		CS125.modulesAvailable[0][0] = new Module("MWF", "1500", "1550");
 		CS125.modulesAvailable[0][1] = new Module("MWF", "1400", "1450");
@@ -224,13 +224,13 @@ public class Driver
 		
 		CourseBuilder2 cb2 = new CourseBuilder2();
 		ArrayList<Course> coursesTaken = new ArrayList<Course>();
-		coursesTaken.add(MATH415);
-		coursesTaken.add(MATH461);
 		coursesTaken.add(CS233);
 		coursesTaken.add(CS225);
+		coursesTaken.add(MATH415);
+		coursesTaken.add(MATH461);
 		long initialTime = System.currentTimeMillis();
 		ArrayList<Module[]> allSchedules = ((cb2.getAllSchedulesFromCourses(coursesTaken)));
-		System.out.println(System.currentTimeMillis()-initialTime);
+		//System.out.println(System.currentTimeMillis()-initialTime);
 		/*
 		for (int i = 0;i<allSchedules.size();i++)
 		{
@@ -265,9 +265,11 @@ public class Driver
 		
 		while (countOfExecutions<allSchedules.size())
 		{
+			
 			//System.out.println(help.toString(allSchedules.get(countOfExecutions)));
 			Module[] scheduleForSemester = allSchedules.get(countOfExecutions);
 			Module[][] finalSchedule = help.convertModuleArrayToSchedule(scheduleForSemester);
+			
 			//System.out.println(help.toString(finalSchedule));
 			double currentScore = (scorer.scoreSchedule(finalSchedule));
 			

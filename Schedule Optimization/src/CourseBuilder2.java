@@ -31,6 +31,7 @@ public class CourseBuilder2
 			for (int i = 0;i<help.realLength(modulesToBeTaken.get(0));i++)
 			{
 				Module[] temp = new Module[] {modulesToBeTaken.get(0)[i]};
+				
 				finalArray.add(temp);	
 			}
 			

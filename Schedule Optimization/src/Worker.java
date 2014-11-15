@@ -154,13 +154,16 @@ public class Worker
 					output.append(this.convertTimeBase10To60(schedule[j][i].startTime) + " - " + this.convertTimeBase10To60(schedule[j][i].endTime) + "      ");
 					foundClass = true;
 				}
+				
 				else
 				{
 					output.append("                 ");
 				}
-				if (!foundClass)
-					break outerloop;
+
+				
 			}
+			if (!foundClass)
+				break outerloop;
 			output.append("\n");
 		}
 		return output.toString();
