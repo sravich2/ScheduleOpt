@@ -5,7 +5,7 @@ public class ScheduleScorer
 {
 
 	Worker help = new Worker();
-	Preferences pref = new Preferences(true, 240, 240, 1, 4);
+	Preferences pref = new Preferences(true, 240, 240, 1, 3, true, 3);
 	
 	public int[] sortedNotableTimes;
 	public StringBuilder log = new StringBuilder();
@@ -25,7 +25,7 @@ public class ScheduleScorer
 		String periodOfDay = "";
 		String days[] = new String[] {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday"};
 		
-		switch (pref.avoidClasses)
+		switch (pref.avoidTime)
 		{
 		case 1: periodOfDay = "morning";
 				break;
@@ -91,12 +91,12 @@ public class ScheduleScorer
 				int shortBreaks = this.countShortAndTotalBreaks(schedule[i])[0];
 				int allBreaks = this.countShortAndTotalBreaks(schedule[i])[1];
 
-				if ((pref.avoidBreaksBetweenClasses == 2 || pref.avoidBreaksBetweenClasses == 4) && shortBreaks > 0)
+				if ((pref.avoidBreaksBetweenClasses == 1 || pref.avoidBreaksBetweenClasses == 3) && shortBreaks > 0)
 				{
 					score -= shortBreaks * 5;
 					log.append(shortBreaks + " short break(s) " + " on " + days[i] + "\n");
 				}
-				if (pref.avoidBreaksBetweenClasses > 2 && allBreaks > 0)
+				if (pref.avoidBreaksBetweenClasses > 1 && allBreaks > 0)
 
 				{
 					score -= 2.5 * allBreaks;
@@ -118,6 +118,37 @@ public class ScheduleScorer
 		}				
 		*/
 		//System.out.println(log);
+		
+		//7. Checking classes near weekend
+		if (pref.extendWeekend)
+		{
+			int mondayClasses = countClassesOnADay(schedule[0]);
+			int fridayClasses = countClassesOnADay(schedule[4]);
+			if (mondayClasses > 0)
+			{
+				score -= mondayClasses * 5;
+				log.append(mondayClasses + " classes on Monday\n");
+			}
+			if (fridayClasses > 0)
+			{
+				score -= fridayClasses * 5;
+				log.append(fridayClasses + " classes on Friday\n");
+			}
+		}
+		
+		
+		//8. Check for day with minimum classes
+		if (pref.dayWithMinimum <= 2)
+		{
+			for (int i = 0; i < 5; i++)
+			{
+				if (countClassesOnADay(schedule[i]) <= pref.dayWithMinimum)
+				{
+					score += 10*(3-pref.dayWithMinimum);
+					log.append(countClassesOnADay(schedule[i]) + " classes on Day " + i + "\n");
+				}
+			}
+		}	
 		return score;
 	}
 
@@ -207,7 +238,7 @@ public class ScheduleScorer
 	{
 		int countOfClassesInUndesirableTime = 0;
 		Module checkAgainstThisModule;
-		switch (pref.avoidClasses)
+		switch (pref.avoidTime)
 		{
 		default:
 			return 0;
@@ -304,6 +335,11 @@ public class ScheduleScorer
 		}
 		howLateAreYouGoingToBe = Arrays.copyOfRange(howLateAreYouGoingToBe, 0, count+1);
 		return howLateAreYouGoingToBe;
+	}
+	
+	public int countClassesOnADay(Module[] scheduleForOneDay)
+	{
+		return scheduleForOneDay.length;
 	}
 
 }

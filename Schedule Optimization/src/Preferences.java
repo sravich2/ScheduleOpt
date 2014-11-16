@@ -9,16 +9,20 @@ public class Preferences
 	public boolean lunchBreak;
 	public int maxMinutesInADay;
 	public int maxMinutesInARow;
-	public int avoidClasses; 			 //0 - No preference, 1 - morning, 2 - afternoon, 3 - evening
+	public int avoidTime; 			 //0 - No preference, 1 - morning, 2 - afternoon, 3 - evening
 	public int avoidBreaksBetweenClasses;//0 - No preference, 1 - Avoid short breaks, 2 - Avoid long breaks, 3 - Avoid all breaks
-
-	public Preferences(boolean lunch, int inDay, int inRow, int avoid, int avoidShortBreaks)
+	public boolean extendWeekend;		 //false - No preference, true - Minimize classes on Friday and Monday 
+	public int dayWithMinimum;
+	
+	public Preferences(boolean lunch, int inDay, int inRow, int avoid, int avoidShortBreaks, boolean weekend, int minClasses)
 	{
 		this.lunchBreak = lunch;
 		this.maxMinutesInADay = inDay;
 		this.maxMinutesInARow = inRow;
-		this.avoidClasses = avoid;
+		this.avoidTime = avoid;
 		this.avoidBreaksBetweenClasses = avoidShortBreaks;
+		this.extendWeekend = weekend;
+		this.dayWithMinimum = minClasses; 
 	}
 
 }
