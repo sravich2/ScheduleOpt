@@ -1,15 +1,14 @@
-import java.io.IOException;
 import java.util.Arrays;
-
+import org.jvnet.inflector.Noun;
 public class ScheduleScorer
 {
-
+	
 	Worker help = new Worker();
 	Preferences pref = new Preferences(true, 240, 240, 1, 3, true, 3);
 	
 	public int[] sortedNotableTimes;
 	public StringBuilder log = new StringBuilder();
-
+	
 	/**
 	 * Scores a given schedule according to arbitrary set of rules, detailed in documentation
 	 * Input taken as Module[][]. See next line. 
@@ -27,19 +26,25 @@ public class ScheduleScorer
 		
 		switch (pref.avoidTime)
 		{
-		case 1: periodOfDay = "morning";
-				break;
-		case 2: periodOfDay = "afternoon";
-				break;
-		case 3: periodOfDay = "evening";
-				break;
-		default: ;
+		case 1:
+			periodOfDay = "morning";
+			break;
+		case 2:
+			periodOfDay = "afternoon";
+			break;
+		case 3:
+			periodOfDay = "evening";
+			break;
+		default:
+			;
 		}
-		
-		//1. Checking for Lunch Break
-		if (pref.lunchBreak)
+		log.append("Schedule Report:\n");
+
+		for (int i = 0;i < 5;i++)
 		{
-			for (int i = 0; i < 5; i++)
+			log.append("\n"+days[i]+"\n");
+			//1. Checking for lunch break
+			if (pref.lunchBreak)
 			{
 				if (!this.checkLunchBreak(schedule[i]))
 				{
@@ -47,46 +52,33 @@ public class ScheduleScorer
 					score -= 15;
 				}
 			}
-		}
-
-		//2. Checking classes at disfavored Time of Day
-		
-		for (int i = 0; i < 5; i++)
-		{
+			
+			//2. Checking for classes at disfavored Time of Day
 			int badClasses = this.classesAtTimeOfDay(schedule[i]);
 			if (badClasses > 0)
 			{
 				score -= badClasses * 7.5;
-				log.append(badClasses + " class(es) in the " + periodOfDay + " on " + days[i] + "\n");
+				log.append(badClasses + ((badClasses == 1) ? " class" : " classes") + " in the " + periodOfDay + " on " + days[i] + "\n");
 			}
-		}
-
-		//3. Calculating Maximum Minutes in a Row
-		for (int i = 0; i < 5; i++)
-		{
+			
+			//3. Calculating Maximum Minutes in a Row
 			int maxMinsInRow = this.maxMinutesInRow(schedule[i]);
 			if (maxMinsInRow > pref.maxMinutesInARow)
 			{
 				score -= (maxMinsInRow - pref.maxMinutesInARow) / 10;
 				log.append(maxMinsInRow + " minutes in a row on " + days[i] + "\n");
 			}
-		}
-
-		//4. Calculating Minutes in class each day
-		for (int i = 0; i < 5; i++)
-		{
+			
+			//4. Calculating Minutes in class each day
 			int maxMinsInDay = this.minutesInDay(schedule[i]);
 			if (maxMinsInDay > pref.maxMinutesInADay)
 			{
 				score -= (maxMinsInDay - pref.maxMinutesInADay) / 10;
 				log.append(maxMinsInDay + " minutes on " + days[i] + "\n");
 			}
-		}
-
-		//5. Checking existence of Breaks as per user preference
-		if (pref.avoidBreaksBetweenClasses > 0)
-		{
-			for (int i = 0; i < 5; i++)
+			
+			//5. Checking existence of Breaks as per user preference
+			if (pref.avoidBreaksBetweenClasses > 0)
 			{
 				int shortBreaks = this.countShortAndTotalBreaks(schedule[i])[0];
 				int allBreaks = this.countShortAndTotalBreaks(schedule[i])[1];
@@ -94,32 +86,40 @@ public class ScheduleScorer
 				if ((pref.avoidBreaksBetweenClasses == 1 || pref.avoidBreaksBetweenClasses == 3) && shortBreaks > 0)
 				{
 					score -= shortBreaks * 5;
-					log.append(shortBreaks + " short break(s) " + " on " + days[i] + "\n");
+					log.append(shortBreaks + " short " + ((shortBreaks == 1) ? "break ": "breaks") + " on " + days[i] + "\n");
 				}
 				if (pref.avoidBreaksBetweenClasses > 1 && allBreaks > 0)
 
 				{
 					score -= 2.5 * allBreaks;
-					log.append(allBreaks + " break(s)" + " on " + days[i] + "\n");
+					log.append(allBreaks + ((allBreaks==1) ? " break" : " breaks") + " on " + days[i] + "\n");
 				}
 			}
-		}
-		/*
-		//6. Checking for unwalkable classes
-				
-		for (int i = 0; i < 5; i++)
-		{
+			
+			/*
+			//6. Checking for unwalkable classes
 			int unwalkableClasses = this.countUnwalkableClasses(schedule[i]).length;
 			if ((unwalkableClasses>0))
 			{
 				score -= 50;
 				log.append(unwalkableClasses+ " unwalkable classes " + " on " + days[i] + "\n");
 			}
-		}				
-		*/
-		//System.out.println(log);
+			*/
+			
+			//7. Check for day with minimum classes
+			if (pref.dayWithMinimum <= 2)
+			{
+
+				if (countClassesOnADay(schedule[i]) <= pref.dayWithMinimum)
+				{
+					score += 10 * (3 - pref.dayWithMinimum);
+					log.append(countClassesOnADay(schedule[i]) + " classes on " + days[i] + "\n");
+				}
+
+			}	
+		}
 		
-		//7. Checking classes near weekend
+		//8. Checking classes near weekend
 		if (pref.extendWeekend)
 		{
 			int mondayClasses = countClassesOnADay(schedule[0]);
@@ -136,20 +136,8 @@ public class ScheduleScorer
 			}
 		}
 		
-		
-		//8. Check for day with minimum classes
-		if (pref.dayWithMinimum <= 2)
-		{
-			for (int i = 0; i < 5; i++)
-			{
-				if (countClassesOnADay(schedule[i]) <= pref.dayWithMinimum)
-				{
-					score += 10*(3-pref.dayWithMinimum);
-					log.append(countClassesOnADay(schedule[i]) + " classes on Day " + i + "\n");
-				}
-			}
-		}	
 		return score;
+		
 	}
 
 	/**
@@ -270,7 +258,7 @@ public class ScheduleScorer
 	 * All breaks:  More than 20 minutes
 	 * 
 	 * @param scheduleForOneDay		Module[] containing all classes on a single day
-	 * @return						int[][] containing count of short breaks and total breaks, in that order
+	 * @return						int[] containing count of short breaks and total breaks, in that order
 	 */
 	public int[] countShortAndTotalBreaks(Module[] scheduleForOneDay)
 	{
@@ -308,7 +296,7 @@ public class ScheduleScorer
 		return countBreaks;
 	}
 	
-	public int[] countUnwalkableClasses(Module[] scheduleForOneDay) //Re-Implement once you have travel time data
+	public int[] countUnwalkableClasses(Module[] scheduleForOneDay) //Optimise this method
 	{
 		DistanceTimeMatrix matrix = new DistanceTimeMatrix();
 		double[] travelInfo = new double[2];

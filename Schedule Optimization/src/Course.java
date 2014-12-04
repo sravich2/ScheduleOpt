@@ -10,6 +10,7 @@ public class Course {
 	public int numberOfModules;
 	public Module[][] modulesAvailable;
 	public String courseName;
+	public String[] dates;
 	
 	public Course(int numberOfModules)
 	{

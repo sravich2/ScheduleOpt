@@ -23,7 +23,7 @@ public class CourseBuilder2
 	
 	public ArrayList<Module[]> getAllSchedules(ArrayList<Module[]> modulesToBeTaken)
 	{
-		ArrayList<Module[]> finalArray = new ArrayList<Module[]>(); 
+		ArrayList<Module[]> finalArray = new ArrayList<Module[]>(modulesToBeTaken.size()); 
 		
 		//Base Case
 		if (modulesToBeTaken.size() == 1)
@@ -40,7 +40,6 @@ public class CourseBuilder2
 		
 		else
 		{
-			
 			ArrayList<Module[]> comboOfRemaining = new ArrayList<Module[]>();
 			ArrayList<Module[]> copyOfModulesTaken = new ArrayList(modulesToBeTaken);
 			copyOfModulesTaken.remove(0);
