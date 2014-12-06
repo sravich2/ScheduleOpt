@@ -1,0 +1,898 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spring2015>
+    <dept id="AAS" name="Asian American Studies">
+        <course id="100" name="Intro Asian American Studies">
+            <creditHours>3 hours</creditHours>
+            <section id="30107" sectionNumber="AD1" status="Open">
+                <creditHours>3 hours</creditHours>
+                <meeting type="Discussion/Recitation">
+                    <daysOfTheWeek>W</daysOfTheWeek>
+                    <dateRange>2015-01-20-06:00 - 2015-05-06-05:00</dateRange>
+                    <timeRange>01:00 PM - 01:50 PM</timeRange>
+                    <instructor>Cacho, L</instructor>
+                    <building>David Kinley Hall</building>
+                </meeting>
+            </section>
+            <section id="41729" sectionNumber="AD2" status="Open">
+                <creditHours>3 hours</creditHours>
+                <meeting type="Discussion/Recitation">
+                    <daysOfTheWeek>W</daysOfTheWeek>
+                    <dateRange>2015-01-20-06:00 - 2015-05-06-05:00</dateRange>
+                    <timeRange>02:00 PM - 02:50 PM</timeRange>
+                    <instructor>Cacho, L</instructor>
+                    <building>David Kinley Hall</building>
+                </meeting>
+            </section>
+            <section id="43832" sectionNumber="AD3" status="Open">
+                <creditHours>3 hours</creditHours>
+                <meeting type="Discussion/Recitation">
+                    <daysOfTheWeek>R</daysOfTheWeek>
+                    <dateRange>2015-01-20-06:00 - 2015-05-06-05:00</dateRange>
+                    <timeRange>10:00 AM - 10:50 AM</timeRange>
+                    <instructor>Cacho, L</instructor>
+                    <building>Armory</building>
+                </meeting>
+            </section>
+            <section id="48232" sectionNumber="AD4" status="Open">
+                <creditHours>3 hours</creditHours>
+                <meeting type="Discussion/Recitation">
+                    <daysOfTheWeek>R</daysOfTheWeek>
+                    <dateRange>2015-01-20-06:00 - 2015-05-06-05:00</dateRange>
+                    <timeRange>11:00 AM - 11:50 AM</timeRange>
+                    <instructor>Cacho, L</instructor>
+                    <building>Armory</building>
+                </meeting>
+            </section>
+            <section id="48234" sectionNumber="AD5" status="Open">
+                <creditHours>3 hours</creditHours>
+                <meeting type="Discussion/Recitation">
+                    <daysOfTheWeek>R</daysOfTheWeek>
+                    <dateRange>2015-01-20-06:00 - 2015-05-06-05:00</dateRange>
+                    <timeRange>01:00 PM - 01:50 PM</timeRange>
+                    <instructor>Cacho, L</instructor>
+                    <building>David Kinley Hall</building>
+                </meeting>
+            </section>
+            <section id="50105" sectionNumber="AD6" status="Open">
+                <creditHours>3 hours</creditHours>
+                <meeting type="Discussion/Recitation">
+                    <daysOfTheWeek>R</daysOfTheWeek>
+                    <dateRange>2015-01-20-06:00 - 2015-05-06-05:00</dateRange>
+                    <timeRange>02:00 PM - 02:50 PM</timeRange>
+                    <instructor>Cacho, L</instructor>
+                    <building>David Kinley Hall</building>
+                </meeting>
+            </section>
+            <section id="30106" sectionNumber="AL1" status="Open">
+                <creditHours>3 hours</creditHours>
+                <meeting type="Lecture">
+                    <daysOfTheWeek>MW</daysOfTheWeek>
+                    <dateRange>2015-01-20-06:00 - 2015-05-06-05:00</dateRange>
+                    <timeRange>10:00 AM - 10:50 AM</timeRange>
+                    <instructor>Cacho, L</instructor>
+                    <building>Temple Hoyne Buell Hall</building>
+                </meeting>
+            </section>
+        </course>
+        <course id="120" name="Intro to Asian Am Pop Culture">
+            <creditHours>3 hours</creditHours>
+            <section id="59194" sectionNumber="B" status="Closed">
+                <creditHours>3 hours</creditHours>
+                <meeting type="Lecture-Discussion">
+                    <daysOfTheWeek>TR</daysOfTheWeek>
+                    <dateRange>2015-01-20-06:00 - 2015-05-06-05:00</dateRange>
+                    <timeRange>12:30 PM - 01:50 PM</timeRange>
+                    <instructor>Esguerra, M</instructor>
+                    <building>David Kinley Hall</building>
+                </meeting>
+            </section>
+        </course>
+        <course id="215" name="US Citizenship Comparatively">
+            <creditHours>3 hours</creditHours>
+            <section id="52317" sectionNumber="A" status="Closed">
+                <creditHours>3 hours</creditHours>
+                <meeting type="Lecture-Discussion">
+                    <daysOfTheWeek>TR</daysOfTheWeek>
+                    <dateRange>2015-01-20-06:00 - 2015-05-06-05:00</dateRange>
+                    <timeRange>02:00 PM - 03:20 PM</timeRange>
+                    <instructor>Bui, L</instructor>
+                    <building>Huff Hall</building>
+                </meeting>
+            </section>
+        </course>
+        <course id="250" name="Asian American Ethnic Groups">
+            <creditHours>3 hours</creditHours>
+            <section id="62340" sectionNumber="CA" status="Open">
+                <creditHours>3 hours</creditHours>
+                <meeting type="Lecture-Discussion">
+                    <daysOfTheWeek>TR</daysOfTheWeek>
+                    <dateRange>2015-01-20-06:00 - 2015-05-06-05:00</dateRange>
+                    <timeRange>11:00 AM - 12:20 PM</timeRange>
+                    <instructor>Arnaldo, C</instructor>
+                    <building>Huff Hall</building>
+                </meeting>
+            </section>
+        </course>
+        <course id="265" name="Politics of Hip Hop">
+            <creditHours>3 hours</creditHours>
+            <section id="60383" sectionNumber="A" status="CrossListOpen">
+                <creditHours>3 hours</creditHours>
+                <meeting type="Lecture-Discussion">
+                    <daysOfTheWeek>MW</daysOfTheWeek>
+                    <dateRange>2015-01-20-06:00 - 2015-05-06-05:00</dateRange>
+                    <timeRange>11:00 AM - 12:20 PM</timeRange>
+                    <instructor>Coyoca, W</instructor>
+                    <building>David Kinley Hall</building>
+                </meeting>
+            </section>
+        </course>
+        <course id="281" name="Constructing Race in America">
+            <creditHours>3 hours</creditHours>
+            <section id="54523" sectionNumber="AD1" status="CrossListOpen">
+                <creditHours>3 hours</creditHours>
+                <meeting type="Discussion/Recitation">
+                    <daysOfTheWeek>T</daysOfTheWeek>
+                    <dateRange>2015-01-20-06:00 - 2015-05-06-05:00</dateRange>
+                    <timeRange>10:00 AM - 10:50 AM</timeRange>
+                    <instructor>Marquez, J</instructor>
+                    <building>Gregory Hall</building>
+                </meeting>
+            </section>
+            <section id="54539" sectionNumber="AD5" status="CrossListOpen">
+                <creditHours>3 hours</creditHours>
+                <meeting type="Discussion/Recitation">
+                    <daysOfTheWeek>W</daysOfTheWeek>
+                    <dateRange>2015-01-20-06:00 - 2015-05-06-05:00</dateRange>
+                    <timeRange>09:00 AM - 09:50 AM</timeRange>
+                    <instructor>Marquez, J</instructor>
+                    <building>Gregory Hall</building>
+                </meeting>
+            </section>
+            <section id="54543" sectionNumber="AD6" status="CrossListOpen">
+                <creditHours>3 hours</creditHours>
+                <meeting type="Discussion/Recitation">
+                    <daysOfTheWeek>R</daysOfTheWeek>
+                    <dateRange>2015-01-20-06:00 - 2015-05-06-05:00</dateRange>
+                    <timeRange>10:00 AM - 10:50 AM</timeRange>
+                    <instructor>Marquez, J</instructor>
+                    <building>Gregory Hall</building>
+                </meeting>
+            </section>
+            <section id="54519" sectionNumber="AL1" status="CrossListOpen">
+                <creditHours>3 hours</creditHours>
+                <meeting type="Lecture">
+                    <daysOfTheWeek>MW</daysOfTheWeek>
+                    <dateRange>2015-01-20-06:00 - 2015-05-06-05:00</dateRange>
+                    <timeRange>10:00 AM - 10:50 AM</timeRange>
+                    <instructor>Mumford, K</instructor>
+                    <building>Bevier Hall</building>
+                </meeting>
+            </section>
+        </course>
+        <course id="283" name="Asian American History">
+            <creditHours>3 hours</creditHours>
+            <section id="34129" sectionNumber="A" status="CrossListOpen">
+                <creditHours>3 hours</creditHours>
+                <meeting type="Lecture-Discussion">
+                    <daysOfTheWeek>TR</daysOfTheWeek>
+                    <dateRange>2015-01-20-06:00 - 2015-03-13-05:00</dateRange>
+                    <timeRange>12:30 PM - 03:20 PM</timeRange>
+                    <instructor>Shinozuka, J</instructor>
+                    <building>Armory</building>
+                </meeting>
+            </section>
+        </course>
+        <course id="286" name="Asian American Literature">
+            <creditHours>3 hours</creditHours>
+            <section id="32112" sectionNumber="M" status="CrossListOpen">
+                <creditHours>3 hours</creditHours>
+                <meeting type="Lecture-Discussion">
+                    <daysOfTheWeek>TR</daysOfTheWeek>
+                    <dateRange>2015-01-20-06:00 - 2015-05-06-05:00</dateRange>
+                    <timeRange>09:30 AM - 10:45 AM</timeRange>
+                    <instructor>Lee, J</instructor>
+                    <building>English Building</building>
+                </meeting>
+            </section>
+        </course>
+        <course id="297" name="Asian Families in America">
+            <creditHours>3 hours</creditHours>
+            <section id="62166" sectionNumber="A" status="Closed">
+                <creditHours>3 hours</creditHours>
+                <meeting type="Lecture-Discussion">
+                    <daysOfTheWeek>MW</daysOfTheWeek>
+                    <dateRange>2015-01-20-06:00 - 2015-05-06-05:00</dateRange>
+                    <timeRange>03:30 PM - 04:45 PM</timeRange>
+                    <instructor>Balgopal, A</instructor>
+                    <building>1010 W Nevada</building>
+                </meeting>
+            </section>
+        </course>
+        <course id="299" name="Begin Topics Asian Am Studies">
+            <creditHours>3 hours</creditHours>
+            <section id="48574" sectionNumber="LCA" status="CrossListOpen">
+                <creditHours>3 hours</creditHours>
+                <meeting type="Lecture-Discussion">
+                    <daysOfTheWeek>MW</daysOfTheWeek>
+                    <dateRange>2015-03-16-05:00 - 2015-05-06-05:00</dateRange>
+                    <timeRange>12:00 PM - 02:20 PM</timeRange>
+                    <instructor>Cacho, L</instructor>
+                    <building>David Kinley Hall</building>
+                </meeting>
+            </section>
+            <section id="51340" sectionNumber="WC" status="CrossListOpen">
+                <creditHours>3 hours</creditHours>
+                <meeting type="Lecture-Discussion">
+                    <daysOfTheWeek>MW</daysOfTheWeek>
+                    <dateRange>2015-01-20-06:00 - 2015-05-06-05:00</dateRange>
+                    <timeRange>02:00 PM - 03:20 PM</timeRange>
+                    <instructor>Coyoca, W</instructor>
+                    <building>Foreign Languages Building</building>
+                </meeting>
+            </section>
+        </course>
+        <course id="310" name="Race and Cultural Diversity">
+            <creditHours>4 hours</creditHours>
+            <section id="33069" sectionNumber="A" status="Closed">
+                <creditHours>4 hours</creditHours>
+                <meeting type="Discussion/Recitation">
+                    <daysOfTheWeek>R</daysOfTheWeek>
+                    <dateRange>2015-01-20-06:00 - 2015-05-06-05:00</dateRange>
+                    <timeRange>02:00 PM - 03:50 PM</timeRange>
+                    <instructor>Ward, R</instructor>
+                    <building>Education Building</building>
+                </meeting>
+                <meeting type="Lecture">
+                    <daysOfTheWeek>T</daysOfTheWeek>
+                    <dateRange>2015-01-20-06:00 - 2015-05-06-05:00</dateRange>
+                    <timeRange>02:00 PM - 03:50 PM</timeRange>
+                    <instructor>Anderson, J</instructor>
+                    <building>Education Building</building>
+                </meeting>
+            </section>
+            <section id="33071" sectionNumber="B" status="Closed">
+                <creditHours>4 hours</creditHours>
+                <meeting type="Discussion/Recitation">
+                    <daysOfTheWeek>R</daysOfTheWeek>
+                    <dateRange>2015-01-20-06:00 - 2015-05-06-05:00</dateRange>
+                    <timeRange>02:00 PM - 03:50 PM</timeRange>
+                    <instructor/>
+                    <building>Education Building</building>
+                </meeting>
+                <meeting type="Lecture">
+                    <daysOfTheWeek>T</daysOfTheWeek>
+                    <dateRange>2015-01-20-06:00 - 2015-05-06-05:00</dateRange>
+                    <timeRange>02:00 PM - 03:50 PM</timeRange>
+                    <instructor>Anderson, J</instructor>
+                    <building>Education Building</building>
+                </meeting>
+            </section>
+        </course>
+        <course id="317" name="Asian American Politics">
+            <creditHours>3 hours</creditHours>
+            <section id="48109" sectionNumber="A" status="CrossListOpen">
+                <creditHours>3 hours</creditHours>
+                <meeting type="Lecture-Discussion">
+                    <daysOfTheWeek>TR</daysOfTheWeek>
+                    <dateRange>2015-01-20-06:00 - 2015-05-06-05:00</dateRange>
+                    <timeRange>11:00 AM - 12:20 PM</timeRange>
+                    <instructor>Cho, W</instructor>
+                    <building>David Kinley Hall</building>
+                </meeting>
+            </section>
+        </course>
+        <course id="365" name="Asian American Media and Film">
+            <creditHours>3 hours</creditHours>
+            <section id="46462" sectionNumber="A" status="CrossListOpen">
+                <creditHours>3 hours</creditHours>
+                <meeting type="Lecture-Discussion">
+                    <daysOfTheWeek>R</daysOfTheWeek>
+                    <dateRange>2015-01-20-06:00 - 2015-05-06-05:00</dateRange>
+                    <timeRange>03:30 PM - 04:20 PM</timeRange>
+                    <instructor>Cagle, R</instructor>
+                    <building>Lincoln Hall</building>
+                </meeting>
+                <meeting type="Lecture-Discussion">
+                    <daysOfTheWeek>T</daysOfTheWeek>
+                    <dateRange>2015-01-20-06:00 - 2015-05-06-05:00</dateRange>
+                    <timeRange>03:30 PM - 05:30 PM</timeRange>
+                    <instructor>Cagle, R</instructor>
+                    <building>Lincoln Hall</building>
+                </meeting>
+            </section>
+        </course>
+        <course id="390" name="Intermed Topics Asian Am St">
+            <creditHours>3 hours</creditHours>
+            <section id="51232" sectionNumber="NP" status="CrossListOpen">
+                <creditHours>3 hours</creditHours>
+                <meeting type="Lecture-Discussion">
+                    <daysOfTheWeek>TR</daysOfTheWeek>
+                    <dateRange>2015-01-20-06:00 - 2015-05-06-05:00</dateRange>
+                    <timeRange>12:30 PM - 01:50 PM</timeRange>
+                    <instructor>Paik, A</instructor>
+                    <building>Foreign Languages Building</building>
+                </meeting>
+            </section>
+        </course>
+        <course id="501" name="Theory and Methods in AAS">
+            <creditHours>4 hours</creditHours>
+            <section id="62099" sectionNumber="A" status="Open">
+                <creditHours>4 hours</creditHours>
+                <meeting type="Lecture-Discussion">
+                    <daysOfTheWeek>T</daysOfTheWeek>
+                    <dateRange>2015-01-20-06:00 - 2015-05-06-05:00</dateRange>
+                    <timeRange>03:00 PM - 05:40 PM</timeRange>
+                    <instructor>Paik, A</instructor>
+                    <building>English Building</building>
+                </meeting>
+            </section>
+        </course>
+        <course id="539" name="Youth, Culture and Society">
+            <creditHours>4 hours</creditHours>
+            <section id="52111" sectionNumber="A" status="Closed">
+                <creditHours>4 hours</creditHours>
+                <meeting type="Lecture-Discussion">
+                    <daysOfTheWeek>M</daysOfTheWeek>
+                    <dateRange>2015-01-20-06:00 - 2015-05-06-05:00</dateRange>
+                    <timeRange>02:00 PM - 04:50 PM</timeRange>
+                    <instructor>Kwon, S</instructor>
+                    <building>Bevier Hall</building>
+                </meeting>
+            </section>
+        </course>
+        <course id="561" name="Race and Cultural Critique">
+            <creditHours>4 hours</creditHours>
+            <section id="52839" sectionNumber="A" status="Closed">
+                <creditHours>4 hours</creditHours>
+                <meeting type="Lecture-Discussion">
+                    <daysOfTheWeek>W</daysOfTheWeek>
+                    <dateRange>2015-01-20-06:00 - 2015-05-06-05:00</dateRange>
+                    <timeRange>02:00 PM - 04:50 PM</timeRange>
+                    <instructor>Rana, J</instructor>
+                    <building>Foreign Languages Building</building>
+                </meeting>
+            </section>
+        </course>
+    </dept>
+    <dept id="ABE" name="Agricultural and Biological Engineering">
+        <course id="141" name="ABE Principles: Biological">
+            <creditHours>2 hours</creditHours>
+            <section id="54768" sectionNumber="MGD" status="Open">
+                <creditHours>2 hours</creditHours>
+                <meeting type="Lecture-Discussion">
+                    <daysOfTheWeek>F</daysOfTheWeek>
+                    <dateRange>2015-01-20-06:00 - 2015-05-06-05:00</dateRange>
+                    <timeRange>10:00 AM - 10:50 AM</timeRange>
+                    <instructor>Bhalerao, K</instructor>
+                    <building>Agricultural Engr Sciences Bld</building>
+                </meeting>
+                <meeting type="Lecture">
+                    <daysOfTheWeek>MW</daysOfTheWeek>
+                    <dateRange>2015-01-20-06:00 - 2015-05-06-05:00</dateRange>
+                    <timeRange>10:00 AM - 10:50 AM</timeRange>
+                    <instructor>Bhalerao, K</instructor>
+                    <building>Agricultural Engr Sciences Bld</building>
+                </meeting>
+            </section>
+        </course>
+        <course id="199" name="Undergraduate Open Seminar">
+            <creditHours>1 TO 5 hours</creditHours>
+            <section id="10141" sectionNumber="" status="Open (Restricted)">
+                <creditHours>1 TO 5 hours</creditHours>
+                <meeting type="Independent Study">
+                    <daysOfTheWeek/>
+                    <dateRange>2015-01-20-06:00 - 2015-05-06-05:00</dateRange>
+                    <timeRange/>
+                    <instructor/>
+                    <building/>
+                </meeting>
+            </section>
+        </course>
+        <course id="225" name="ABE Principles: Bioenvironment">
+            <creditHours>2 hours</creditHours>
+            <section id="57090" sectionNumber="AB1" status="Open (Restricted)">
+                <creditHours>2 hours</creditHours>
+                <meeting type="Laboratory">
+                    <daysOfTheWeek>F</daysOfTheWeek>
+                    <dateRange>2015-01-20-06:00 - 2015-03-13-05:00</dateRange>
+                    <timeRange>08:00 AM - 09:50 AM</timeRange>
+                    <instructor>Zhang, Y</instructor>
+                    <building>Agricultural Engr Sciences Bld</building>
+                </meeting>
+            </section>
+            <section id="57091" sectionNumber="AB2" status="Open (Restricted)">
+                <creditHours>2 hours</creditHours>
+                <meeting type="Laboratory">
+                    <daysOfTheWeek>F</daysOfTheWeek>
+                    <dateRange>2015-01-20-06:00 - 2015-03-13-05:00</dateRange>
+                    <timeRange>10:00 AM - 11:50 AM</timeRange>
+                    <instructor>Zhang, Y</instructor>
+                    <building>Agricultural Engr Sciences Bld</building>
+                </meeting>
+            </section>
+            <section id="57089" sectionNumber="AE1" status="Open (Restricted)">
+                <creditHours>2 hours</creditHours>
+                <meeting type="Lecture-Discussion">
+                    <daysOfTheWeek>TR</daysOfTheWeek>
+                    <dateRange>2015-01-20-06:00 - 2015-03-13-05:00</dateRange>
+                    <timeRange>08:00 AM - 09:20 AM</timeRange>
+                    <instructor>Zhang, Y</instructor>
+                    <building>Agricultural Engr Sciences Bld</building>
+                </meeting>
+            </section>
+        </course>
+        <course id="226" name="ABE Principles: Bioprocessing">
+            <creditHours>2 hours</creditHours>
+            <section id="57087" sectionNumber="AB1" status="Open (Restricted)">
+                <creditHours>2 hours</creditHours>
+                <meeting type="Laboratory">
+                    <daysOfTheWeek>F</daysOfTheWeek>
+                    <dateRange>2015-03-16-05:00 - 2015-05-06-05:00</dateRange>
+                    <timeRange>08:00 AM - 09:50 AM</timeRange>
+                    <instructor>Singh, V</instructor>
+                    <building>Agricultural Engr Sciences Bld</building>
+                </meeting>
+            </section>
+            <section id="57088" sectionNumber="AB2" status="Open (Restricted)">
+                <creditHours>2 hours</creditHours>
+                <meeting type="Laboratory">
+                    <daysOfTheWeek>F</daysOfTheWeek>
+                    <dateRange>2015-03-16-05:00 - 2015-05-06-05:00</dateRange>
+                    <timeRange>10:00 AM - 11:50 AM</timeRange>
+                    <instructor>Singh, V</instructor>
+                    <building>Agricultural Engr Sciences Bld</building>
+                </meeting>
+            </section>
+            <section id="57086" sectionNumber="AE1" status="Open (Restricted)">
+                <creditHours>2 hours</creditHours>
+                <meeting type="Lecture-Discussion">
+                    <daysOfTheWeek>TR</daysOfTheWeek>
+                    <dateRange>2015-03-16-05:00 - 2015-05-06-05:00</dateRange>
+                    <timeRange>08:00 AM - 09:20 AM</timeRange>
+                    <instructor>Singh, V</instructor>
+                    <building>Agricultural Engr Sciences Bld</building>
+                </meeting>
+            </section>
+        </course>
+        <course id="374" name="Environ Control for Buildings">
+            <creditHours>3 hours</creditHours>
+            <section id="29864" sectionNumber="AB1" status="Open">
+                <creditHours>3 hours</creditHours>
+                <meeting type="Laboratory">
+                    <daysOfTheWeek>T</daysOfTheWeek>
+                    <dateRange>2015-01-20-06:00 - 2015-05-06-05:00</dateRange>
+                    <timeRange>03:00 PM - 04:50 PM</timeRange>
+                    <instructor>Green, A</instructor>
+                    <building>Agricultural Engr Sciences Bld</building>
+                </meeting>
+            </section>
+            <section id="29865" sectionNumber="AL1" status="Open">
+                <creditHours>3 hours</creditHours>
+                <meeting type="Lecture">
+                    <daysOfTheWeek>MW</daysOfTheWeek>
+                    <dateRange>2015-01-20-06:00 - 2015-05-06-05:00</dateRange>
+                    <timeRange>02:00 PM - 02:50 PM</timeRange>
+                    <instructor>Green, A</instructor>
+                    <building>Agricultural Engr Sciences Bld</building>
+                </meeting>
+            </section>
+        </course>
+        <course id="397" name="Independent Study">
+            <creditHours>1 TO 4 hours</creditHours>
+            <section id="47262" sectionNumber="" status="Open (Restricted)">
+                <creditHours>1 TO 4 hours</creditHours>
+                <meeting type="Independent Study">
+                    <daysOfTheWeek/>
+                    <dateRange>2015-01-20-06:00 - 2015-05-06-05:00</dateRange>
+                    <timeRange/>
+                    <instructor/>
+                    <building/>
+                </meeting>
+            </section>
+        </course>
+        <course id="398" name="Special Topics">
+            <creditHours>1 TO 3 hours</creditHours>
+            <section id="62285" sectionNumber="SZ" status="Open">
+                <creditHours>2 hours</creditHours>
+                <meeting type="Laboratory-Discussion">
+                    <daysOfTheWeek/>
+                    <dateRange>2015-01-20-06:00 - 2015-05-06-05:00</dateRange>
+                    <timeRange/>
+                    <instructor>Zahos, S</instructor>
+                    <building/>
+                </meeting>
+            </section>
+        </course>
+        <course id="425" name="Engrg Measurement Systems">
+            <creditHours>4 hours</creditHours>
+            <section id="39995" sectionNumber="AB1" status="Closed">
+                <creditHours>4 hours</creditHours>
+                <meeting type="Laboratory">
+                    <daysOfTheWeek>F</daysOfTheWeek>
+                    <dateRange>2015-01-20-06:00 - 2015-05-06-05:00</dateRange>
+                    <timeRange>01:00 PM - 02:20 PM</timeRange>
+                    <instructor>Grift, T</instructor>
+                    <building>Agricultural Engr Sciences Bld</building>
+                </meeting>
+            </section>
+            <section id="56252" sectionNumber="AB2" status="Closed">
+                <creditHours>4 hours</creditHours>
+                <meeting type="Laboratory">
+                    <daysOfTheWeek>F</daysOfTheWeek>
+                    <dateRange>2015-01-20-06:00 - 2015-05-06-05:00</dateRange>
+                    <timeRange>02:30 PM - 03:50 PM</timeRange>
+                    <instructor>Grift, T</instructor>
+                    <building>Agricultural Engr Sciences Bld</building>
+                </meeting>
+            </section>
+            <section id="39997" sectionNumber="AE1" status="Closed">
+                <creditHours>4 hours</creditHours>
+                <meeting type="Lecture-Discussion">
+                    <daysOfTheWeek>TR</daysOfTheWeek>
+                    <dateRange>2015-01-20-06:00 - 2015-05-06-05:00</dateRange>
+                    <timeRange>09:30 AM - 10:50 AM</timeRange>
+                    <instructor>Grift, T</instructor>
+                    <building>Agricultural Engr Sciences Bld</building>
+                </meeting>
+            </section>
+        </course>
+        <course id="436" name="Renewable Energy Systems">
+            <creditHours>3 OR 4 hours</creditHours>
+            <section id="47444" sectionNumber="XW1" status="Closed">
+                <creditHours>3 hours</creditHours>
+                <meeting type="Laboratory">
+                    <daysOfTheWeek>T</daysOfTheWeek>
+                    <dateRange>2015-01-20-06:00 - 2015-05-06-05:00</dateRange>
+                    <timeRange>01:00 PM - 02:50 PM</timeRange>
+                    <instructor>Wang, X</instructor>
+                    <building>Agricultural Engr Sciences Bld</building>
+                </meeting>
+                <meeting type="Lecture">
+                    <daysOfTheWeek>MW</daysOfTheWeek>
+                    <dateRange>2015-01-20-06:00 - 2015-05-06-05:00</dateRange>
+                    <timeRange>01:00 PM - 01:50 PM</timeRange>
+                    <instructor>Wang, X</instructor>
+                    <building>Agricultural Engr Sciences Bld</building>
+                </meeting>
+            </section>
+            <section id="47445" sectionNumber="XW2" status="Closed">
+                <creditHours>4 hours</creditHours>
+                <meeting type="Laboratory">
+                    <daysOfTheWeek>T</daysOfTheWeek>
+                    <dateRange>2015-01-20-06:00 - 2015-05-06-05:00</dateRange>
+                    <timeRange>01:00 PM - 02:50 PM</timeRange>
+                    <instructor>Wang, X</instructor>
+                    <building>Agricultural Engr Sciences Bld</building>
+                </meeting>
+                <meeting type="Lecture">
+                    <daysOfTheWeek>MW</daysOfTheWeek>
+                    <dateRange>2015-01-20-06:00 - 2015-05-06-05:00</dateRange>
+                    <timeRange>01:00 PM - 01:50 PM</timeRange>
+                    <instructor>Wang, X</instructor>
+                    <building>Agricultural Engr Sciences Bld</building>
+                </meeting>
+            </section>
+        </course>
+        <course id="440" name="Applied Statistical Methods I">
+            <creditHours>4 hours</creditHours>
+            <section id="31583" sectionNumber="AB1" status="Closed">
+                <creditHours>4 hours</creditHours>
+                <meeting type="Laboratory">
+                    <daysOfTheWeek>W</daysOfTheWeek>
+                    <dateRange>2015-01-20-06:00 - 2015-05-06-05:00</dateRange>
+                    <timeRange>10:00 AM - 11:50 AM</timeRange>
+                    <instructor>Bullock, D</instructor>
+                    <building>Turner Hall</building>
+                </meeting>
+            </section>
+            <section id="31585" sectionNumber="AB2" status="CrossListOpen">
+                <creditHours>4 hours</creditHours>
+                <meeting type="Laboratory">
+                    <daysOfTheWeek>W</daysOfTheWeek>
+                    <dateRange>2015-01-20-06:00 - 2015-05-06-05:00</dateRange>
+                    <timeRange>12:00 PM - 01:50 PM</timeRange>
+                    <instructor>Bullock, D</instructor>
+                    <building/>
+                </meeting>
+            </section>
+            <section id="31587" sectionNumber="AB3" status="Closed">
+                <creditHours>4 hours</creditHours>
+                <meeting type="Laboratory">
+                    <daysOfTheWeek>W</daysOfTheWeek>
+                    <dateRange>2015-01-20-06:00 - 2015-05-06-05:00</dateRange>
+                    <timeRange>02:00 PM - 03:50 PM</timeRange>
+                    <instructor>Bullock, D</instructor>
+                    <building/>
+                </meeting>
+            </section>
+            <section id="31588" sectionNumber="AB5" status="CrossListOpen">
+                <creditHours>4 hours</creditHours>
+                <meeting type="Laboratory">
+                    <daysOfTheWeek>W</daysOfTheWeek>
+                    <dateRange>2015-01-20-06:00 - 2015-05-06-05:00</dateRange>
+                    <timeRange>04:00 PM - 05:50 PM</timeRange>
+                    <instructor>Bullock, D</instructor>
+                    <building>Turner Hall</building>
+                </meeting>
+            </section>
+            <section id="60974" sectionNumber="AB6" status="CrossListOpen">
+                <creditHours>4 hours</creditHours>
+                <meeting type="Laboratory">
+                    <daysOfTheWeek>W</daysOfTheWeek>
+                    <dateRange>2015-01-20-06:00 - 2015-05-06-05:00</dateRange>
+                    <timeRange>06:00 PM - 07:50 PM</timeRange>
+                    <instructor>Bullock, D</instructor>
+                    <building/>
+                </meeting>
+            </section>
+            <section id="31591" sectionNumber="AL1" status="CrossListOpen">
+                <creditHours>4 hours</creditHours>
+                <meeting type="Lecture">
+                    <daysOfTheWeek>TR</daysOfTheWeek>
+                    <dateRange>2015-01-20-06:00 - 2015-05-06-05:00</dateRange>
+                    <timeRange>03:30 PM - 04:50 PM</timeRange>
+                    <instructor>Bullock, D</instructor>
+                    <building>Gregory Hall</building>
+                </meeting>
+            </section>
+        </course>
+        <course id="445" name="Statistical Methods">
+            <creditHours>4 hours</creditHours>
+            <section id="43600" sectionNumber="1" status="CrossListOpen">
+                <creditHours>4 hours</creditHours>
+                <meeting type="Lecture-Discussion">
+                    <daysOfTheWeek>TR</daysOfTheWeek>
+                    <dateRange>2015-01-20-06:00 - 2015-05-06-05:00</dateRange>
+                    <timeRange>09:30 AM - 10:50 AM</timeRange>
+                    <instructor>Rodriguez-Zas, S</instructor>
+                    <building>ACES Lib, Info &amp; Alum Ctr</building>
+                </meeting>
+            </section>
+        </course>
+        <course id="446" name="Biological Nanoengineering">
+            <creditHours>3 OR 4 hours</creditHours>
+            <section id="51916" sectionNumber="KB1" status="CrossListOpen">
+                <creditHours>3 hours</creditHours>
+                <meeting type="Laboratory">
+                    <daysOfTheWeek>W</daysOfTheWeek>
+                    <dateRange>2015-01-20-06:00 - 2015-05-06-05:00</dateRange>
+                    <timeRange>03:00 PM - 04:50 PM</timeRange>
+                    <instructor>Bhalerao, K</instructor>
+                    <building>Agricultural Engr Sciences Bld</building>
+                </meeting>
+                <meeting type="Lecture">
+                    <daysOfTheWeek>MF</daysOfTheWeek>
+                    <dateRange>2015-01-20-06:00 - 2015-05-06-05:00</dateRange>
+                    <timeRange>03:00 PM - 03:50 PM</timeRange>
+                    <instructor>Bhalerao, K</instructor>
+                    <building>Agricultural Engr Sciences Bld</building>
+                </meeting>
+            </section>
+            <section id="51917" sectionNumber="KB2" status="CrossListOpen">
+                <creditHours>4 hours</creditHours>
+                <meeting type="Laboratory">
+                    <daysOfTheWeek>W</daysOfTheWeek>
+                    <dateRange>2015-01-20-06:00 - 2015-05-06-05:00</dateRange>
+                    <timeRange>03:00 PM - 04:50 PM</timeRange>
+                    <instructor>Bhalerao, K</instructor>
+                    <building>Agricultural Engr Sciences Bld</building>
+                </meeting>
+                <meeting type="Lecture">
+                    <daysOfTheWeek>MF</daysOfTheWeek>
+                    <dateRange>2015-01-20-06:00 - 2015-05-06-05:00</dateRange>
+                    <timeRange>03:00 PM - 03:50 PM</timeRange>
+                    <instructor>Bhalerao, K</instructor>
+                    <building>Agricultural Engr Sciences Bld</building>
+                </meeting>
+            </section>
+        </course>
+        <course id="456" name="Land &amp; Water Resources Engrg">
+            <creditHours>3 OR 4 hours</creditHours>
+            <section id="29875" sectionNumber="G4" status="CrossListOpen">
+                <creditHours>3 OR 4 hours</creditHours>
+                <meeting type="Laboratory">
+                    <daysOfTheWeek>M</daysOfTheWeek>
+                    <dateRange>2015-01-20-06:00 - 2015-05-06-05:00</dateRange>
+                    <timeRange>03:00 PM - 04:50 PM</timeRange>
+                    <instructor>Bhattarai, R</instructor>
+                    <building>Agricultural Engr Sciences Bld</building>
+                </meeting>
+                <meeting type="Lecture">
+                    <daysOfTheWeek>W</daysOfTheWeek>
+                    <dateRange>2015-01-20-06:00 - 2015-05-06-05:00</dateRange>
+                    <timeRange>03:00 PM - 04:50 PM</timeRange>
+                    <instructor/>
+                    <building>Agricultural Engr Sciences Bld</building>
+                </meeting>
+            </section>
+            <section id="40185" sectionNumber="U3" status="CrossListOpen">
+                <creditHours>3 hours</creditHours>
+                <meeting type="Laboratory">
+                    <daysOfTheWeek>M</daysOfTheWeek>
+                    <dateRange>2015-01-20-06:00 - 2015-05-06-05:00</dateRange>
+                    <timeRange>03:00 PM - 04:50 PM</timeRange>
+                    <instructor>Bhattarai, R</instructor>
+                    <building>Agricultural Engr Sciences Bld</building>
+                </meeting>
+                <meeting type="Lecture">
+                    <daysOfTheWeek>W</daysOfTheWeek>
+                    <dateRange>2015-01-20-06:00 - 2015-05-06-05:00</dateRange>
+                    <timeRange>03:00 PM - 04:50 PM</timeRange>
+                    <instructor/>
+                    <building>Agricultural Engr Sciences Bld</building>
+                </meeting>
+            </section>
+        </course>
+        <course id="457" name="NPS Pollution Processes">
+            <creditHours>2 hours</creditHours>
+            <section id="51989" sectionNumber="RBH" status="Open">
+                <creditHours>2 hours</creditHours>
+                <meeting type="Lecture-Discussion">
+                    <daysOfTheWeek>TR</daysOfTheWeek>
+                    <dateRange>2015-01-20-06:00 - 2015-03-13-05:00</dateRange>
+                    <timeRange>03:00 PM - 04:50 PM</timeRange>
+                    <instructor>Bhattarai, R</instructor>
+                    <building>Agricultural Engr Sciences Bld</building>
+                </meeting>
+            </section>
+        </course>
+        <course id="458" name="NPS Pollution Modeling">
+            <creditHours>2 hours</creditHours>
+            <section id="62504" sectionNumber="MCC" status="Open">
+                <creditHours>2 hours</creditHours>
+                <meeting type="Lecture-Discussion">
+                    <daysOfTheWeek>TR</daysOfTheWeek>
+                    <dateRange>2015-03-16-05:00 - 2015-05-06-05:00</dateRange>
+                    <timeRange>03:00 PM - 04:50 PM</timeRange>
+                    <instructor>Chu, M</instructor>
+                    <building>Agricultural Engr Sciences Bld</building>
+                </meeting>
+            </section>
+        </course>
+        <course id="469" name="Industry-Linked Design Project">
+            <creditHours>4 hours</creditHours>
+            <section id="29870" sectionNumber="AB1" status="Open">
+                <creditHours>4 hours</creditHours>
+                <meeting type="Laboratory">
+                    <daysOfTheWeek>T</daysOfTheWeek>
+                    <dateRange>2015-01-20-06:00 - 2015-05-06-05:00</dateRange>
+                    <timeRange>11:00 AM - 12:50 PM</timeRange>
+                    <instructor>Zahos, S</instructor>
+                    <building>Agricultural Engr Sciences Bld</building>
+                </meeting>
+            </section>
+            <section id="29872" sectionNumber="AE1" status="Open (Restricted)">
+                <creditHours>4 hours</creditHours>
+                <meeting type="Lecture-Discussion">
+                    <daysOfTheWeek>F</daysOfTheWeek>
+                    <dateRange>2015-01-20-06:00 - 2015-05-06-05:00</dateRange>
+                    <timeRange>12:00 PM - 12:50 PM</timeRange>
+                    <instructor>Zahos, S</instructor>
+                    <building>Bevier Hall</building>
+                </meeting>
+                <meeting type="Lecture-Discussion">
+                    <daysOfTheWeek>MW</daysOfTheWeek>
+                    <dateRange>2015-01-20-06:00 - 2015-05-06-05:00</dateRange>
+                    <timeRange>12:00 PM - 12:50 PM</timeRange>
+                    <instructor>Zahos, S</instructor>
+                    <building>Agricultural Engr Sciences Bld</building>
+                </meeting>
+            </section>
+        </course>
+        <course id="497" name="Independent Study">
+            <creditHours>1 TO 4 hours</creditHours>
+            <section id="61168" sectionNumber="" status="Open (Restricted)">
+                <creditHours>1 TO 4 hours</creditHours>
+                <meeting type="Independent Study">
+                    <daysOfTheWeek/>
+                    <dateRange>2015-01-20-06:00 - 2015-05-06-05:00</dateRange>
+                    <timeRange/>
+                    <instructor/>
+                    <building/>
+                </meeting>
+            </section>
+        </course>
+        <course id="498" name="Special Topics">
+            <creditHours>1 TO 4 hours</creditHours>
+            <section id="10169" sectionNumber="" status="Open (Restricted)">
+                <creditHours>1 TO 4 hours</creditHours>
+                <meeting type="Independent Study">
+                    <daysOfTheWeek/>
+                    <dateRange>2015-01-20-06:00 - 2015-05-06-05:00</dateRange>
+                    <timeRange/>
+                    <instructor/>
+                    <building/>
+                </meeting>
+            </section>
+            <section id="57187" sectionNumber="AL1" status="Open">
+                <creditHours>2 hours</creditHours>
+                <meeting type="Laboratory">
+                    <daysOfTheWeek>MW</daysOfTheWeek>
+                    <dateRange>2015-01-20-06:00 - 2015-05-06-05:00</dateRange>
+                    <timeRange>10:00 AM - 11:50 AM</timeRange>
+                    <instructor>Rodriguez, L</instructor>
+                    <building>Agricultural Engr Sciences Bld</building>
+                </meeting>
+            </section>
+            <section id="10864" sectionNumber="ARG" status="Open">
+                <creditHours>4 hours</creditHours>
+                <meeting type="Lecture-Discussion">
+                    <daysOfTheWeek>MW</daysOfTheWeek>
+                    <dateRange>2015-01-20-06:00 - 2015-05-06-05:00</dateRange>
+                    <timeRange>02:00 PM - 02:50 PM</timeRange>
+                    <instructor>Green, A</instructor>
+                    <building>Agricultural Engr Sciences Bld</building>
+                </meeting>
+                <meeting type="Lecture-Discussion">
+                    <daysOfTheWeek>T</daysOfTheWeek>
+                    <dateRange>2015-01-20-06:00 - 2015-05-06-05:00</dateRange>
+                    <timeRange>03:00 PM - 04:50 PM</timeRange>
+                    <instructor>Green, A</instructor>
+                    <building>Agricultural Engr Sciences Bld</building>
+                </meeting>
+            </section>
+        </course>
+        <course id="594" name="Graduate Seminar">
+            <creditHours>0 hours</creditHours>
+            <section id="45390" sectionNumber="A" status="CrossListOpen">
+                <creditHours>0 hours</creditHours>
+                <meeting type="Lecture-Discussion">
+                    <daysOfTheWeek>F</daysOfTheWeek>
+                    <dateRange>2015-01-20-06:00 - 2015-05-06-05:00</dateRange>
+                    <timeRange>12:00 PM - 12:50 PM</timeRange>
+                    <instructor>Rodriguez, L</instructor>
+                    <building>Agricultural Engr Sciences Bld</building>
+                </meeting>
+            </section>
+        </course>
+        <course id="597" name="Independent Study">
+            <creditHours>1 TO 4 hours</creditHours>
+            <section id="10174" sectionNumber="" status="Closed">
+                <creditHours>1 TO 4 hours</creditHours>
+                <meeting type="Independent Study">
+                    <daysOfTheWeek/>
+                    <dateRange>2015-01-20-06:00 - 2015-05-06-05:00</dateRange>
+                    <timeRange/>
+                    <instructor/>
+                    <building/>
+                </meeting>
+            </section>
+        </course>
+        <course id="598" name="Special Topics">
+            <creditHours>1 TO 4 hours</creditHours>
+            <section id="58177" sectionNumber="AH1" status="Open (Restricted)">
+                <creditHours>4 hours</creditHours>
+                <meeting type="Lecture">
+                    <daysOfTheWeek/>
+                    <dateRange>2015-01-20-06:00 - 2015-05-06-05:00</dateRange>
+                    <timeRange/>
+                    <instructor>Hansen, A</instructor>
+                    <building/>
+                </meeting>
+            </section>
+            <section id="58179" sectionNumber="KCT" status="Open (Restricted)">
+                <creditHours>4 hours</creditHours>
+                <meeting type="Lecture">
+                    <daysOfTheWeek/>
+                    <dateRange>2015-01-20-06:00 - 2015-05-06-05:00</dateRange>
+                    <timeRange/>
+                    <instructor>Ting, K</instructor>
+                    <building/>
+                </meeting>
+            </section>
+        </course>
+        <course id="599" name="Thesis Research">
+            <creditHours>0 TO 16 hours</creditHours>
+            <section id="10177" sectionNumber="" status="Open (Restricted)">
+                <creditHours>0 TO 16 hours</creditHours>
+                <meeting type="Independent Study">
+                    <daysOfTheWeek/>
+                    <dateRange>2015-01-20-06:00 - 2015-05-06-05:00</dateRange>
+                    <timeRange/>
+                    <instructor/>
+                    <building/>
+                </meeting>
+            </section>
+        </course>
+    </dept>
+</spring2015>

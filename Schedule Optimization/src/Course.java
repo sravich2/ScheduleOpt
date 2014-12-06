@@ -8,13 +8,13 @@ public class Course {
 
 	public int creditHours;
 	public int numberOfModules;
-	public Module[][] modulesAvailable;
+	public Meeting[][] modulesAvailable;
 	public String courseName;
 	public String[] dates;
 	
 	public Course(int numberOfModules)
 	{
-		modulesAvailable = new Module[numberOfModules][30];
+		modulesAvailable = new Meeting[numberOfModules][30];
 	}
 	
 }

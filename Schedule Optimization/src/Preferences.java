@@ -5,7 +5,6 @@
  */
 public class Preferences
 {
-
 	public boolean lunchBreak;
 	public int maxMinutesInADay;
 	public int maxMinutesInARow;

@@ -1,17 +1,18 @@
 /**
  * 
  */
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.net.MalformedURLException;
-import java.net.URL;
 import java.util.ArrayList;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.transform.OutputKeys;
+import javax.xml.transform.Transformer;
+import javax.xml.transform.TransformerException;
+import javax.xml.transform.TransformerFactory;
+import javax.xml.transform.dom.DOMSource;
+import javax.xml.transform.stream.StreamResult;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -31,28 +32,51 @@ public class InfoRetriever2{
 	DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
 	DocumentBuilder dBuilder;
 
-	public void getSessionCoursesInfo(Document doc, String session, String year)
+	public void getSessionCoursesInfo(String session, String year)
 	{
+
 		StringBuffer sessionUrl = new StringBuffer(baseUrl);
 		sessionUrl.append(year + "/" + session + ".xml");
 		try
 		{
 			dBuilder = dbFactory.newDocumentBuilder();
+			
+			Document finalXML = dBuilder.newDocument();
+			Element rootElement = finalXML.createElement(session + year);
+			finalXML.appendChild(rootElement); 
+			
+					
+			
+			
 			Document sessionInfo = dBuilder.parse((sessionUrl.toString()));
 			NodeList deptList = sessionInfo.getElementsByTagName("subject");
 
-			for (int i = 0; i < deptList.getLength(); i++)
+			for (int i = 0; i < 2/*deptList.getLength()*/; i++)
 			{
 				Node dept = deptList.item(i);
 				if (dept.getNodeType() == Node.ELEMENT_NODE)
 				{
 					Element currentDept = (Element) dept;
 					String Dept = currentDept.getAttribute("id");
-					String deptName = currentDept.getTextContent();
-					System.out.println(deptName + "\n\n");
-					getDepartmentCoursesInfo(Dept, year, session);
+					
+					getDepartmentCoursesInfo(finalXML, rootElement, Dept, year, session);
 				}
 			}
+		
+           TransformerFactory transformerFactory = TransformerFactory.newInstance();
+           Transformer transformer = transformerFactory.newTransformer();
+           //for pretty print
+           transformer.setOutputProperty(OutputKeys.ENCODING, "UTF-8");
+           transformer.setOutputProperty(OutputKeys.OMIT_XML_DECLARATION, "yes");
+           transformer.setOutputProperty(OutputKeys.INDENT, "yes");
+           transformer.setOutputProperty("{http://xml.apache.org/xslt}indent-amount", "4");
+
+           DOMSource source = new DOMSource(finalXML);
+
+           StreamResult console = new StreamResult(System.out);
+           transformer.transform(source, console);
+           System.out.println("DONE");	
+			
 		} catch (IOException ioe)
 		{
 			System.out.println(ioe.getMessage());
@@ -62,17 +86,26 @@ public class InfoRetriever2{
 		} catch (ParserConfigurationException pce)
 		{
 			System.out.println(pce.getMessage());
+		} catch (TransformerException te)
+		{
+			System.out.println(te.getMessage());
 		}
 	}
 
-	public void getDepartmentCoursesInfo(Document doc, String dept, String year, String session)
+	public void getDepartmentCoursesInfo(Document doc, Element root, String dept, String year, String session)
 	{
 		StringBuffer deptUrl = new StringBuffer(baseUrl);
 		deptUrl.append(year + "/" + session + "/" + dept + ".xml");
+		
 		try
 		{
 			dBuilder = dbFactory.newDocumentBuilder();
 			Document deptInfo = dBuilder.parse(deptUrl.toString());
+			
+			String deptName = deptInfo.getElementsByTagName("unitName").item(0).getTextContent();
+			Node deptNode = root.appendChild(this.createDept(doc, dept, deptName));
+			
+			
 			NodeList coursesOffered = deptInfo.getElementsByTagName("course");
 
 			for (int i = 0; i < coursesOffered.getLength(); i++)
@@ -82,8 +115,8 @@ public class InfoRetriever2{
 				{
 					Element currentCourse = (Element) course;
 					String courseNum = (currentCourse.getAttribute("id"));
-					System.out.println(courseNum + "\n\n");
-					getCourseInfo(dept, courseNum, year, session);
+					
+					getCourseInfo(doc, (Element) deptNode, dept, courseNum, year, session);
 				}
 			}
 
@@ -100,29 +133,40 @@ public class InfoRetriever2{
 
 	}
 
-	public void getCourseInfo(Document doc, String dept, String courseNum, String year, String session)
+	public void getCourseInfo(Document doc, Element deptNode, String dept, String courseNum, String year, String session)
 	{
-
+		
 		StringBuffer courseUrl = new StringBuffer(baseUrl);
 		courseUrl.append(year + "/" + session + "/" + dept + "/" + courseNum);
 		StringBuffer url = new StringBuffer(courseUrl);
 		url.append(".xml");
-		//String XML = getPageXML(url.toString());
-		//System.out.println(XML);
 
 		ArrayList<String> CRNList = new ArrayList<String>();
 		ArrayList<String> sectionName = new ArrayList<String>();
-
+		
+		Node courseNode = null;
+		
+		String creditHours = "";
+		
 		try
 		{
 			dbFactory = DocumentBuilderFactory.newInstance();
 			dBuilder = dbFactory.newDocumentBuilder();
-
+			
 			Document courseInfo = dBuilder.parse(url.toString());
 			//optional, but recommended
 			//read this - http://stackoverflow.com/questions/13786607/normalization-in-dom-parsing-with-java-how-does-it-work
-			courseInfo.getDocumentElement().normalize();
+			//courseInfo.getDocumentElement().normalize();
 
+			creditHours = courseInfo.getElementsByTagName("creditHours").item(0).getTextContent();
+			
+			if (creditHours.indexOf(".") > -1)
+				creditHours = creditHours.substring(0, creditHours.length()-1);
+			
+			String courseName = courseInfo.getElementsByTagName("label").item(0).getTextContent();
+			
+			courseNode = deptNode.appendChild(this.createCourse(doc, courseNum, courseName, creditHours));
+			
 			NodeList sectionList = courseInfo.getElementsByTagName("section");
 
 			for (int i = 0; i < sectionList.getLength(); i++)
@@ -150,24 +194,74 @@ public class InfoRetriever2{
 
 		for (int i = 0; i < CRNList.size(); i++)
 		{
-			//System.out.println("Section: " + sectionName.get(i) + "\n");
 			url = new StringBuffer(courseUrl);
 			url.append("/" + CRNList.get(i) + ".xml");
 			try
 			{
 				Document currentSectionInfo = dBuilder.parse(url.toString());
+				
+				String dateRange = "";
+				String startDate = "";
+				String endDate = "";
+				String name = "";
+				String status = "";
+				String sectionCreditHours = "";
+				
+				NodeList statusNL;
+				NodeList nameNL;
+				NodeList creditHoursNL;
+				
+				String CRN = CRNList.get(i);
+				
+				if ((currentSectionInfo.getElementsByTagName("startDate")).getLength()!=0 && currentSectionInfo.getElementsByTagName("endDate").getLength()!=0)
+				{
+					startDate = currentSectionInfo.getElementsByTagName("startDate").item(0).getTextContent();
+					endDate = currentSectionInfo.getElementsByTagName("endDate").item(0).getTextContent(); 
+					dateRange = startDate.substring(0, startDate.length()-6) + "|" + endDate.substring(0, endDate.length()-6);
+				}
+				if ((nameNL = currentSectionInfo.getElementsByTagName("sectionNumber")).getLength()!=0)
+					name = nameNL.item(0).getTextContent().trim();
+				if ((statusNL = currentSectionInfo.getElementsByTagName("enrollmentStatus")).getLength()!=0)
+					status = statusNL.item(0).getTextContent();
+			
+				if ((creditHoursNL = currentSectionInfo.getElementsByTagName("creditHours")).getLength()!=0)
+					sectionCreditHours = creditHoursNL.item(0).getTextContent();
+				else
+					sectionCreditHours = creditHours;
+				
+				Node sectionNode = courseNode.appendChild(this.createSection(doc, name, CRN, status, sectionCreditHours));
+				
+				NodeList meetingList = currentSectionInfo.getElementsByTagName("meeting");
+				
+				for (int j = 0; j < meetingList.getLength(); j++)
+				{
+					Element current = (Element) meetingList.item(j);
 
-				NodeList meeting = currentSectionInfo.getElementsByTagName("meeting");
-				Element current = (Element) meeting.item(0);
-				/*System.out.println("CRN: "+CRNList.get(i));
-				System.out.println("Type: " + current.getElementsByTagName("type").item(0).getTextContent());
-				System.out.println("Status: " + currentSectionInfo.getElementsByTagName("enrollmentStatus").item(0).getTextContent());
-				System.out.println("Time Range: " + current.getElementsByTagName("start").item(0).getTextContent() + 
-						" - " + current.getElementsByTagName("end").item(0).getTextContent());
-				System.out.println("Date Range: " + currentSectionInfo.getElementsByTagName("startDate").item(0).getTextContent() + 
-						" - " + currentSectionInfo.getElementsByTagName("endDate").item(0).getTextContent()); 
-				System.out.println("Days: " + current.getElementsByTagName("daysOfTheWeek").item(0).getTextContent());
-				System.out.println("Building name: " + current.getElementsByTagName("buildingName").item(0).getTextContent()+"\n\n");*/
+					String type = "";
+					String timeRange = "";
+					String daysOfTheWeek = "";
+					String instructor = "";
+					String building = "";
+
+					NodeList typeNL;
+					NodeList daysOfTheWeekNL;
+					NodeList instructorNL;
+					NodeList buildingNL;
+
+					if ((typeNL = current.getElementsByTagName("type")).getLength() != 0)
+						type = typeNL.item(0).getTextContent();
+
+					if ((current.getElementsByTagName("start")).getLength() != 0 && current.getElementsByTagName("end").getLength() != 0)
+						timeRange = current.getElementsByTagName("start").item(0).getTextContent() + " - " + current.getElementsByTagName("end").item(0).getTextContent();
+					if ((daysOfTheWeekNL = current.getElementsByTagName("daysOfTheWeek")).getLength() != 0)
+						daysOfTheWeek = daysOfTheWeekNL.item(0).getTextContent().trim();
+					if ((buildingNL = current.getElementsByTagName("buildingName")).getLength() != 0)
+						building = buildingNL.item(0).getTextContent();
+					if ((instructorNL = current.getElementsByTagName("instructor")).getLength() != 0)
+						instructor = instructorNL.item(0).getTextContent();
+
+					sectionNode.appendChild(this.createMeeting(doc, type, daysOfTheWeek, dateRange, timeRange, instructor, building));
+				}
 			} catch (SAXException saxe)
 			{
 				System.out.println(saxe.getMessage());
@@ -175,7 +269,69 @@ public class InfoRetriever2{
 			{
 				System.out.println(ioe.getMessage());
 			}
-
 		}
-}
+	}
+
+	private Node createCourse(Document doc, String code, String name, String creditHours)
+	{
+		Element course = doc.createElement("course");
+
+		course.setAttribute("id", code);
+		course.setAttribute("name", name);
+		
+		course.appendChild(getCourseElements(doc, course, "creditHours", creditHours));
+		
+		return course;
+	}
+	
+	private Node createDept(Document doc, String abbr, String name)
+	{
+		Element dept = doc.createElement("dept");
+
+		dept.setAttribute("id", abbr);
+		dept.setAttribute("name", name);
+		
+		return dept;
+	}
+	
+
+	private Node createSection(Document doc, String name, String CRN, String status, String creditHours)
+	{
+		Element section = doc.createElement("section");
+
+		section.setAttribute("id", CRN);
+		section.setAttribute("sectionNumber", name);
+		section.setAttribute("status", status);
+		
+		section.appendChild(getCourseElements(doc, section, "creditHours", creditHours));		
+
+		return section;
+	}
+	
+	private Node createMeeting(Document doc, String type, String daysOfTheWeek, String dateRange, String timeRange, String instructor, String building)
+	{
+		Element meeting = doc.createElement("meeting");
+		
+		meeting.setAttribute("type", type);
+		
+		meeting.appendChild(getCourseElements(doc, meeting, "daysOfTheWeek", daysOfTheWeek));
+		meeting.appendChild(getCourseElements(doc, meeting, "dateRange", dateRange));
+		meeting.appendChild(getCourseElements(doc, meeting, "timeRange", timeRange));
+		meeting.appendChild(getCourseElements(doc, meeting, "instructor", instructor));
+		meeting.appendChild(getCourseElements(doc, meeting, "building", building));
+		
+		return meeting;
+	}
+	
+
+	//utility method to create text node
+	private static Node getCourseElements(Document doc, Element element, String name, String value)
+	{
+		Element node = doc.createElement(name);
+		
+		node.appendChild(doc.createTextNode(value));
+		
+		return node;
+	}
+
 }

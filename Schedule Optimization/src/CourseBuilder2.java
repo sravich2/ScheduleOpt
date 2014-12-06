@@ -5,11 +5,11 @@ public class CourseBuilder2
 
 	public int indexOfCourseBeingIncremented = 0;
 	Worker help = new Worker();
-	public Module[] currentSchedule;
+	public Meeting[] currentSchedule;
 
-	public ArrayList<Module[]> getAllSchedulesFromCourses(ArrayList<Course> coursesTaken)
+	public ArrayList<Meeting[]> getAllSchedulesFromCourses(ArrayList<Course> coursesTaken)
 	{
-		ArrayList<Module[]> modulesTaken = new ArrayList<Module[]>();
+		ArrayList<Meeting[]> modulesTaken = new ArrayList<Meeting[]>();
 		for (int i = 0;i<coursesTaken.size();i++)
 		{
 			for (int j = 0;j<coursesTaken.get(i).modulesAvailable.length;j++)
@@ -21,16 +21,16 @@ public class CourseBuilder2
 	}
 	
 	
-	public ArrayList<Module[]> getAllSchedules(ArrayList<Module[]> modulesToBeTaken)
+	public ArrayList<Meeting[]> getAllSchedules(ArrayList<Meeting[]> modulesToBeTaken)
 	{
-		ArrayList<Module[]> finalArray = new ArrayList<Module[]>(modulesToBeTaken.size()); 
+		ArrayList<Meeting[]> finalArray = new ArrayList<Meeting[]>(modulesToBeTaken.size()); 
 		
 		//Base Case
 		if (modulesToBeTaken.size() == 1)
 		{
 			for (int i = 0;i<help.realLength(modulesToBeTaken.get(0));i++)
 			{
-				Module[] temp = new Module[] {modulesToBeTaken.get(0)[i]};
+				Meeting[] temp = new Meeting[] {modulesToBeTaken.get(0)[i]};
 				
 				finalArray.add(temp);	
 			}
@@ -40,14 +40,14 @@ public class CourseBuilder2
 		
 		else
 		{
-			ArrayList<Module[]> comboOfRemaining = new ArrayList<Module[]>();
-			ArrayList<Module[]> copyOfModulesTaken = new ArrayList(modulesToBeTaken);
+			ArrayList<Meeting[]> comboOfRemaining = new ArrayList<Meeting[]>();
+			ArrayList<Meeting[]> copyOfModulesTaken = new ArrayList(modulesToBeTaken);
 			copyOfModulesTaken.remove(0);
 			comboOfRemaining = getAllSchedules(copyOfModulesTaken);
 			boolean conflict;
 			for (int i = 0;i<help.realLength(modulesToBeTaken.get(0));i++)
 			{
-				Module[] temp = new Module[modulesToBeTaken.size()];
+				Meeting[] temp = new Meeting[modulesToBeTaken.size()];
 				temp[0] = modulesToBeTaken.get(0)[i];
 				
 				

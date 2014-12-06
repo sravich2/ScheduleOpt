@@ -5,15 +5,15 @@ public class CourseBuilder
 
 	Worker help = new Worker();
 
-	public Module[] buildCourseSchedule(Course[] coursesTaken)
+	public Meeting[] buildCourseSchedule(Course[] coursesTaken)
 	{
 		while (true)
 		{
-			ArrayList<Module> finalClasses = new ArrayList<Module>();
+			ArrayList<Meeting> finalClasses = new ArrayList<Meeting>();
 
 			for (int i = 0; i < coursesTaken.length; i++)
 			{
-				ArrayList<Module> modulesForThisCourse = new ArrayList<Module>();
+				ArrayList<Meeting> modulesForThisCourse = new ArrayList<Meeting>();
 				modulesForThisCourse = (help.chooseRandomModules(coursesTaken[i]));
 				finalClasses.addAll(modulesForThisCourse);
 			}
@@ -35,7 +35,7 @@ public class CourseBuilder
 					{
 						//output = (help.toString(finalClasses.toArray(new Module[size])));
 						//System.out.println("FOUND: \n"+ output);
-						return finalClasses.toArray(new Module[size]);
+						return finalClasses.toArray(new Meeting[size]);
 					}
 				}
 			}
@@ -43,19 +43,19 @@ public class CourseBuilder
 		//	return "Didn't get anything";
 	}
 	
-	public Module[] geneticBuild(Module[][] population)
+	public Meeting[] geneticBuild(Meeting[][] population)
 	{
 		return null;
 	}
 	
-	public Module[][] generatePopulation(Course[] coursesTaken)
+	public Meeting[][] generatePopulation(Course[] coursesTaken)
 	{
 		final int POPULATION_SIZE = 500;
-		ArrayList<Module[]> population = new ArrayList<Module[]>(POPULATION_SIZE);
+		ArrayList<Meeting[]> population = new ArrayList<Meeting[]>(POPULATION_SIZE);
 		int count = 0;
 		while (count < 1000)
 		{
-			Module[] prospectiveSchedule = this.buildCourseSchedule(coursesTaken);
+			Meeting[] prospectiveSchedule = this.buildCourseSchedule(coursesTaken);
 			for (int i = 0;i<count;i++)
 			{
 				if (help.compareModuleArrays(prospectiveSchedule, population.get(i)))
@@ -66,10 +66,10 @@ public class CourseBuilder
 			}
 			population.add(prospectiveSchedule);
 		}
-		return population.toArray(new Module[1000][]);
+		return population.toArray(new Meeting[1000][]);
 	}
 	
-	public Module[] geneticMutate(Module[] inputSchedule)
+	public Meeting[] geneticMutate(Meeting[] inputSchedule)
 	{
 		return null;
 	}

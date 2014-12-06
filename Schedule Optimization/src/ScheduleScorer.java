@@ -17,7 +17,7 @@ public class ScheduleScorer
 	 * @param schedule		Module[][] which represents prospective schedule
 	 * @return				Score for given prospective schedule. Higher is better.
 	 */
-	public double scoreSchedule(Module[][] schedule)
+	public double scoreSchedule(Meeting[][] schedule)
 	{
 		log.setLength(0);
 		double score = 0;
@@ -146,7 +146,7 @@ public class ScheduleScorer
 	 * @param scheduleForOneDay		Module[] containing all classes on a single day
 	 * @return						Number of minutes in class during the given day
 	 */
-	public int minutesInDay(Module[] scheduleForOneDay)
+	public int minutesInDay(Meeting[] scheduleForOneDay)
 	{
 		int minutesBusyInDay = 0;
 		for (int i = 0; i < scheduleForOneDay.length; i++)
@@ -162,7 +162,7 @@ public class ScheduleScorer
 	 * @param scheduleForOneDay		Module[] containing all classes on a single day
 	 * @return						Maximum number of minutes in a row during the given day
 	 */
-	public int maxMinutesInRow(Module[] scheduleForOneDay)
+	public int maxMinutesInRow(Meeting[] scheduleForOneDay)
 	{
 		int maxMinutesInRow = 0;
 		int count = 0;
@@ -198,7 +198,7 @@ public class ScheduleScorer
 	 * @param scheduleForOneDay		Module[] containing all classes on a single day
 	 * @return						boolean represents whether there is a break for lunch on the given day
 	 */
-	public boolean checkLunchBreak(Module[] scheduleForOneDay)
+	public boolean checkLunchBreak(Meeting[] scheduleForOneDay)
 	{
 		int minutesBusyDuringLunchTime = 0;
 		for (int i = 0; i < scheduleForOneDay.length; i++)
@@ -222,22 +222,22 @@ public class ScheduleScorer
 	 * @param scheduleOnDay		Module[] containing all classes on a single day
 	 * @return					Number of classes during disfavored time of day on the given day
 	 */
-	public int classesAtTimeOfDay(Module[] scheduleOnDay) //Returns number of bad classes
+	public int classesAtTimeOfDay(Meeting[] scheduleOnDay) //Returns number of bad classes
 	{
 		int countOfClassesInUndesirableTime = 0;
-		Module checkAgainstThisModule;
+		Meeting checkAgainstThisModule;
 		switch (pref.avoidTime)
 		{
 		default:
 			return 0;
 		case 1:
-			checkAgainstThisModule = new Module("MTWRF", "0800", "1059");
+			checkAgainstThisModule = new Meeting("MTWRF", "0800", "1059");
 			break;
 		case 2:
-			checkAgainstThisModule = new Module("MTWRF", "1100", "1559");
+			checkAgainstThisModule = new Meeting("MTWRF", "1100", "1559");
 			break;
 		case 3:
-			checkAgainstThisModule = new Module("MTWRF", "1600", "2200");
+			checkAgainstThisModule = new Meeting("MTWRF", "1600", "2200");
 			break;
 		}
 
@@ -260,7 +260,7 @@ public class ScheduleScorer
 	 * @param scheduleForOneDay		Module[] containing all classes on a single day
 	 * @return						int[] containing count of short breaks and total breaks, in that order
 	 */
-	public int[] countShortAndTotalBreaks(Module[] scheduleForOneDay)
+	public int[] countShortAndTotalBreaks(Meeting[] scheduleForOneDay)
 	{
 
 		int[] countBreaks = new int[2];
@@ -283,10 +283,7 @@ public class ScheduleScorer
 			breakBetweenClasses = notableTimes[2 * (i + 1)] - notableTimes[2 * i + 1];
 
 			if (breakBetweenClasses > 20 && breakBetweenClasses < 90)
-			{
-				//System.out.println(breakBetweenClasses);
 				countShortBreaks++;
-			}
 			if (breakBetweenClasses > 20)
 				countAllBreaks++;
 		}
@@ -296,13 +293,13 @@ public class ScheduleScorer
 		return countBreaks;
 	}
 	
-	public int[] countUnwalkableClasses(Module[] scheduleForOneDay) //Optimise this method
+	public int[] countUnwalkableClasses(Meeting[] scheduleForOneDay) //Optimise this method
 	{
 		DistanceTimeMatrix matrix = new DistanceTimeMatrix();
 		double[] travelInfo = new double[2];
 		int[] howLateAreYouGoingToBe = new int[10];
 		int count = 0;
-		Module[] scheduleForOneDay2 = help.sortByTimeScheduleForOneDay(scheduleForOneDay);
+		Meeting[] scheduleForOneDay2 = help.sortByTimeScheduleForOneDay(scheduleForOneDay);
 
 		for (int i = 0;i<scheduleForOneDay2.length-1;i++)
 		{
@@ -325,7 +322,7 @@ public class ScheduleScorer
 		return howLateAreYouGoingToBe;
 	}
 	
-	public int countClassesOnADay(Module[] scheduleForOneDay)
+	public int countClassesOnADay(Meeting[] scheduleForOneDay)
 	{
 		return scheduleForOneDay.length;
 	}
